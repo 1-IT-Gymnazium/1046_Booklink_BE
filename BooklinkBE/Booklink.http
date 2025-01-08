@@ -1,0 +1,6 @@
+@Booklink_HostAddress = http://localhost:5038
+
+GET {{Booklink_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

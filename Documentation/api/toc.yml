@@ -1,0 +1,42 @@
+### YamlMime:TableOfContent
+items:
+- uid: Booklink.Controllers
+  name: Booklink.Controllers
+  type: Namespace
+  items:
+  - uid: Booklink.Controllers.BooksController
+    name: BooksController
+    type: Class
+- uid: Booklink.Migrations
+  name: Booklink.Migrations
+  type: Namespace
+  items:
+  - uid: Booklink.Migrations.AddedISBN
+    name: AddedISBN
+    type: Class
+  - uid: Booklink.Migrations.InitialCreate
+    name: InitialCreate
+    type: Class
+- uid: Booklink.Models
+  name: Booklink.Models
+  type: Namespace
+  items:
+  - uid: Booklink.Models.AppDbContext
+    name: AppDbContext
+    type: Class
+  - uid: Booklink.Models.Book
+    name: Book
+    type: Class
+  - uid: Booklink.Models.BookRepository
+    name: BookRepository
+    type: Class
+  - uid: Booklink.Models.IBookRepository
+    name: IBookRepository
+    type: Interface
+  - uid: Booklink.Models.PhysicalLocation
+    name: PhysicalLocation
+    type: Class
+  - uid: Booklink.Models.User
+    name: User
+    type: Class
+memberLayout: SamePage

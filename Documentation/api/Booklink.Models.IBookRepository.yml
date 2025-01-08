@@ -1,0 +1,389 @@
+### YamlMime:ManagedReference
+items:
+- uid: Booklink.Models.IBookRepository
+  commentId: T:Booklink.Models.IBookRepository
+  id: IBookRepository
+  parent: Booklink.Models
+  children:
+  - Booklink.Models.IBookRepository.AddBookAsync(Booklink.Models.Book)
+  - Booklink.Models.IBookRepository.DeleteBookAsync(System.Guid)
+  - Booklink.Models.IBookRepository.GetAllBooksAsync
+  - Booklink.Models.IBookRepository.GetBookByIdAsync(System.Guid)
+  - Booklink.Models.IBookRepository.UpdateBookAsync(Booklink.Models.Book)
+  langs:
+  - csharp
+  - vb
+  name: IBookRepository
+  nameWithType: IBookRepository
+  fullName: Booklink.Models.IBookRepository
+  type: Interface
+  source:
+    id: IBookRepository
+    path: /Users/f3l1x/Coding/CurrentProjects/maturita/BooklinkBE/BooklinkBE/Models/Book.cs
+    startLine: 19
+  assemblies:
+  - BooklinkBE
+  namespace: Booklink.Models
+  syntax:
+    content: public interface IBookRepository
+    content.vb: Public Interface IBookRepository
+- uid: Booklink.Models.IBookRepository.GetAllBooksAsync
+  commentId: M:Booklink.Models.IBookRepository.GetAllBooksAsync
+  id: GetAllBooksAsync
+  parent: Booklink.Models.IBookRepository
+  langs:
+  - csharp
+  - vb
+  name: GetAllBooksAsync()
+  nameWithType: IBookRepository.GetAllBooksAsync()
+  fullName: Booklink.Models.IBookRepository.GetAllBooksAsync()
+  type: Method
+  source:
+    id: GetAllBooksAsync
+    path: /Users/f3l1x/Coding/CurrentProjects/maturita/BooklinkBE/BooklinkBE/Models/Book.cs
+    startLine: 21
+  assemblies:
+  - BooklinkBE
+  namespace: Booklink.Models
+  syntax:
+    content: Task<IEnumerable<Book>> GetAllBooksAsync()
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{Booklink.Models.Book}}
+    content.vb: Function GetAllBooksAsync() As Task(Of IEnumerable(Of Book))
+  overload: Booklink.Models.IBookRepository.GetAllBooksAsync*
+- uid: Booklink.Models.IBookRepository.GetBookByIdAsync(System.Guid)
+  commentId: M:Booklink.Models.IBookRepository.GetBookByIdAsync(System.Guid)
+  id: GetBookByIdAsync(System.Guid)
+  parent: Booklink.Models.IBookRepository
+  langs:
+  - csharp
+  - vb
+  name: GetBookByIdAsync(Guid)
+  nameWithType: IBookRepository.GetBookByIdAsync(Guid)
+  fullName: Booklink.Models.IBookRepository.GetBookByIdAsync(System.Guid)
+  type: Method
+  source:
+    id: GetBookByIdAsync
+    path: /Users/f3l1x/Coding/CurrentProjects/maturita/BooklinkBE/BooklinkBE/Models/Book.cs
+    startLine: 22
+  assemblies:
+  - BooklinkBE
+  namespace: Booklink.Models
+  syntax:
+    content: Task<Book> GetBookByIdAsync(Guid id)
+    parameters:
+    - id: id
+      type: System.Guid
+    return:
+      type: System.Threading.Tasks.Task{Booklink.Models.Book}
+    content.vb: Function GetBookByIdAsync(id As Guid) As Task(Of Book)
+  overload: Booklink.Models.IBookRepository.GetBookByIdAsync*
+- uid: Booklink.Models.IBookRepository.AddBookAsync(Booklink.Models.Book)
+  commentId: M:Booklink.Models.IBookRepository.AddBookAsync(Booklink.Models.Book)
+  id: AddBookAsync(Booklink.Models.Book)
+  parent: Booklink.Models.IBookRepository
+  langs:
+  - csharp
+  - vb
+  name: AddBookAsync(Book)
+  nameWithType: IBookRepository.AddBookAsync(Book)
+  fullName: Booklink.Models.IBookRepository.AddBookAsync(Booklink.Models.Book)
+  type: Method
+  source:
+    id: AddBookAsync
+    path: /Users/f3l1x/Coding/CurrentProjects/maturita/BooklinkBE/BooklinkBE/Models/Book.cs
+    startLine: 23
+  assemblies:
+  - BooklinkBE
+  namespace: Booklink.Models
+  syntax:
+    content: Task<Book> AddBookAsync(Book book)
+    parameters:
+    - id: book
+      type: Booklink.Models.Book
+    return:
+      type: System.Threading.Tasks.Task{Booklink.Models.Book}
+    content.vb: Function AddBookAsync(book As Book) As Task(Of Book)
+  overload: Booklink.Models.IBookRepository.AddBookAsync*
+- uid: Booklink.Models.IBookRepository.UpdateBookAsync(Booklink.Models.Book)
+  commentId: M:Booklink.Models.IBookRepository.UpdateBookAsync(Booklink.Models.Book)
+  id: UpdateBookAsync(Booklink.Models.Book)
+  parent: Booklink.Models.IBookRepository
+  langs:
+  - csharp
+  - vb
+  name: UpdateBookAsync(Book)
+  nameWithType: IBookRepository.UpdateBookAsync(Book)
+  fullName: Booklink.Models.IBookRepository.UpdateBookAsync(Booklink.Models.Book)
+  type: Method
+  source:
+    id: UpdateBookAsync
+    path: /Users/f3l1x/Coding/CurrentProjects/maturita/BooklinkBE/BooklinkBE/Models/Book.cs
+    startLine: 24
+  assemblies:
+  - BooklinkBE
+  namespace: Booklink.Models
+  syntax:
+    content: Task UpdateBookAsync(Book book)
+    parameters:
+    - id: book
+      type: Booklink.Models.Book
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function UpdateBookAsync(book As Book) As Task
+  overload: Booklink.Models.IBookRepository.UpdateBookAsync*
+- uid: Booklink.Models.IBookRepository.DeleteBookAsync(System.Guid)
+  commentId: M:Booklink.Models.IBookRepository.DeleteBookAsync(System.Guid)
+  id: DeleteBookAsync(System.Guid)
+  parent: Booklink.Models.IBookRepository
+  langs:
+  - csharp
+  - vb
+  name: DeleteBookAsync(Guid)
+  nameWithType: IBookRepository.DeleteBookAsync(Guid)
+  fullName: Booklink.Models.IBookRepository.DeleteBookAsync(System.Guid)
+  type: Method
+  source:
+    id: DeleteBookAsync
+    path: /Users/f3l1x/Coding/CurrentProjects/maturita/BooklinkBE/BooklinkBE/Models/Book.cs
+    startLine: 25
+  assemblies:
+  - BooklinkBE
+  namespace: Booklink.Models
+  syntax:
+    content: Task DeleteBookAsync(Guid id)
+    parameters:
+    - id: id
+      type: System.Guid
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function DeleteBookAsync(id As Guid) As Task
+  overload: Booklink.Models.IBookRepository.DeleteBookAsync*
+references:
+- uid: Booklink.Models
+  commentId: N:Booklink.Models
+  href: Booklink.html
+  name: Booklink.Models
+  nameWithType: Booklink.Models
+  fullName: Booklink.Models
+  spec.csharp:
+  - uid: Booklink
+    name: Booklink
+    href: Booklink.html
+  - name: .
+  - uid: Booklink.Models
+    name: Models
+    href: Booklink.Models.html
+  spec.vb:
+  - uid: Booklink
+    name: Booklink
+    href: Booklink.html
+  - name: .
+  - uid: Booklink.Models
+    name: Models
+    href: Booklink.Models.html
+- uid: Booklink.Models.IBookRepository.GetAllBooksAsync*
+  commentId: Overload:Booklink.Models.IBookRepository.GetAllBooksAsync
+  href: Booklink.Models.IBookRepository.html#Booklink_Models_IBookRepository_GetAllBooksAsync
+  name: GetAllBooksAsync
+  nameWithType: IBookRepository.GetAllBooksAsync
+  fullName: Booklink.Models.IBookRepository.GetAllBooksAsync
+- uid: System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{Booklink.Models.Book}}
+  commentId: T:System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{Booklink.Models.Book}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<IEnumerable<Book>>
+  nameWithType: Task<IEnumerable<Book>>
+  fullName: System.Threading.Tasks.Task<System.Collections.Generic.IEnumerable<Booklink.Models.Book>>
+  nameWithType.vb: Task(Of IEnumerable(Of Book))
+  fullName.vb: System.Threading.Tasks.Task(Of System.Collections.Generic.IEnumerable(Of Booklink.Models.Book))
+  name.vb: Task(Of IEnumerable(Of Book))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Booklink.Models.Book
+    name: Book
+    href: Booklink.Models.Book.html
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Booklink.Models.Book
+    name: Book
+    href: Booklink.Models.Book.html
+  - name: )
+  - name: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: Booklink.Models.IBookRepository.GetBookByIdAsync*
+  commentId: Overload:Booklink.Models.IBookRepository.GetBookByIdAsync
+  href: Booklink.Models.IBookRepository.html#Booklink_Models_IBookRepository_GetBookByIdAsync_System_Guid_
+  name: GetBookByIdAsync
+  nameWithType: IBookRepository.GetBookByIdAsync
+  fullName: Booklink.Models.IBookRepository.GetBookByIdAsync
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
+- uid: System.Threading.Tasks.Task{Booklink.Models.Book}
+  commentId: T:System.Threading.Tasks.Task{Booklink.Models.Book}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<Book>
+  nameWithType: Task<Book>
+  fullName: System.Threading.Tasks.Task<Booklink.Models.Book>
+  nameWithType.vb: Task(Of Book)
+  fullName.vb: System.Threading.Tasks.Task(Of Booklink.Models.Book)
+  name.vb: Task(Of Book)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: Booklink.Models.Book
+    name: Book
+    href: Booklink.Models.Book.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Booklink.Models.Book
+    name: Book
+    href: Booklink.Models.Book.html
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Booklink.Models.IBookRepository.AddBookAsync*
+  commentId: Overload:Booklink.Models.IBookRepository.AddBookAsync
+  href: Booklink.Models.IBookRepository.html#Booklink_Models_IBookRepository_AddBookAsync_Booklink_Models_Book_
+  name: AddBookAsync
+  nameWithType: IBookRepository.AddBookAsync
+  fullName: Booklink.Models.IBookRepository.AddBookAsync
+- uid: Booklink.Models.Book
+  commentId: T:Booklink.Models.Book
+  parent: Booklink.Models
+  href: Booklink.Models.Book.html
+  name: Book
+  nameWithType: Book
+  fullName: Booklink.Models.Book
+- uid: Booklink.Models.IBookRepository.UpdateBookAsync*
+  commentId: Overload:Booklink.Models.IBookRepository.UpdateBookAsync
+  href: Booklink.Models.IBookRepository.html#Booklink_Models_IBookRepository_UpdateBookAsync_Booklink_Models_Book_
+  name: UpdateBookAsync
+  nameWithType: IBookRepository.UpdateBookAsync
+  fullName: Booklink.Models.IBookRepository.UpdateBookAsync
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: Booklink.Models.IBookRepository.DeleteBookAsync*
+  commentId: Overload:Booklink.Models.IBookRepository.DeleteBookAsync
+  href: Booklink.Models.IBookRepository.html#Booklink_Models_IBookRepository_DeleteBookAsync_System_Guid_
+  name: DeleteBookAsync
+  nameWithType: IBookRepository.DeleteBookAsync
+  fullName: Booklink.Models.IBookRepository.DeleteBookAsync
