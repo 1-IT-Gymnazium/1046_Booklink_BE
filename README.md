@@ -1,4 +1,4 @@
-# 1046_LibLink_BE
+# 1046_Booklink_BE
 
 Projekt se zabývá digitálním zaznamenáváním do databáze a zobrazování uživatelových knih v knihovně.
 Aplikace bude přístupná z webového rozhraní, které bude snadné a přehledné, jelikož cílím na starší uživatele s rozsáhlými knihovnami a alespoň základními schopnostmi ovládání počítače.
