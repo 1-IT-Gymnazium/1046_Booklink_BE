@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BooklinkBE.API", "BooklinkBE.API\BooklinkBE.API.csproj", "{ED7DD595-8B47-49B2-8456-198061D071A3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BooklinkBE.Data", "BooklinkBE.Data\BooklinkBE.Data.csproj", "{38665940-BABE-4700-A85A-9D93229BEC11}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ED7DD595-8B47-49B2-8456-198061D071A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED7DD595-8B47-49B2-8456-198061D071A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED7DD595-8B47-49B2-8456-198061D071A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED7DD595-8B47-49B2-8456-198061D071A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38665940-BABE-4700-A85A-9D93229BEC11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38665940-BABE-4700-A85A-9D93229BEC11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38665940-BABE-4700-A85A-9D93229BEC11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38665940-BABE-4700-A85A-9D93229BEC11}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

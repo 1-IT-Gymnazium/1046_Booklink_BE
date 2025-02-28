@@ -1,0 +1,15 @@
+/Users/f3l1x/Coding/Maturita/BooklinkBE.API/BooklinkBE.Data/obj/Debug/net9.0/BooklinkBE.Data.csproj.AssemblyReference.cache
+/Users/f3l1x/Coding/Maturita/BooklinkBE.API/BooklinkBE.Data/obj/Debug/net9.0/BooklinkBE.Data.GeneratedMSBuildEditorConfig.editorconfig
+/Users/f3l1x/Coding/Maturita/BooklinkBE.API/BooklinkBE.Data/obj/Debug/net9.0/BooklinkBE.Data.AssemblyInfoInputs.cache
+/Users/f3l1x/Coding/Maturita/BooklinkBE.API/BooklinkBE.Data/obj/Debug/net9.0/BooklinkBE.Data.AssemblyInfo.cs
+/Users/f3l1x/Coding/Maturita/BooklinkBE.API/BooklinkBE.Data/obj/Debug/net9.0/BooklinkBE.Data.csproj.CoreCompileInputs.cache
+/Users/f3l1x/Coding/Maturita/BooklinkBE.API/BooklinkBE.Data/bin/Debug/net9.0/BooklinkBE.Data.deps.json
+/Users/f3l1x/Coding/Maturita/BooklinkBE.API/BooklinkBE.Data/bin/Debug/net9.0/BooklinkBE.Data.runtimeconfig.json
+/Users/f3l1x/Coding/Maturita/BooklinkBE.API/BooklinkBE.Data/bin/Debug/net9.0/BooklinkBE.Data.dll
+/Users/f3l1x/Coding/Maturita/BooklinkBE.API/BooklinkBE.Data/bin/Debug/net9.0/BooklinkBE.Data.pdb
+/Users/f3l1x/Coding/Maturita/BooklinkBE.API/BooklinkBE.Data/obj/Debug/net9.0/BooklinkBE.Data.dll
+/Users/f3l1x/Coding/Maturita/BooklinkBE.API/BooklinkBE.Data/obj/Debug/net9.0/refint/BooklinkBE.Data.dll
+/Users/f3l1x/Coding/Maturita/BooklinkBE.API/BooklinkBE.Data/obj/Debug/net9.0/BooklinkBE.Data.pdb
+/Users/f3l1x/Coding/Maturita/BooklinkBE.API/BooklinkBE.Data/obj/Debug/net9.0/BooklinkBE.Data.genruntimeconfig.cache
+/Users/f3l1x/Coding/Maturita/BooklinkBE.API/BooklinkBE.Data/obj/Debug/net9.0/ref/BooklinkBE.Data.dll
+/Users/f3l1x/Coding/Maturita/BooklinkBE.API/BooklinkBE.Data/obj/Debug/net9.0/BooklinkBE.Data.sourcelink.json
