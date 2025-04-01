@@ -1,0 +1,51 @@
+### YamlMime:ManagedReference
+items:
+- uid: BooklinkBE.API.Controllers
+  commentId: N:BooklinkBE.API.Controllers
+  id: BooklinkBE.API.Controllers
+  children:
+  - BooklinkBE.API.Controllers.AuthController
+  - BooklinkBE.API.Controllers.BookController
+  - BooklinkBE.API.Controllers.BookshelfController
+  - BooklinkBE.API.Controllers.HouseholdController
+  - BooklinkBE.API.Controllers.RoomsController
+  langs:
+  - csharp
+  - vb
+  name: BooklinkBE.API.Controllers
+  nameWithType: BooklinkBE.API.Controllers
+  fullName: BooklinkBE.API.Controllers
+  type: Namespace
+  assemblies:
+  - BooklinkBE.API
+references:
+- uid: BooklinkBE.API.Controllers.AuthController
+  commentId: T:BooklinkBE.API.Controllers.AuthController
+  href: BooklinkBE.API.Controllers.AuthController.html
+  name: AuthController
+  nameWithType: AuthController
+  fullName: BooklinkBE.API.Controllers.AuthController
+- uid: BooklinkBE.API.Controllers.BookController
+  commentId: T:BooklinkBE.API.Controllers.BookController
+  href: BooklinkBE.API.Controllers.BookController.html
+  name: BookController
+  nameWithType: BookController
+  fullName: BooklinkBE.API.Controllers.BookController
+- uid: BooklinkBE.API.Controllers.BookshelfController
+  commentId: T:BooklinkBE.API.Controllers.BookshelfController
+  href: BooklinkBE.API.Controllers.BookshelfController.html
+  name: BookshelfController
+  nameWithType: BookshelfController
+  fullName: BooklinkBE.API.Controllers.BookshelfController
+- uid: BooklinkBE.API.Controllers.HouseholdController
+  commentId: T:BooklinkBE.API.Controllers.HouseholdController
+  href: BooklinkBE.API.Controllers.HouseholdController.html
+  name: HouseholdController
+  nameWithType: HouseholdController
+  fullName: BooklinkBE.API.Controllers.HouseholdController
+- uid: BooklinkBE.API.Controllers.RoomsController
+  commentId: T:BooklinkBE.API.Controllers.RoomsController
+  href: BooklinkBE.API.Controllers.RoomsController.html
+  name: RoomsController
+  nameWithType: RoomsController
+  fullName: BooklinkBE.API.Controllers.RoomsController

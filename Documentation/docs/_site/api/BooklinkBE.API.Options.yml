@@ -1,0 +1,37 @@
+### YamlMime:ManagedReference
+items:
+- uid: BooklinkBE.API.Options
+  commentId: N:BooklinkBE.API.Options
+  id: BooklinkBE.API.Options
+  children:
+  - BooklinkBE.API.Options.EnvironmentOptions
+  - BooklinkBE.API.Options.JwtSettings
+  - BooklinkBE.API.Options.SmtpOptions
+  langs:
+  - csharp
+  - vb
+  name: BooklinkBE.API.Options
+  nameWithType: BooklinkBE.API.Options
+  fullName: BooklinkBE.API.Options
+  type: Namespace
+  assemblies:
+  - BooklinkBE.API
+references:
+- uid: BooklinkBE.API.Options.EnvironmentOptions
+  commentId: T:BooklinkBE.API.Options.EnvironmentOptions
+  href: BooklinkBE.API.Options.EnvironmentOptions.html
+  name: EnvironmentOptions
+  nameWithType: EnvironmentOptions
+  fullName: BooklinkBE.API.Options.EnvironmentOptions
+- uid: BooklinkBE.API.Options.JwtSettings
+  commentId: T:BooklinkBE.API.Options.JwtSettings
+  href: BooklinkBE.API.Options.JwtSettings.html
+  name: JwtSettings
+  nameWithType: JwtSettings
+  fullName: BooklinkBE.API.Options.JwtSettings
+- uid: BooklinkBE.API.Options.SmtpOptions
+  commentId: T:BooklinkBE.API.Options.SmtpOptions
+  href: BooklinkBE.API.Options.SmtpOptions.html
+  name: SmtpOptions
+  nameWithType: SmtpOptions
+  fullName: BooklinkBE.API.Options.SmtpOptions

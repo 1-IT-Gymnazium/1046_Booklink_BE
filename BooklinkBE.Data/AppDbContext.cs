@@ -8,7 +8,7 @@ public class AppDbContext(DbContextOptions<AppDbContext> options) : DbContext(op
 {
     public DbSet<Book> Books { get; set; }
     public DbSet<User> Users { get; set; }
-    public DbSet<RealEstate> RealEstates { get; set; }
+    public DbSet<Household> Households { get; set; }
     public DbSet<Room> Rooms { get; set; }
     public DbSet<Bookshelf> Bookshelves { get; set; }
     public DbSet<EmailMessage> EmailMessages { get; set; }
@@ -24,18 +24,18 @@ public class AppDbContext(DbContextOptions<AppDbContext> options) : DbContext(op
         
         base.OnModelCreating(modelBuilder);
 
-        // One-to-Many: User -> RealEstates (Cascade on delete)
-        modelBuilder.Entity<RealEstate>()
+        // One-to-Many: User -> Households (Cascade on delete)
+        modelBuilder.Entity<Household>()
             .HasOne(re => re.User)
-            .WithMany(u => u.RealEstates)
+            .WithMany(u => u.Households)
             .HasForeignKey(re => re.UserId)
             .OnDelete(DeleteBehavior.Cascade);
 
-        // One-to-Many: RealEstate -> Rooms (Cascade on delete)
+        // One-to-Many: Household -> Rooms (Cascade on delete)
         modelBuilder.Entity<Room>()
-            .HasOne(r => r.RealEstate)
+            .HasOne(r => r.Household)
             .WithMany(re => re.Rooms)
-            .HasForeignKey(r => r.RealEstateId)
+            .HasForeignKey(r => r.HouseholdId)
             .OnDelete(DeleteBehavior.Cascade);
 
         // One-to-Many: one Room has many BookShelves (Cascade on delete)

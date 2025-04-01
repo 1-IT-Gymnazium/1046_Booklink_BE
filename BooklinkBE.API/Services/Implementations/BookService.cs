@@ -5,59 +5,47 @@ using Microsoft.EntityFrameworkCore;
 
 namespace BooklinkBE.API.Services.Implementations
 {
-    public class BookService : IBookService
+    public class BookService(AppDbContext context) : IBookService
     {
-        private readonly AppDbContext _context;
-
-        public BookService(AppDbContext context)
-        {
-            _context = context;
-        }
-        
         public async Task<IEnumerable<Book>> GetUserBooksAsync(Guid userId)
         {
             if (userId == Guid.Empty)
                 throw new ArgumentException("Invalid user ID");
 
-            return await _context.Books
+            return await context.Books
                 .Where(b => b.UserId == userId)
                 .ToListAsync();
         }
         
-        public async Task<Book> GetBookByIdAsync(Guid id)
+        public async Task<IEnumerable<Book>> GetBooksByBookshelfIdAsync(Guid bookshelfId)
         {
-            if (id == Guid.Empty)
-                throw new ArgumentException("Invalid book ID");
-
-            var book = await _context.Books.FindAsync(id);
-
-            if (book == null)
-                throw new KeyNotFoundException("Book not found.");
-
-            return book;
+            return await context.Books
+                .Where(b => b.BookshelfId == bookshelfId)
+                .ToListAsync();
         }
         
-        public async Task<Book> CreateBookAsync(Guid userId, CreateBookRequest request)
+        public async Task<Book> CreateBookAsync(CreateBookRequest request)
         {
-            if (userId == Guid.Empty)
-                throw new ArgumentException("Invalid user ID");
-
-            if (string.IsNullOrWhiteSpace(request.Title) || string.IsNullOrWhiteSpace(request.Author))
-                throw new ArgumentException("Book title and author are required.");
-
             var book = new Book
             {
                 Id = Guid.NewGuid(),
-                UserId = userId,
+                UserId = request.UserId,
                 Title = request.Title,
                 Author = request.Author,
                 Genre = request.Genre,
-                ISBN = request.ISBN,
-                PublicationYear = request.PublicationYear
+                Isbn = request.Isbn,
+                PublicationYear = request.PublicationYear,
+                IsInReadingList = request.IsInReadingList,
+                ColumnsFromLeft = request.ColumnsFromLeft,
+                RowsFromTop = request.RowsFromTop,
+                HouseholdId = request.HouseholdId,
+                RoomId = request.RoomId,
+                BookshelfId = request.BookshelfId,
             };
 
-            _context.Books.Add(book);
-            await _context.SaveChangesAsync();
+            context.Books.Add(book);
+            await context.SaveChangesAsync();
+            
             return book;
         }
 
@@ -66,18 +54,24 @@ namespace BooklinkBE.API.Services.Implementations
             if (id != request.Id)
                 throw new ArgumentException("Book ID mismatch.");
 
-            var book = await _context.Books.FindAsync(id);
+            var book = await context.Books.FindAsync(id);
             if (book == null)
                 throw new KeyNotFoundException("Book not found.");
 
             book.Title = request.Title;
             book.Author = request.Author;
             book.Genre = request.Genre;
-            book.ISBN = request.ISBN;
+            book.Isbn = request.Isbn;
             book.PublicationYear = request.PublicationYear;
+            book.IsInReadingList = request.IsInReadingList;
+            book.ColumnsFromLeft = request.ColumnsFromLeft;
+            book.RowsFromTop = request.RowsFromTop;
+            book.HouseholdId = request.HouseholdId;
+            book.RoomId = request.RoomId;
+            book.BookshelfId = request.BookshelfId;
 
-            _context.Books.Update(book);
-            await _context.SaveChangesAsync();
+            context.Books.Update(book);
+            await context.SaveChangesAsync();
 
             return book;
         }
@@ -87,12 +81,12 @@ namespace BooklinkBE.API.Services.Implementations
             if (id == Guid.Empty)
                 throw new ArgumentException("Invalid book ID");
 
-            var book = await _context.Books.FindAsync(id);
+            var book = await context.Books.FindAsync(id);
             if (book == null)
                 throw new KeyNotFoundException("Book not found.");
 
-            _context.Books.Remove(book);
-            await _context.SaveChangesAsync();
+            context.Books.Remove(book);
+            await context.SaveChangesAsync();
         }
     }
 }

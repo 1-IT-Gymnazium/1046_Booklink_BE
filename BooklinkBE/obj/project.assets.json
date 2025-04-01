@@ -3355,11 +3355,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/f3l1x/Coding/CurrentProjects/maturita/BooklinkBE/BooklinkBE/BooklinkBE.csproj",
+      "projectUniqueName": "/Users/f3l1x/Coding/Maturita/BooklinkBE.API/BooklinkBE/BooklinkBE.csproj",
       "projectName": "BooklinkBE",
-      "projectPath": "/Users/f3l1x/Coding/CurrentProjects/maturita/BooklinkBE/BooklinkBE/BooklinkBE.csproj",
+      "projectPath": "/Users/f3l1x/Coding/Maturita/BooklinkBE.API/BooklinkBE/BooklinkBE.csproj",
       "packagesPath": "/Users/f3l1x/.nuget/packages/",
-      "outputPath": "/Users/f3l1x/Coding/CurrentProjects/maturita/BooklinkBE/BooklinkBE/obj/",
+      "outputPath": "/Users/f3l1x/Coding/Maturita/BooklinkBE.API/BooklinkBE/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/f3l1x/.nuget/NuGet/NuGet.Config"

@@ -1,23 +1,12 @@
-using BooklinkBE.API.Options;
 using BooklinkBE.API.Services.Implementations;
-using Microsoft.Extensions.Options;
 
 namespace BooklinkBE.API.BackgroundWorkers;
 
-public class EmailSenderBackgroundService : BackgroundService
+// Runs in the background and sends emails every 60 seconds using EmailSenderService.
+public class EmailSenderBackgroundService(
+    IServiceProvider provider)
+    : BackgroundService
 {
-    private readonly IServiceProvider _provider;
-    private readonly SmtpOptions _smtpOptions;
-
-    public EmailSenderBackgroundService(
-        IServiceProvider provider,
-        IOptions<SmtpOptions> smtpOptions
-    )
-    {
-        _provider = provider;
-        _smtpOptions = smtpOptions.Value;
-    }
-
     protected override async Task ExecuteAsync(CancellationToken stoppingToken)
     {
         await SendEmails(stoppingToken);
@@ -27,7 +16,7 @@ public class EmailSenderBackgroundService : BackgroundService
     {
         while (!stoppingToken.IsCancellationRequested)
         {
-            using var scope = _provider.CreateScope();
+            using var scope = provider.CreateScope();
             var emailSenderService = scope.ServiceProvider.GetRequiredService<EmailSenderService>();
             try
             {
@@ -39,8 +28,7 @@ public class EmailSenderBackgroundService : BackgroundService
                 Console.WriteLine($"Error sending email: {ex.Message}");
             }
 
-            await Task.Delay(TimeSpan.FromSeconds(300), stoppingToken); // Pass cancellation token
+            await Task.Delay(TimeSpan.FromSeconds(60), stoppingToken);
         }
     }
-
 }

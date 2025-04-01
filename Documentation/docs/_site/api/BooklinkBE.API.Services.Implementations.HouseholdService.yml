@@ -1,0 +1,1046 @@
+### YamlMime:ManagedReference
+items:
+- uid: BooklinkBE.API.Services.Implementations.HouseholdService
+  commentId: T:BooklinkBE.API.Services.Implementations.HouseholdService
+  id: HouseholdService
+  parent: BooklinkBE.API.Services.Implementations
+  children:
+  - BooklinkBE.API.Services.Implementations.HouseholdService.#ctor(BooklinkBE.Data.AppDbContext)
+  - BooklinkBE.API.Services.Implementations.HouseholdService.CreateHouseholdAsync(BooklinkBE.Data.Models.CreateHouseholdRequest)
+  - BooklinkBE.API.Services.Implementations.HouseholdService.DeleteHouseholdAsync(System.Guid)
+  - BooklinkBE.API.Services.Implementations.HouseholdService.GetHouseholdByIdAsync(System.Guid)
+  - BooklinkBE.API.Services.Implementations.HouseholdService.GetHouseholdsByUserIdAsync(System.Guid)
+  - BooklinkBE.API.Services.Implementations.HouseholdService.UpdateHouseholdAsync(BooklinkBE.Data.Models.UpdateHouseholdRequest)
+  langs:
+  - csharp
+  - vb
+  name: HouseholdService
+  nameWithType: HouseholdService
+  fullName: BooklinkBE.API.Services.Implementations.HouseholdService
+  type: Class
+  source:
+    remote:
+      path: BooklinkBE.API/Services/Implementations/HouseholdService.cs
+      branch: main
+      repo: https://github.com/1-IT-Gymnazium/1046_Booklink_BE.git
+    id: HouseholdService
+    path: ../../BooklinkBE.API/Services/Implementations/HouseholdService.cs
+    startLine: 8
+  assemblies:
+  - BooklinkBE.API
+  namespace: BooklinkBE.API.Services.Implementations
+  syntax:
+    content: 'public class HouseholdService : IHouseholdService'
+    content.vb: Public Class HouseholdService Implements IHouseholdService
+  inheritance:
+  - System.Object
+  implements:
+  - BooklinkBE.API.Services.Interfaces.IHouseholdService
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: BooklinkBE.API.Services.Implementations.HouseholdService.#ctor(BooklinkBE.Data.AppDbContext)
+  commentId: M:BooklinkBE.API.Services.Implementations.HouseholdService.#ctor(BooklinkBE.Data.AppDbContext)
+  id: '#ctor(BooklinkBE.Data.AppDbContext)'
+  parent: BooklinkBE.API.Services.Implementations.HouseholdService
+  langs:
+  - csharp
+  - vb
+  name: HouseholdService(AppDbContext)
+  nameWithType: HouseholdService.HouseholdService(AppDbContext)
+  fullName: BooklinkBE.API.Services.Implementations.HouseholdService.HouseholdService(BooklinkBE.Data.AppDbContext)
+  type: Constructor
+  source:
+    remote:
+      path: BooklinkBE.API/Services/Implementations/HouseholdService.cs
+      branch: main
+      repo: https://github.com/1-IT-Gymnazium/1046_Booklink_BE.git
+    id: .ctor
+    path: ../../BooklinkBE.API/Services/Implementations/HouseholdService.cs
+    startLine: 8
+  assemblies:
+  - BooklinkBE.API
+  namespace: BooklinkBE.API.Services.Implementations
+  syntax:
+    content: public HouseholdService(AppDbContext dbContext)
+    parameters:
+    - id: dbContext
+      type: BooklinkBE.Data.AppDbContext
+    content.vb: Public Sub New(dbContext As AppDbContext)
+  overload: BooklinkBE.API.Services.Implementations.HouseholdService.#ctor*
+  nameWithType.vb: HouseholdService.New(AppDbContext)
+  fullName.vb: BooklinkBE.API.Services.Implementations.HouseholdService.New(BooklinkBE.Data.AppDbContext)
+  name.vb: New(AppDbContext)
+- uid: BooklinkBE.API.Services.Implementations.HouseholdService.GetHouseholdByIdAsync(System.Guid)
+  commentId: M:BooklinkBE.API.Services.Implementations.HouseholdService.GetHouseholdByIdAsync(System.Guid)
+  id: GetHouseholdByIdAsync(System.Guid)
+  parent: BooklinkBE.API.Services.Implementations.HouseholdService
+  langs:
+  - csharp
+  - vb
+  name: GetHouseholdByIdAsync(Guid)
+  nameWithType: HouseholdService.GetHouseholdByIdAsync(Guid)
+  fullName: BooklinkBE.API.Services.Implementations.HouseholdService.GetHouseholdByIdAsync(System.Guid)
+  type: Method
+  source:
+    remote:
+      path: BooklinkBE.API/Services/Implementations/HouseholdService.cs
+      branch: main
+      repo: https://github.com/1-IT-Gymnazium/1046_Booklink_BE.git
+    id: GetHouseholdByIdAsync
+    path: ../../BooklinkBE.API/Services/Implementations/HouseholdService.cs
+    startLine: 10
+  assemblies:
+  - BooklinkBE.API
+  namespace: BooklinkBE.API.Services.Implementations
+  example: []
+  syntax:
+    content: public Task<Household?> GetHouseholdByIdAsync(Guid id)
+    parameters:
+    - id: id
+      type: System.Guid
+    return:
+      type: System.Threading.Tasks.Task{BooklinkBE.Data.Models.Household}
+    content.vb: Public Function GetHouseholdByIdAsync(id As Guid) As Task(Of Household)
+  overload: BooklinkBE.API.Services.Implementations.HouseholdService.GetHouseholdByIdAsync*
+  implements:
+  - BooklinkBE.API.Services.Interfaces.IHouseholdService.GetHouseholdByIdAsync(System.Guid)
+- uid: BooklinkBE.API.Services.Implementations.HouseholdService.GetHouseholdsByUserIdAsync(System.Guid)
+  commentId: M:BooklinkBE.API.Services.Implementations.HouseholdService.GetHouseholdsByUserIdAsync(System.Guid)
+  id: GetHouseholdsByUserIdAsync(System.Guid)
+  parent: BooklinkBE.API.Services.Implementations.HouseholdService
+  langs:
+  - csharp
+  - vb
+  name: GetHouseholdsByUserIdAsync(Guid)
+  nameWithType: HouseholdService.GetHouseholdsByUserIdAsync(Guid)
+  fullName: BooklinkBE.API.Services.Implementations.HouseholdService.GetHouseholdsByUserIdAsync(System.Guid)
+  type: Method
+  source:
+    remote:
+      path: BooklinkBE.API/Services/Implementations/HouseholdService.cs
+      branch: main
+      repo: https://github.com/1-IT-Gymnazium/1046_Booklink_BE.git
+    id: GetHouseholdsByUserIdAsync
+    path: ../../BooklinkBE.API/Services/Implementations/HouseholdService.cs
+    startLine: 15
+  assemblies:
+  - BooklinkBE.API
+  namespace: BooklinkBE.API.Services.Implementations
+  example: []
+  syntax:
+    content: public Task<IEnumerable<Household>> GetHouseholdsByUserIdAsync(Guid userId)
+    parameters:
+    - id: userId
+      type: System.Guid
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{BooklinkBE.Data.Models.Household}}
+    content.vb: Public Function GetHouseholdsByUserIdAsync(userId As Guid) As Task(Of IEnumerable(Of Household))
+  overload: BooklinkBE.API.Services.Implementations.HouseholdService.GetHouseholdsByUserIdAsync*
+  implements:
+  - BooklinkBE.API.Services.Interfaces.IHouseholdService.GetHouseholdsByUserIdAsync(System.Guid)
+- uid: BooklinkBE.API.Services.Implementations.HouseholdService.CreateHouseholdAsync(BooklinkBE.Data.Models.CreateHouseholdRequest)
+  commentId: M:BooklinkBE.API.Services.Implementations.HouseholdService.CreateHouseholdAsync(BooklinkBE.Data.Models.CreateHouseholdRequest)
+  id: CreateHouseholdAsync(BooklinkBE.Data.Models.CreateHouseholdRequest)
+  parent: BooklinkBE.API.Services.Implementations.HouseholdService
+  langs:
+  - csharp
+  - vb
+  name: CreateHouseholdAsync(CreateHouseholdRequest)
+  nameWithType: HouseholdService.CreateHouseholdAsync(CreateHouseholdRequest)
+  fullName: BooklinkBE.API.Services.Implementations.HouseholdService.CreateHouseholdAsync(BooklinkBE.Data.Models.CreateHouseholdRequest)
+  type: Method
+  source:
+    remote:
+      path: BooklinkBE.API/Services/Implementations/HouseholdService.cs
+      branch: main
+      repo: https://github.com/1-IT-Gymnazium/1046_Booklink_BE.git
+    id: CreateHouseholdAsync
+    path: ../../BooklinkBE.API/Services/Implementations/HouseholdService.cs
+    startLine: 23
+  assemblies:
+  - BooklinkBE.API
+  namespace: BooklinkBE.API.Services.Implementations
+  example: []
+  syntax:
+    content: public Task<Guid> CreateHouseholdAsync(CreateHouseholdRequest request)
+    parameters:
+    - id: request
+      type: BooklinkBE.Data.Models.CreateHouseholdRequest
+    return:
+      type: System.Threading.Tasks.Task{System.Guid}
+    content.vb: Public Function CreateHouseholdAsync(request As CreateHouseholdRequest) As Task(Of Guid)
+  overload: BooklinkBE.API.Services.Implementations.HouseholdService.CreateHouseholdAsync*
+  implements:
+  - BooklinkBE.API.Services.Interfaces.IHouseholdService.CreateHouseholdAsync(BooklinkBE.Data.Models.CreateHouseholdRequest)
+- uid: BooklinkBE.API.Services.Implementations.HouseholdService.UpdateHouseholdAsync(BooklinkBE.Data.Models.UpdateHouseholdRequest)
+  commentId: M:BooklinkBE.API.Services.Implementations.HouseholdService.UpdateHouseholdAsync(BooklinkBE.Data.Models.UpdateHouseholdRequest)
+  id: UpdateHouseholdAsync(BooklinkBE.Data.Models.UpdateHouseholdRequest)
+  parent: BooklinkBE.API.Services.Implementations.HouseholdService
+  langs:
+  - csharp
+  - vb
+  name: UpdateHouseholdAsync(UpdateHouseholdRequest)
+  nameWithType: HouseholdService.UpdateHouseholdAsync(UpdateHouseholdRequest)
+  fullName: BooklinkBE.API.Services.Implementations.HouseholdService.UpdateHouseholdAsync(BooklinkBE.Data.Models.UpdateHouseholdRequest)
+  type: Method
+  source:
+    remote:
+      path: BooklinkBE.API/Services/Implementations/HouseholdService.cs
+      branch: main
+      repo: https://github.com/1-IT-Gymnazium/1046_Booklink_BE.git
+    id: UpdateHouseholdAsync
+    path: ../../BooklinkBE.API/Services/Implementations/HouseholdService.cs
+    startLine: 38
+  assemblies:
+  - BooklinkBE.API
+  namespace: BooklinkBE.API.Services.Implementations
+  example: []
+  syntax:
+    content: public Task<bool> UpdateHouseholdAsync(UpdateHouseholdRequest request)
+    parameters:
+    - id: request
+      type: BooklinkBE.Data.Models.UpdateHouseholdRequest
+    return:
+      type: System.Threading.Tasks.Task{System.Boolean}
+    content.vb: Public Function UpdateHouseholdAsync(request As UpdateHouseholdRequest) As Task(Of Boolean)
+  overload: BooklinkBE.API.Services.Implementations.HouseholdService.UpdateHouseholdAsync*
+  implements:
+  - BooklinkBE.API.Services.Interfaces.IHouseholdService.UpdateHouseholdAsync(BooklinkBE.Data.Models.UpdateHouseholdRequest)
+- uid: BooklinkBE.API.Services.Implementations.HouseholdService.DeleteHouseholdAsync(System.Guid)
+  commentId: M:BooklinkBE.API.Services.Implementations.HouseholdService.DeleteHouseholdAsync(System.Guid)
+  id: DeleteHouseholdAsync(System.Guid)
+  parent: BooklinkBE.API.Services.Implementations.HouseholdService
+  langs:
+  - csharp
+  - vb
+  name: DeleteHouseholdAsync(Guid)
+  nameWithType: HouseholdService.DeleteHouseholdAsync(Guid)
+  fullName: BooklinkBE.API.Services.Implementations.HouseholdService.DeleteHouseholdAsync(System.Guid)
+  type: Method
+  source:
+    remote:
+      path: BooklinkBE.API/Services/Implementations/HouseholdService.cs
+      branch: main
+      repo: https://github.com/1-IT-Gymnazium/1046_Booklink_BE.git
+    id: DeleteHouseholdAsync
+    path: ../../BooklinkBE.API/Services/Implementations/HouseholdService.cs
+    startLine: 52
+  assemblies:
+  - BooklinkBE.API
+  namespace: BooklinkBE.API.Services.Implementations
+  example: []
+  syntax:
+    content: public Task DeleteHouseholdAsync(Guid id)
+    parameters:
+    - id: id
+      type: System.Guid
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function DeleteHouseholdAsync(id As Guid) As Task
+  overload: BooklinkBE.API.Services.Implementations.HouseholdService.DeleteHouseholdAsync*
+  implements:
+  - BooklinkBE.API.Services.Interfaces.IHouseholdService.DeleteHouseholdAsync(System.Guid)
+references:
+- uid: BooklinkBE.API.Services.Implementations
+  commentId: N:BooklinkBE.API.Services.Implementations
+  href: BooklinkBE.html
+  name: BooklinkBE.API.Services.Implementations
+  nameWithType: BooklinkBE.API.Services.Implementations
+  fullName: BooklinkBE.API.Services.Implementations
+  spec.csharp:
+  - uid: BooklinkBE
+    name: BooklinkBE
+    href: BooklinkBE.html
+  - name: .
+  - uid: BooklinkBE.API
+    name: API
+    href: BooklinkBE.API.html
+  - name: .
+  - uid: BooklinkBE.API.Services
+    name: Services
+    href: BooklinkBE.API.Services.html
+  - name: .
+  - uid: BooklinkBE.API.Services.Implementations
+    name: Implementations
+    href: BooklinkBE.API.Services.Implementations.html
+  spec.vb:
+  - uid: BooklinkBE
+    name: BooklinkBE
+    href: BooklinkBE.html
+  - name: .
+  - uid: BooklinkBE.API
+    name: API
+    href: BooklinkBE.API.html
+  - name: .
+  - uid: BooklinkBE.API.Services
+    name: Services
+    href: BooklinkBE.API.Services.html
+  - name: .
+  - uid: BooklinkBE.API.Services.Implementations
+    name: Implementations
+    href: BooklinkBE.API.Services.Implementations.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: BooklinkBE.API.Services.Interfaces.IHouseholdService
+  commentId: T:BooklinkBE.API.Services.Interfaces.IHouseholdService
+  parent: BooklinkBE.API.Services.Interfaces
+  href: BooklinkBE.API.Services.Interfaces.IHouseholdService.html
+  name: IHouseholdService
+  nameWithType: IHouseholdService
+  fullName: BooklinkBE.API.Services.Interfaces.IHouseholdService
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: BooklinkBE.API.Services.Interfaces
+  commentId: N:BooklinkBE.API.Services.Interfaces
+  href: BooklinkBE.html
+  name: BooklinkBE.API.Services.Interfaces
+  nameWithType: BooklinkBE.API.Services.Interfaces
+  fullName: BooklinkBE.API.Services.Interfaces
+  spec.csharp:
+  - uid: BooklinkBE
+    name: BooklinkBE
+    href: BooklinkBE.html
+  - name: .
+  - uid: BooklinkBE.API
+    name: API
+    href: BooklinkBE.API.html
+  - name: .
+  - uid: BooklinkBE.API.Services
+    name: Services
+    href: BooklinkBE.API.Services.html
+  - name: .
+  - uid: BooklinkBE.API.Services.Interfaces
+    name: Interfaces
+    href: BooklinkBE.API.Services.Interfaces.html
+  spec.vb:
+  - uid: BooklinkBE
+    name: BooklinkBE
+    href: BooklinkBE.html
+  - name: .
+  - uid: BooklinkBE.API
+    name: API
+    href: BooklinkBE.API.html
+  - name: .
+  - uid: BooklinkBE.API.Services
+    name: Services
+    href: BooklinkBE.API.Services.html
+  - name: .
+  - uid: BooklinkBE.API.Services.Interfaces
+    name: Interfaces
+    href: BooklinkBE.API.Services.Interfaces.html
+- uid: BooklinkBE.API.Services.Implementations.HouseholdService.#ctor*
+  commentId: Overload:BooklinkBE.API.Services.Implementations.HouseholdService.#ctor
+  href: BooklinkBE.API.Services.Implementations.HouseholdService.html#BooklinkBE_API_Services_Implementations_HouseholdService__ctor_BooklinkBE_Data_AppDbContext_
+  name: HouseholdService
+  nameWithType: HouseholdService.HouseholdService
+  fullName: BooklinkBE.API.Services.Implementations.HouseholdService.HouseholdService
+  nameWithType.vb: HouseholdService.New
+  fullName.vb: BooklinkBE.API.Services.Implementations.HouseholdService.New
+  name.vb: New
+- uid: BooklinkBE.Data.AppDbContext
+  commentId: T:BooklinkBE.Data.AppDbContext
+  parent: BooklinkBE.Data
+  href: BooklinkBE.Data.AppDbContext.html
+  name: AppDbContext
+  nameWithType: AppDbContext
+  fullName: BooklinkBE.Data.AppDbContext
+- uid: BooklinkBE.Data
+  commentId: N:BooklinkBE.Data
+  href: BooklinkBE.html
+  name: BooklinkBE.Data
+  nameWithType: BooklinkBE.Data
+  fullName: BooklinkBE.Data
+  spec.csharp:
+  - uid: BooklinkBE
+    name: BooklinkBE
+    href: BooklinkBE.html
+  - name: .
+  - uid: BooklinkBE.Data
+    name: Data
+    href: BooklinkBE.Data.html
+  spec.vb:
+  - uid: BooklinkBE
+    name: BooklinkBE
+    href: BooklinkBE.html
+  - name: .
+  - uid: BooklinkBE.Data
+    name: Data
+    href: BooklinkBE.Data.html
+- uid: BooklinkBE.API.Services.Implementations.HouseholdService.GetHouseholdByIdAsync*
+  commentId: Overload:BooklinkBE.API.Services.Implementations.HouseholdService.GetHouseholdByIdAsync
+  href: BooklinkBE.API.Services.Implementations.HouseholdService.html#BooklinkBE_API_Services_Implementations_HouseholdService_GetHouseholdByIdAsync_System_Guid_
+  name: GetHouseholdByIdAsync
+  nameWithType: HouseholdService.GetHouseholdByIdAsync
+  fullName: BooklinkBE.API.Services.Implementations.HouseholdService.GetHouseholdByIdAsync
+- uid: BooklinkBE.API.Services.Interfaces.IHouseholdService.GetHouseholdByIdAsync(System.Guid)
+  commentId: M:BooklinkBE.API.Services.Interfaces.IHouseholdService.GetHouseholdByIdAsync(System.Guid)
+  parent: BooklinkBE.API.Services.Interfaces.IHouseholdService
+  isExternal: true
+  href: BooklinkBE.API.Services.Interfaces.IHouseholdService.html#BooklinkBE_API_Services_Interfaces_IHouseholdService_GetHouseholdByIdAsync_System_Guid_
+  name: GetHouseholdByIdAsync(Guid)
+  nameWithType: IHouseholdService.GetHouseholdByIdAsync(Guid)
+  fullName: BooklinkBE.API.Services.Interfaces.IHouseholdService.GetHouseholdByIdAsync(System.Guid)
+  spec.csharp:
+  - uid: BooklinkBE.API.Services.Interfaces.IHouseholdService.GetHouseholdByIdAsync(System.Guid)
+    name: GetHouseholdByIdAsync
+    href: BooklinkBE.API.Services.Interfaces.IHouseholdService.html#BooklinkBE_API_Services_Interfaces_IHouseholdService_GetHouseholdByIdAsync_System_Guid_
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: )
+  spec.vb:
+  - uid: BooklinkBE.API.Services.Interfaces.IHouseholdService.GetHouseholdByIdAsync(System.Guid)
+    name: GetHouseholdByIdAsync
+    href: BooklinkBE.API.Services.Interfaces.IHouseholdService.html#BooklinkBE_API_Services_Interfaces_IHouseholdService_GetHouseholdByIdAsync_System_Guid_
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: )
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
+- uid: System.Threading.Tasks.Task{BooklinkBE.Data.Models.Household}
+  commentId: T:System.Threading.Tasks.Task{BooklinkBE.Data.Models.Household}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<Household>
+  nameWithType: Task<Household>
+  fullName: System.Threading.Tasks.Task<BooklinkBE.Data.Models.Household>
+  nameWithType.vb: Task(Of Household)
+  fullName.vb: System.Threading.Tasks.Task(Of BooklinkBE.Data.Models.Household)
+  name.vb: Task(Of Household)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: BooklinkBE.Data.Models.Household
+    name: Household
+    href: BooklinkBE.Data.Models.Household.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: BooklinkBE.Data.Models.Household
+    name: Household
+    href: BooklinkBE.Data.Models.Household.html
+  - name: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: BooklinkBE.API.Services.Implementations.HouseholdService.GetHouseholdsByUserIdAsync*
+  commentId: Overload:BooklinkBE.API.Services.Implementations.HouseholdService.GetHouseholdsByUserIdAsync
+  href: BooklinkBE.API.Services.Implementations.HouseholdService.html#BooklinkBE_API_Services_Implementations_HouseholdService_GetHouseholdsByUserIdAsync_System_Guid_
+  name: GetHouseholdsByUserIdAsync
+  nameWithType: HouseholdService.GetHouseholdsByUserIdAsync
+  fullName: BooklinkBE.API.Services.Implementations.HouseholdService.GetHouseholdsByUserIdAsync
+- uid: BooklinkBE.API.Services.Interfaces.IHouseholdService.GetHouseholdsByUserIdAsync(System.Guid)
+  commentId: M:BooklinkBE.API.Services.Interfaces.IHouseholdService.GetHouseholdsByUserIdAsync(System.Guid)
+  parent: BooklinkBE.API.Services.Interfaces.IHouseholdService
+  isExternal: true
+  href: BooklinkBE.API.Services.Interfaces.IHouseholdService.html#BooklinkBE_API_Services_Interfaces_IHouseholdService_GetHouseholdsByUserIdAsync_System_Guid_
+  name: GetHouseholdsByUserIdAsync(Guid)
+  nameWithType: IHouseholdService.GetHouseholdsByUserIdAsync(Guid)
+  fullName: BooklinkBE.API.Services.Interfaces.IHouseholdService.GetHouseholdsByUserIdAsync(System.Guid)
+  spec.csharp:
+  - uid: BooklinkBE.API.Services.Interfaces.IHouseholdService.GetHouseholdsByUserIdAsync(System.Guid)
+    name: GetHouseholdsByUserIdAsync
+    href: BooklinkBE.API.Services.Interfaces.IHouseholdService.html#BooklinkBE_API_Services_Interfaces_IHouseholdService_GetHouseholdsByUserIdAsync_System_Guid_
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: )
+  spec.vb:
+  - uid: BooklinkBE.API.Services.Interfaces.IHouseholdService.GetHouseholdsByUserIdAsync(System.Guid)
+    name: GetHouseholdsByUserIdAsync
+    href: BooklinkBE.API.Services.Interfaces.IHouseholdService.html#BooklinkBE_API_Services_Interfaces_IHouseholdService_GetHouseholdsByUserIdAsync_System_Guid_
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: )
+- uid: System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{BooklinkBE.Data.Models.Household}}
+  commentId: T:System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{BooklinkBE.Data.Models.Household}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<IEnumerable<Household>>
+  nameWithType: Task<IEnumerable<Household>>
+  fullName: System.Threading.Tasks.Task<System.Collections.Generic.IEnumerable<BooklinkBE.Data.Models.Household>>
+  nameWithType.vb: Task(Of IEnumerable(Of Household))
+  fullName.vb: System.Threading.Tasks.Task(Of System.Collections.Generic.IEnumerable(Of BooklinkBE.Data.Models.Household))
+  name.vb: Task(Of IEnumerable(Of Household))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: BooklinkBE.Data.Models.Household
+    name: Household
+    href: BooklinkBE.Data.Models.Household.html
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: BooklinkBE.Data.Models.Household
+    name: Household
+    href: BooklinkBE.Data.Models.Household.html
+  - name: )
+  - name: )
+- uid: BooklinkBE.API.Services.Implementations.HouseholdService.CreateHouseholdAsync*
+  commentId: Overload:BooklinkBE.API.Services.Implementations.HouseholdService.CreateHouseholdAsync
+  href: BooklinkBE.API.Services.Implementations.HouseholdService.html#BooklinkBE_API_Services_Implementations_HouseholdService_CreateHouseholdAsync_BooklinkBE_Data_Models_CreateHouseholdRequest_
+  name: CreateHouseholdAsync
+  nameWithType: HouseholdService.CreateHouseholdAsync
+  fullName: BooklinkBE.API.Services.Implementations.HouseholdService.CreateHouseholdAsync
+- uid: BooklinkBE.API.Services.Interfaces.IHouseholdService.CreateHouseholdAsync(BooklinkBE.Data.Models.CreateHouseholdRequest)
+  commentId: M:BooklinkBE.API.Services.Interfaces.IHouseholdService.CreateHouseholdAsync(BooklinkBE.Data.Models.CreateHouseholdRequest)
+  parent: BooklinkBE.API.Services.Interfaces.IHouseholdService
+  href: BooklinkBE.API.Services.Interfaces.IHouseholdService.html#BooklinkBE_API_Services_Interfaces_IHouseholdService_CreateHouseholdAsync_BooklinkBE_Data_Models_CreateHouseholdRequest_
+  name: CreateHouseholdAsync(CreateHouseholdRequest)
+  nameWithType: IHouseholdService.CreateHouseholdAsync(CreateHouseholdRequest)
+  fullName: BooklinkBE.API.Services.Interfaces.IHouseholdService.CreateHouseholdAsync(BooklinkBE.Data.Models.CreateHouseholdRequest)
+  spec.csharp:
+  - uid: BooklinkBE.API.Services.Interfaces.IHouseholdService.CreateHouseholdAsync(BooklinkBE.Data.Models.CreateHouseholdRequest)
+    name: CreateHouseholdAsync
+    href: BooklinkBE.API.Services.Interfaces.IHouseholdService.html#BooklinkBE_API_Services_Interfaces_IHouseholdService_CreateHouseholdAsync_BooklinkBE_Data_Models_CreateHouseholdRequest_
+  - name: (
+  - uid: BooklinkBE.Data.Models.CreateHouseholdRequest
+    name: CreateHouseholdRequest
+    href: BooklinkBE.Data.Models.CreateHouseholdRequest.html
+  - name: )
+  spec.vb:
+  - uid: BooklinkBE.API.Services.Interfaces.IHouseholdService.CreateHouseholdAsync(BooklinkBE.Data.Models.CreateHouseholdRequest)
+    name: CreateHouseholdAsync
+    href: BooklinkBE.API.Services.Interfaces.IHouseholdService.html#BooklinkBE_API_Services_Interfaces_IHouseholdService_CreateHouseholdAsync_BooklinkBE_Data_Models_CreateHouseholdRequest_
+  - name: (
+  - uid: BooklinkBE.Data.Models.CreateHouseholdRequest
+    name: CreateHouseholdRequest
+    href: BooklinkBE.Data.Models.CreateHouseholdRequest.html
+  - name: )
+- uid: BooklinkBE.Data.Models.CreateHouseholdRequest
+  commentId: T:BooklinkBE.Data.Models.CreateHouseholdRequest
+  parent: BooklinkBE.Data.Models
+  href: BooklinkBE.Data.Models.CreateHouseholdRequest.html
+  name: CreateHouseholdRequest
+  nameWithType: CreateHouseholdRequest
+  fullName: BooklinkBE.Data.Models.CreateHouseholdRequest
+- uid: System.Threading.Tasks.Task{System.Guid}
+  commentId: T:System.Threading.Tasks.Task{System.Guid}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<Guid>
+  nameWithType: Task<Guid>
+  fullName: System.Threading.Tasks.Task<System.Guid>
+  nameWithType.vb: Task(Of Guid)
+  fullName.vb: System.Threading.Tasks.Task(Of System.Guid)
+  name.vb: Task(Of Guid)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: )
+- uid: BooklinkBE.Data.Models
+  commentId: N:BooklinkBE.Data.Models
+  href: BooklinkBE.html
+  name: BooklinkBE.Data.Models
+  nameWithType: BooklinkBE.Data.Models
+  fullName: BooklinkBE.Data.Models
+  spec.csharp:
+  - uid: BooklinkBE
+    name: BooklinkBE
+    href: BooklinkBE.html
+  - name: .
+  - uid: BooklinkBE.Data
+    name: Data
+    href: BooklinkBE.Data.html
+  - name: .
+  - uid: BooklinkBE.Data.Models
+    name: Models
+    href: BooklinkBE.Data.Models.html
+  spec.vb:
+  - uid: BooklinkBE
+    name: BooklinkBE
+    href: BooklinkBE.html
+  - name: .
+  - uid: BooklinkBE.Data
+    name: Data
+    href: BooklinkBE.Data.html
+  - name: .
+  - uid: BooklinkBE.Data.Models
+    name: Models
+    href: BooklinkBE.Data.Models.html
+- uid: BooklinkBE.API.Services.Implementations.HouseholdService.UpdateHouseholdAsync*
+  commentId: Overload:BooklinkBE.API.Services.Implementations.HouseholdService.UpdateHouseholdAsync
+  href: BooklinkBE.API.Services.Implementations.HouseholdService.html#BooklinkBE_API_Services_Implementations_HouseholdService_UpdateHouseholdAsync_BooklinkBE_Data_Models_UpdateHouseholdRequest_
+  name: UpdateHouseholdAsync
+  nameWithType: HouseholdService.UpdateHouseholdAsync
+  fullName: BooklinkBE.API.Services.Implementations.HouseholdService.UpdateHouseholdAsync
+- uid: BooklinkBE.API.Services.Interfaces.IHouseholdService.UpdateHouseholdAsync(BooklinkBE.Data.Models.UpdateHouseholdRequest)
+  commentId: M:BooklinkBE.API.Services.Interfaces.IHouseholdService.UpdateHouseholdAsync(BooklinkBE.Data.Models.UpdateHouseholdRequest)
+  parent: BooklinkBE.API.Services.Interfaces.IHouseholdService
+  href: BooklinkBE.API.Services.Interfaces.IHouseholdService.html#BooklinkBE_API_Services_Interfaces_IHouseholdService_UpdateHouseholdAsync_BooklinkBE_Data_Models_UpdateHouseholdRequest_
+  name: UpdateHouseholdAsync(UpdateHouseholdRequest)
+  nameWithType: IHouseholdService.UpdateHouseholdAsync(UpdateHouseholdRequest)
+  fullName: BooklinkBE.API.Services.Interfaces.IHouseholdService.UpdateHouseholdAsync(BooklinkBE.Data.Models.UpdateHouseholdRequest)
+  spec.csharp:
+  - uid: BooklinkBE.API.Services.Interfaces.IHouseholdService.UpdateHouseholdAsync(BooklinkBE.Data.Models.UpdateHouseholdRequest)
+    name: UpdateHouseholdAsync
+    href: BooklinkBE.API.Services.Interfaces.IHouseholdService.html#BooklinkBE_API_Services_Interfaces_IHouseholdService_UpdateHouseholdAsync_BooklinkBE_Data_Models_UpdateHouseholdRequest_
+  - name: (
+  - uid: BooklinkBE.Data.Models.UpdateHouseholdRequest
+    name: UpdateHouseholdRequest
+    href: BooklinkBE.Data.Models.UpdateHouseholdRequest.html
+  - name: )
+  spec.vb:
+  - uid: BooklinkBE.API.Services.Interfaces.IHouseholdService.UpdateHouseholdAsync(BooklinkBE.Data.Models.UpdateHouseholdRequest)
+    name: UpdateHouseholdAsync
+    href: BooklinkBE.API.Services.Interfaces.IHouseholdService.html#BooklinkBE_API_Services_Interfaces_IHouseholdService_UpdateHouseholdAsync_BooklinkBE_Data_Models_UpdateHouseholdRequest_
+  - name: (
+  - uid: BooklinkBE.Data.Models.UpdateHouseholdRequest
+    name: UpdateHouseholdRequest
+    href: BooklinkBE.Data.Models.UpdateHouseholdRequest.html
+  - name: )
+- uid: BooklinkBE.Data.Models.UpdateHouseholdRequest
+  commentId: T:BooklinkBE.Data.Models.UpdateHouseholdRequest
+  parent: BooklinkBE.Data.Models
+  href: BooklinkBE.Data.Models.UpdateHouseholdRequest.html
+  name: UpdateHouseholdRequest
+  nameWithType: UpdateHouseholdRequest
+  fullName: BooklinkBE.Data.Models.UpdateHouseholdRequest
+- uid: System.Threading.Tasks.Task{System.Boolean}
+  commentId: T:System.Threading.Tasks.Task{System.Boolean}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<bool>
+  nameWithType: Task<bool>
+  fullName: System.Threading.Tasks.Task<bool>
+  nameWithType.vb: Task(Of Boolean)
+  fullName.vb: System.Threading.Tasks.Task(Of Boolean)
+  name.vb: Task(Of Boolean)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: BooklinkBE.API.Services.Implementations.HouseholdService.DeleteHouseholdAsync*
+  commentId: Overload:BooklinkBE.API.Services.Implementations.HouseholdService.DeleteHouseholdAsync
+  href: BooklinkBE.API.Services.Implementations.HouseholdService.html#BooklinkBE_API_Services_Implementations_HouseholdService_DeleteHouseholdAsync_System_Guid_
+  name: DeleteHouseholdAsync
+  nameWithType: HouseholdService.DeleteHouseholdAsync
+  fullName: BooklinkBE.API.Services.Implementations.HouseholdService.DeleteHouseholdAsync
+- uid: BooklinkBE.API.Services.Interfaces.IHouseholdService.DeleteHouseholdAsync(System.Guid)
+  commentId: M:BooklinkBE.API.Services.Interfaces.IHouseholdService.DeleteHouseholdAsync(System.Guid)
+  parent: BooklinkBE.API.Services.Interfaces.IHouseholdService
+  isExternal: true
+  href: BooklinkBE.API.Services.Interfaces.IHouseholdService.html#BooklinkBE_API_Services_Interfaces_IHouseholdService_DeleteHouseholdAsync_System_Guid_
+  name: DeleteHouseholdAsync(Guid)
+  nameWithType: IHouseholdService.DeleteHouseholdAsync(Guid)
+  fullName: BooklinkBE.API.Services.Interfaces.IHouseholdService.DeleteHouseholdAsync(System.Guid)
+  spec.csharp:
+  - uid: BooklinkBE.API.Services.Interfaces.IHouseholdService.DeleteHouseholdAsync(System.Guid)
+    name: DeleteHouseholdAsync
+    href: BooklinkBE.API.Services.Interfaces.IHouseholdService.html#BooklinkBE_API_Services_Interfaces_IHouseholdService_DeleteHouseholdAsync_System_Guid_
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: )
+  spec.vb:
+  - uid: BooklinkBE.API.Services.Interfaces.IHouseholdService.DeleteHouseholdAsync(System.Guid)
+    name: DeleteHouseholdAsync
+    href: BooklinkBE.API.Services.Interfaces.IHouseholdService.html#BooklinkBE_API_Services_Interfaces_IHouseholdService_DeleteHouseholdAsync_System_Guid_
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: )
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task

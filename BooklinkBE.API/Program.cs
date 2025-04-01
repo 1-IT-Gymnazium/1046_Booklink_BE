@@ -77,7 +77,8 @@ builder.Services.AddHostedService<EmailSenderBackgroundService>();
 // Business Services
 builder.Services.AddScoped<IBookService, BookService>();
 builder.Services.AddScoped<IBookshelfService, BookshelfService>();
-builder.Services.AddScoped<IRealEstateService, RealEstateService>();
+builder.Services.AddScoped<IRoomService, RoomService>();
+builder.Services.AddScoped<IHouseholdService, HouseholdService>();
 
 // API Controllers
 builder.Services.AddControllers();

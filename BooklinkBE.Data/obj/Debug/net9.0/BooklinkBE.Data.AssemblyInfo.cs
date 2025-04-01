@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BooklinkBE.Data")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d51f4d28a5108db00b560301a5809f24e936fb53")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7ec9824176a6f152855d2ce327d7a26bb5bae3a8")]
 [assembly: System.Reflection.AssemblyProductAttribute("BooklinkBE.Data")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BooklinkBE.Data")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

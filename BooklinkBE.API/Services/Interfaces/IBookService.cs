@@ -5,8 +5,8 @@ namespace BooklinkBE.API.Services.Interfaces;
 public interface IBookService
 {
     Task<IEnumerable<Book>> GetUserBooksAsync(Guid userId);
-    Task<Book> GetBookByIdAsync(Guid id);
-    Task<Book> CreateBookAsync(Guid userId, CreateBookRequest request);
+    Task<IEnumerable<Book>> GetBooksByBookshelfIdAsync(Guid id);
+    Task<Book> CreateBookAsync(CreateBookRequest request);
     Task<Book> UpdateBookAsync(Guid id, UpdateBookRequest request);
     Task DeleteBookAsync(Guid id);
 }

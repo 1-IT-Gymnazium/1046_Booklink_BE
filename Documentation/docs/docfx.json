@@ -1,0 +1,46 @@
+{
+  "$schema": "https://raw.githubusercontent.com/dotnet/docfx/main/schemas/docfx.schema.json",
+  "metadata": [
+    {
+      "src": [
+        {
+          "src": "/Users/f3l1x/Coding/Maturita/BooklinkBE.API",
+          "files": [
+            "**/*.csproj"
+          ]
+        }
+      ],
+      "dest": "api"
+    }
+  ],
+  "build": {
+    "content": [
+  {
+    "files": [ "**/*.{md,yml}" ],
+    "exclude": [ "_site/**" ]
+  },
+  {
+    "files": [ "api/**.yml", "api/index.md" ]
+  }
+],
+
+    "resource": [
+      {
+        "files": [
+          "images/**", "api/**.yml", "api/index.md"
+        ]
+      }
+    ],
+    "output": "_site",
+    "template": [
+      "default",
+      "modern"
+    ],
+    "globalMetadata": {
+      "_appName": "Booklink",
+      "_appTitle": "Booklink",
+      "_enableSearch": true,
+      "pdf": true
+    }
+  }
+}

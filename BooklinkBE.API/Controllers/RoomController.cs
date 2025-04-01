@@ -1,94 +1,91 @@
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using BooklinkBE.Data;
+using BooklinkBE.API.Services.Interfaces;
 using BooklinkBE.Data.Models;
-    
+
 namespace BooklinkBE.API.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("v1/api/rooms")]
     [ApiController]
-    public class RoomsController : ControllerBase
+    public class RoomsController(IRoomService roomService) : ControllerBase
     {
-        private readonly AppDbContext _context;
+        [HttpGet("user:{userId:guid}")]
+        public async Task<ActionResult<IEnumerable<Room>>> GetRoomsByUserId(Guid userId)
+        {
+            var rooms = await roomService.GetRoomsByUserIdAsync(userId);
+            return Ok(rooms);
+        }
+        [HttpGet("householdId:{id:guid}")]
+        public async Task<ActionResult<IEnumerable<Room>>> GetRooms(Guid id)
+        {
+            var rooms = await roomService.GetRoomsAsync(id);
+            return Ok(rooms);
+        }
 
-        public RoomsController(AppDbContext context)
-        {
-            _context = context;
-        }
-        
-        [HttpGet]
-        public async Task<ActionResult<IEnumerable<Room>>> GetRooms()
-        {
-            return await _context.Rooms.Include(r => r.RealEstate).ToListAsync();
-        }
-        
         [HttpGet("{id:guid}")]
         public async Task<ActionResult<Room>> GetRoom(Guid id)
         {
-            var room = await _context.Rooms
-                .Include(r => r.RealEstate)
-                .FirstOrDefaultAsync(r => r.Id == id);
-
+            var room = await roomService.GetRoomByIdAsync(id);
             if (room == null)
             {
                 return NotFound(new { message = "Room not found" });
             }
-
-            return room;
+            return Ok(room);
         }
-        
+
         [HttpPost]
-        public async Task<ActionResult<Room>> CreateRoom(Room room)
+        public async Task<ActionResult<Room>> CreateRoom([FromBody] CreateRoomRequest request)
         {
-            // checks if the RealEstate exists before assigning the Room
-            var realEstate = await _context.RealEstates.FindAsync(room.RealEstateId);
-            if (realEstate == null)
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+
+            var room = new Room
             {
-                return BadRequest(new { message = "Invalid RealEstateId" });
+                Id = Guid.NewGuid(),
+                Name = request.Name,
+                HouseholdId = request.HouseholdId,
+                UserId = request.UserId,
+            };
+
+            try
+            {
+                var newRoom = await roomService.CreateRoomAsync(room);
+                return CreatedAtAction(nameof(GetRoom), new { id = newRoom.Id }, newRoom);
             }
-
-            _context.Rooms.Add(room);
-            await _context.SaveChangesAsync();
-
-            return CreatedAtAction(nameof(GetRoom), new { id = room.Id }, room);
+            catch (Exception ex)
+            {
+                return BadRequest(new { message = ex.Message });
+            }
         }
-        
-        [HttpPut("{id:guid}")]
-        public async Task<IActionResult> UpdateRoom(Guid id, Room updatedRoom)
-        {
-            if (id != updatedRoom.Id)
-            {
-                return BadRequest(new { message = "ID mismatch" });
-            }
 
-            var room = await _context.Rooms.FindAsync(id);
-            if (room == null)
+        [HttpPut("{id:guid}")]
+        public async Task<IActionResult> UpdateRoom(Guid id, [FromBody] UpdateRoomRequest request)
+        {
+            var updated = await roomService.UpdateRoomAsync(id, request);
+            if (!updated)
             {
                 return NotFound(new { message = "Room not found" });
             }
-
-            room.Name = updatedRoom.Name;
-            room.RealEstateId = updatedRoom.RealEstateId;
-
-            _context.Entry(room).State = EntityState.Modified;
-            await _context.SaveChangesAsync();
 
             return NoContent();
         }
-        
+
+
         [HttpDelete("{id:guid}")]
         public async Task<IActionResult> DeleteRoom(Guid id)
         {
-            var room = await _context.Rooms.FindAsync(id);
-            if (room == null)
+            try
             {
-                return NotFound(new { message = "Room not found" });
+                await roomService.DeleteRoomAsync(id);
+                return NoContent();
             }
-
-            _context.Rooms.Remove(room);
-            await _context.SaveChangesAsync();
-
-            return NoContent();
+            catch (ArgumentException ex)
+            {
+                return NotFound(ex.Message);
+            }
+            catch (InvalidOperationException ex)
+            {
+                return BadRequest(ex.Message);
+            }
         }
     }
 }

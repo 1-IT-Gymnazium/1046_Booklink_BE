@@ -4,10 +4,11 @@ namespace BooklinkBE.API.Services.Interfaces
 {
     public interface IBookshelfService
     {
-        Task<IEnumerable<Bookshelf>> GetAllAsync();
-        Task<Bookshelf?> GetByIdAsync(Guid id);
-        Task<Bookshelf> CreateAsync(CreateBookshelfModel model);
-        Task<bool> UpdateAsync(UpdateBookshelfModel model);
-        Task<bool> DeleteAsync(Guid id);
+        Task<IEnumerable<Bookshelf>> GetBookshelvesByUserIdAsync(Guid userId);
+        Task<IEnumerable<Bookshelf>> GetBookshelvesByRoomIdAsync(Guid roomId);
+        Task<Bookshelf?> GetBookshelfById(Guid id);
+        Task<Bookshelf> CreateBookshelfAsync(CreateBookshelfModel model);
+        Task<bool> UpdateBookshelfAsync(UpdateBookshelfModel model);
+        Task<bool> DeleteRoomAsync(Guid id);
     }
 }

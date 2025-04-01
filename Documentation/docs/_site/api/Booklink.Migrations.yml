@@ -1,0 +1,30 @@
+### YamlMime:ManagedReference
+items:
+- uid: Booklink.Migrations
+  commentId: N:Booklink.Migrations
+  id: Booklink.Migrations
+  children:
+  - Booklink.Migrations.AddedISBN
+  - Booklink.Migrations.InitialCreate
+  langs:
+  - csharp
+  - vb
+  name: Booklink.Migrations
+  nameWithType: Booklink.Migrations
+  fullName: Booklink.Migrations
+  type: Namespace
+  assemblies:
+  - BooklinkBE
+references:
+- uid: Booklink.Migrations.InitialCreate
+  commentId: T:Booklink.Migrations.InitialCreate
+  href: Booklink.Migrations.InitialCreate.html
+  name: InitialCreate
+  nameWithType: InitialCreate
+  fullName: Booklink.Migrations.InitialCreate
+- uid: Booklink.Migrations.AddedISBN
+  commentId: T:Booklink.Migrations.AddedISBN
+  href: Booklink.Migrations.AddedISBN.html
+  name: AddedISBN
+  nameWithType: AddedISBN
+  fullName: Booklink.Migrations.AddedISBN

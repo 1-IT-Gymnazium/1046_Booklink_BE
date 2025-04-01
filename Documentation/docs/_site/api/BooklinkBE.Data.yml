@@ -1,0 +1,46 @@
+### YamlMime:ManagedReference
+items:
+- uid: BooklinkBE.Data
+  commentId: N:BooklinkBE.Data
+  id: BooklinkBE.Data
+  children:
+  - BooklinkBE.Data.AppDbContext
+  langs:
+  - csharp
+  - vb
+  name: BooklinkBE.Data
+  nameWithType: BooklinkBE.Data
+  fullName: BooklinkBE.Data
+  type: Namespace
+  assemblies:
+  - BooklinkBE.Data
+references:
+- uid: BooklinkBE.Data.AppDbContext
+  commentId: T:BooklinkBE.Data.AppDbContext
+  parent: BooklinkBE.Data
+  href: BooklinkBE.Data.AppDbContext.html
+  name: AppDbContext
+  nameWithType: AppDbContext
+  fullName: BooklinkBE.Data.AppDbContext
+- uid: BooklinkBE.Data
+  commentId: N:BooklinkBE.Data
+  href: BooklinkBE.html
+  name: BooklinkBE.Data
+  nameWithType: BooklinkBE.Data
+  fullName: BooklinkBE.Data
+  spec.csharp:
+  - uid: BooklinkBE
+    name: BooklinkBE
+    href: BooklinkBE.html
+  - name: .
+  - uid: BooklinkBE.Data
+    name: Data
+    href: BooklinkBE.Data.html
+  spec.vb:
+  - uid: BooklinkBE
+    name: BooklinkBE
+    href: BooklinkBE.html
+  - name: .
+  - uid: BooklinkBE.Data
+    name: Data
+    href: BooklinkBE.Data.html

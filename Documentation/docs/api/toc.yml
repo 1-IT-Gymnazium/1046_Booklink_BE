@@ -1,0 +1,208 @@
+### YamlMime:TableOfContent
+items:
+- uid: Booklink.Controllers
+  name: Booklink.Controllers
+  type: Namespace
+  items:
+  - uid: Booklink.Controllers.BooksController
+    name: BooksController
+    type: Class
+- uid: Booklink.Migrations
+  name: Booklink.Migrations
+  type: Namespace
+  items:
+  - uid: Booklink.Migrations.AddedISBN
+    name: AddedISBN
+    type: Class
+  - uid: Booklink.Migrations.InitialCreate
+    name: InitialCreate
+    type: Class
+- uid: Booklink.Models
+  name: Booklink.Models
+  type: Namespace
+  items:
+  - uid: Booklink.Models.AppDbContext
+    name: AppDbContext
+    type: Class
+  - uid: Booklink.Models.Book
+    name: Book
+    type: Class
+  - uid: Booklink.Models.BookRepository
+    name: BookRepository
+    type: Class
+  - uid: Booklink.Models.IBookRepository
+    name: IBookRepository
+    type: Interface
+  - uid: Booklink.Models.PhysicalLocation
+    name: PhysicalLocation
+    type: Class
+  - uid: Booklink.Models.User
+    name: User
+    type: Class
+- uid: BooklinkBE.API.BackgroundWorkers
+  name: BooklinkBE.API.BackgroundWorkers
+  type: Namespace
+  items:
+  - uid: BooklinkBE.API.BackgroundWorkers.EmailSenderBackgroundService
+    name: EmailSenderBackgroundService
+    type: Class
+- uid: BooklinkBE.API.Controllers
+  name: BooklinkBE.API.Controllers
+  type: Namespace
+  items:
+  - uid: BooklinkBE.API.Controllers.AuthController
+    name: AuthController
+    type: Class
+  - uid: BooklinkBE.API.Controllers.BookController
+    name: BookController
+    type: Class
+  - uid: BooklinkBE.API.Controllers.BookshelfController
+    name: BookshelfController
+    type: Class
+  - uid: BooklinkBE.API.Controllers.HouseholdController
+    name: HouseholdController
+    type: Class
+  - uid: BooklinkBE.API.Controllers.RoomsController
+    name: RoomsController
+    type: Class
+- uid: BooklinkBE.API.Entities
+  name: BooklinkBE.API.Entities
+  type: Namespace
+  items:
+  - uid: BooklinkBE.API.Entities.ForgotPassword
+    name: ForgotPassword
+    type: Class
+  - uid: BooklinkBE.API.Entities.LoggedUser
+    name: LoggedUser
+    type: Class
+  - uid: BooklinkBE.API.Entities.Login
+    name: Login
+    type: Class
+  - uid: BooklinkBE.API.Entities.Register
+    name: Register
+    type: Class
+  - uid: BooklinkBE.API.Entities.ResetPasswordRequest
+    name: ResetPasswordRequest
+    type: Class
+  - uid: BooklinkBE.API.Entities.Token
+    name: Token
+    type: Class
+- uid: BooklinkBE.API.Options
+  name: BooklinkBE.API.Options
+  type: Namespace
+  items:
+  - uid: BooklinkBE.API.Options.EnvironmentOptions
+    name: EnvironmentOptions
+    type: Class
+  - uid: BooklinkBE.API.Options.JwtSettings
+    name: JwtSettings
+    type: Class
+  - uid: BooklinkBE.API.Options.SmtpOptions
+    name: SmtpOptions
+    type: Class
+- uid: BooklinkBE.API.Services.Implementations
+  name: BooklinkBE.API.Services.Implementations
+  type: Namespace
+  items:
+  - uid: BooklinkBE.API.Services.Implementations.BookService
+    name: BookService
+    type: Class
+  - uid: BooklinkBE.API.Services.Implementations.BookshelfService
+    name: BookshelfService
+    type: Class
+  - uid: BooklinkBE.API.Services.Implementations.EmailSenderService
+    name: EmailSenderService
+    type: Class
+  - uid: BooklinkBE.API.Services.Implementations.HouseholdService
+    name: HouseholdService
+    type: Class
+  - uid: BooklinkBE.API.Services.Implementations.RoomService
+    name: RoomService
+    type: Class
+- uid: BooklinkBE.API.Services.Interfaces
+  name: BooklinkBE.API.Services.Interfaces
+  type: Namespace
+  items:
+  - uid: BooklinkBE.API.Services.Interfaces.IBookService
+    name: IBookService
+    type: Interface
+  - uid: BooklinkBE.API.Services.Interfaces.IBookshelfService
+    name: IBookshelfService
+    type: Interface
+  - uid: BooklinkBE.API.Services.Interfaces.IHouseholdService
+    name: IHouseholdService
+    type: Interface
+  - uid: BooklinkBE.API.Services.Interfaces.IRoomService
+    name: IRoomService
+    type: Interface
+- uid: BooklinkBE.API.Utils
+  name: BooklinkBE.API.Utils
+  type: Namespace
+  items:
+  - uid: BooklinkBE.API.Utils.ClaimsPrincipalExtensions
+    name: ClaimsPrincipalExtensions
+    type: Class
+- uid: BooklinkBE.Data
+  name: BooklinkBE.Data
+  type: Namespace
+  items:
+  - uid: BooklinkBE.Data.AppDbContext
+    name: AppDbContext
+    type: Class
+- uid: BooklinkBE.Data.Migrations
+  name: BooklinkBE.Data.Migrations
+  type: Namespace
+  items:
+  - uid: BooklinkBE.Data.Migrations.InitialCreate
+    name: InitialCreate
+    type: Class
+- uid: BooklinkBE.Data.Models
+  name: BooklinkBE.Data.Models
+  type: Namespace
+  items:
+  - uid: BooklinkBE.Data.Models.Book
+    name: Book
+    type: Class
+  - uid: BooklinkBE.Data.Models.Bookshelf
+    name: Bookshelf
+    type: Class
+  - uid: BooklinkBE.Data.Models.CreateBookRequest
+    name: CreateBookRequest
+    type: Class
+  - uid: BooklinkBE.Data.Models.CreateBookshelfModel
+    name: CreateBookshelfModel
+    type: Class
+  - uid: BooklinkBE.Data.Models.CreateHouseholdRequest
+    name: CreateHouseholdRequest
+    type: Class
+  - uid: BooklinkBE.Data.Models.CreateRoomRequest
+    name: CreateRoomRequest
+    type: Class
+  - uid: BooklinkBE.Data.Models.EmailMessage
+    name: EmailMessage
+    type: Class
+  - uid: BooklinkBE.Data.Models.Household
+    name: Household
+    type: Class
+  - uid: BooklinkBE.Data.Models.RefreshToken
+    name: RefreshToken
+    type: Class
+  - uid: BooklinkBE.Data.Models.Room
+    name: Room
+    type: Class
+  - uid: BooklinkBE.Data.Models.UpdateBookRequest
+    name: UpdateBookRequest
+    type: Class
+  - uid: BooklinkBE.Data.Models.UpdateBookshelfModel
+    name: UpdateBookshelfModel
+    type: Class
+  - uid: BooklinkBE.Data.Models.UpdateHouseholdRequest
+    name: UpdateHouseholdRequest
+    type: Class
+  - uid: BooklinkBE.Data.Models.UpdateRoomRequest
+    name: UpdateRoomRequest
+    type: Class
+  - uid: BooklinkBE.Data.Models.User
+    name: User
+    type: Class
+memberLayout: SamePage

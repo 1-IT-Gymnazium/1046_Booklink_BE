@@ -1,0 +1,85 @@
+### YamlMime:ManagedReference
+items:
+- uid: Booklink.Models
+  commentId: N:Booklink.Models
+  id: Booklink.Models
+  children:
+  - Booklink.Models.AppDbContext
+  - Booklink.Models.Book
+  - Booklink.Models.BookRepository
+  - Booklink.Models.IBookRepository
+  - Booklink.Models.PhysicalLocation
+  - Booklink.Models.User
+  langs:
+  - csharp
+  - vb
+  name: Booklink.Models
+  nameWithType: Booklink.Models
+  fullName: Booklink.Models
+  type: Namespace
+  assemblies:
+  - BooklinkBE
+references:
+- uid: Booklink.Models.AppDbContext
+  commentId: T:Booklink.Models.AppDbContext
+  parent: Booklink.Models
+  href: Booklink.Models.AppDbContext.html
+  name: AppDbContext
+  nameWithType: AppDbContext
+  fullName: Booklink.Models.AppDbContext
+- uid: Booklink.Models.Book
+  commentId: T:Booklink.Models.Book
+  parent: Booklink.Models
+  href: Booklink.Models.Book.html
+  name: Book
+  nameWithType: Book
+  fullName: Booklink.Models.Book
+- uid: Booklink.Models.IBookRepository
+  commentId: T:Booklink.Models.IBookRepository
+  parent: Booklink.Models
+  href: Booklink.Models.IBookRepository.html
+  name: IBookRepository
+  nameWithType: IBookRepository
+  fullName: Booklink.Models.IBookRepository
+- uid: Booklink.Models.BookRepository
+  commentId: T:Booklink.Models.BookRepository
+  href: Booklink.Models.BookRepository.html
+  name: BookRepository
+  nameWithType: BookRepository
+  fullName: Booklink.Models.BookRepository
+- uid: Booklink.Models.PhysicalLocation
+  commentId: T:Booklink.Models.PhysicalLocation
+  parent: Booklink.Models
+  href: Booklink.Models.PhysicalLocation.html
+  name: PhysicalLocation
+  nameWithType: PhysicalLocation
+  fullName: Booklink.Models.PhysicalLocation
+- uid: Booklink.Models.User
+  commentId: T:Booklink.Models.User
+  parent: Booklink.Models
+  href: Booklink.Models.User.html
+  name: User
+  nameWithType: User
+  fullName: Booklink.Models.User
+- uid: Booklink.Models
+  commentId: N:Booklink.Models
+  href: Booklink.html
+  name: Booklink.Models
+  nameWithType: Booklink.Models
+  fullName: Booklink.Models
+  spec.csharp:
+  - uid: Booklink
+    name: Booklink
+    href: Booklink.html
+  - name: .
+  - uid: Booklink.Models
+    name: Models
+    href: Booklink.Models.html
+  spec.vb:
+  - uid: Booklink
+    name: Booklink
+    href: Booklink.html
+  - name: .
+  - uid: Booklink.Models
+    name: Models
+    href: Booklink.Models.html

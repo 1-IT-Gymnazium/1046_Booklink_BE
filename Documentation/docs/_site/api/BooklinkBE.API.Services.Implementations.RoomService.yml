@@ -1,0 +1,1087 @@
+### YamlMime:ManagedReference
+items:
+- uid: BooklinkBE.API.Services.Implementations.RoomService
+  commentId: T:BooklinkBE.API.Services.Implementations.RoomService
+  id: RoomService
+  parent: BooklinkBE.API.Services.Implementations
+  children:
+  - BooklinkBE.API.Services.Implementations.RoomService.#ctor(BooklinkBE.Data.AppDbContext)
+  - BooklinkBE.API.Services.Implementations.RoomService.CreateRoomAsync(BooklinkBE.Data.Models.Room)
+  - BooklinkBE.API.Services.Implementations.RoomService.DeleteRoomAsync(System.Guid)
+  - BooklinkBE.API.Services.Implementations.RoomService.GetRoomByIdAsync(System.Guid)
+  - BooklinkBE.API.Services.Implementations.RoomService.GetRoomsAsync(System.Guid)
+  - BooklinkBE.API.Services.Implementations.RoomService.GetRoomsByUserIdAsync(System.Guid)
+  - BooklinkBE.API.Services.Implementations.RoomService.UpdateRoomAsync(System.Guid,BooklinkBE.Data.Models.UpdateRoomRequest)
+  langs:
+  - csharp
+  - vb
+  name: RoomService
+  nameWithType: RoomService
+  fullName: BooklinkBE.API.Services.Implementations.RoomService
+  type: Class
+  source:
+    remote:
+      path: BooklinkBE.API/Services/Implementations/RoomService.cs
+      branch: main
+      repo: https://github.com/1-IT-Gymnazium/1046_Booklink_BE.git
+    id: RoomService
+    path: ../../BooklinkBE.API/Services/Implementations/RoomService.cs
+    startLine: 7
+  assemblies:
+  - BooklinkBE.API
+  namespace: BooklinkBE.API.Services.Implementations
+  syntax:
+    content: 'public class RoomService : IRoomService'
+    content.vb: Public Class RoomService Implements IRoomService
+  inheritance:
+  - System.Object
+  implements:
+  - BooklinkBE.API.Services.Interfaces.IRoomService
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: BooklinkBE.API.Services.Implementations.RoomService.#ctor(BooklinkBE.Data.AppDbContext)
+  commentId: M:BooklinkBE.API.Services.Implementations.RoomService.#ctor(BooklinkBE.Data.AppDbContext)
+  id: '#ctor(BooklinkBE.Data.AppDbContext)'
+  parent: BooklinkBE.API.Services.Implementations.RoomService
+  langs:
+  - csharp
+  - vb
+  name: RoomService(AppDbContext)
+  nameWithType: RoomService.RoomService(AppDbContext)
+  fullName: BooklinkBE.API.Services.Implementations.RoomService.RoomService(BooklinkBE.Data.AppDbContext)
+  type: Constructor
+  source:
+    remote:
+      path: BooklinkBE.API/Services/Implementations/RoomService.cs
+      branch: main
+      repo: https://github.com/1-IT-Gymnazium/1046_Booklink_BE.git
+    id: .ctor
+    path: ../../BooklinkBE.API/Services/Implementations/RoomService.cs
+    startLine: 7
+  assemblies:
+  - BooklinkBE.API
+  namespace: BooklinkBE.API.Services.Implementations
+  syntax:
+    content: public RoomService(AppDbContext context)
+    parameters:
+    - id: context
+      type: BooklinkBE.Data.AppDbContext
+    content.vb: Public Sub New(context As AppDbContext)
+  overload: BooklinkBE.API.Services.Implementations.RoomService.#ctor*
+  nameWithType.vb: RoomService.New(AppDbContext)
+  fullName.vb: BooklinkBE.API.Services.Implementations.RoomService.New(BooklinkBE.Data.AppDbContext)
+  name.vb: New(AppDbContext)
+- uid: BooklinkBE.API.Services.Implementations.RoomService.GetRoomsByUserIdAsync(System.Guid)
+  commentId: M:BooklinkBE.API.Services.Implementations.RoomService.GetRoomsByUserIdAsync(System.Guid)
+  id: GetRoomsByUserIdAsync(System.Guid)
+  parent: BooklinkBE.API.Services.Implementations.RoomService
+  langs:
+  - csharp
+  - vb
+  name: GetRoomsByUserIdAsync(Guid)
+  nameWithType: RoomService.GetRoomsByUserIdAsync(Guid)
+  fullName: BooklinkBE.API.Services.Implementations.RoomService.GetRoomsByUserIdAsync(System.Guid)
+  type: Method
+  source:
+    remote:
+      path: BooklinkBE.API/Services/Implementations/RoomService.cs
+      branch: main
+      repo: https://github.com/1-IT-Gymnazium/1046_Booklink_BE.git
+    id: GetRoomsByUserIdAsync
+    path: ../../BooklinkBE.API/Services/Implementations/RoomService.cs
+    startLine: 9
+  assemblies:
+  - BooklinkBE.API
+  namespace: BooklinkBE.API.Services.Implementations
+  example: []
+  syntax:
+    content: public Task<IEnumerable<Room>> GetRoomsByUserIdAsync(Guid userId)
+    parameters:
+    - id: userId
+      type: System.Guid
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{BooklinkBE.Data.Models.Room}}
+    content.vb: Public Function GetRoomsByUserIdAsync(userId As Guid) As Task(Of IEnumerable(Of Room))
+  overload: BooklinkBE.API.Services.Implementations.RoomService.GetRoomsByUserIdAsync*
+  implements:
+  - BooklinkBE.API.Services.Interfaces.IRoomService.GetRoomsByUserIdAsync(System.Guid)
+- uid: BooklinkBE.API.Services.Implementations.RoomService.GetRoomsAsync(System.Guid)
+  commentId: M:BooklinkBE.API.Services.Implementations.RoomService.GetRoomsAsync(System.Guid)
+  id: GetRoomsAsync(System.Guid)
+  parent: BooklinkBE.API.Services.Implementations.RoomService
+  langs:
+  - csharp
+  - vb
+  name: GetRoomsAsync(Guid)
+  nameWithType: RoomService.GetRoomsAsync(Guid)
+  fullName: BooklinkBE.API.Services.Implementations.RoomService.GetRoomsAsync(System.Guid)
+  type: Method
+  source:
+    remote:
+      path: BooklinkBE.API/Services/Implementations/RoomService.cs
+      branch: main
+      repo: https://github.com/1-IT-Gymnazium/1046_Booklink_BE.git
+    id: GetRoomsAsync
+    path: ../../BooklinkBE.API/Services/Implementations/RoomService.cs
+    startLine: 14
+  assemblies:
+  - BooklinkBE.API
+  namespace: BooklinkBE.API.Services.Implementations
+  example: []
+  syntax:
+    content: public Task<IEnumerable<Room>> GetRoomsAsync(Guid householdId)
+    parameters:
+    - id: householdId
+      type: System.Guid
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{BooklinkBE.Data.Models.Room}}
+    content.vb: Public Function GetRoomsAsync(householdId As Guid) As Task(Of IEnumerable(Of Room))
+  overload: BooklinkBE.API.Services.Implementations.RoomService.GetRoomsAsync*
+  implements:
+  - BooklinkBE.API.Services.Interfaces.IRoomService.GetRoomsAsync(System.Guid)
+- uid: BooklinkBE.API.Services.Implementations.RoomService.GetRoomByIdAsync(System.Guid)
+  commentId: M:BooklinkBE.API.Services.Implementations.RoomService.GetRoomByIdAsync(System.Guid)
+  id: GetRoomByIdAsync(System.Guid)
+  parent: BooklinkBE.API.Services.Implementations.RoomService
+  langs:
+  - csharp
+  - vb
+  name: GetRoomByIdAsync(Guid)
+  nameWithType: RoomService.GetRoomByIdAsync(Guid)
+  fullName: BooklinkBE.API.Services.Implementations.RoomService.GetRoomByIdAsync(System.Guid)
+  type: Method
+  source:
+    remote:
+      path: BooklinkBE.API/Services/Implementations/RoomService.cs
+      branch: main
+      repo: https://github.com/1-IT-Gymnazium/1046_Booklink_BE.git
+    id: GetRoomByIdAsync
+    path: ../../BooklinkBE.API/Services/Implementations/RoomService.cs
+    startLine: 19
+  assemblies:
+  - BooklinkBE.API
+  namespace: BooklinkBE.API.Services.Implementations
+  example: []
+  syntax:
+    content: public Task<Room?> GetRoomByIdAsync(Guid id)
+    parameters:
+    - id: id
+      type: System.Guid
+    return:
+      type: System.Threading.Tasks.Task{BooklinkBE.Data.Models.Room}
+    content.vb: Public Function GetRoomByIdAsync(id As Guid) As Task(Of Room)
+  overload: BooklinkBE.API.Services.Implementations.RoomService.GetRoomByIdAsync*
+  implements:
+  - BooklinkBE.API.Services.Interfaces.IRoomService.GetRoomByIdAsync(System.Guid)
+- uid: BooklinkBE.API.Services.Implementations.RoomService.CreateRoomAsync(BooklinkBE.Data.Models.Room)
+  commentId: M:BooklinkBE.API.Services.Implementations.RoomService.CreateRoomAsync(BooklinkBE.Data.Models.Room)
+  id: CreateRoomAsync(BooklinkBE.Data.Models.Room)
+  parent: BooklinkBE.API.Services.Implementations.RoomService
+  langs:
+  - csharp
+  - vb
+  name: CreateRoomAsync(Room)
+  nameWithType: RoomService.CreateRoomAsync(Room)
+  fullName: BooklinkBE.API.Services.Implementations.RoomService.CreateRoomAsync(BooklinkBE.Data.Models.Room)
+  type: Method
+  source:
+    remote:
+      path: BooklinkBE.API/Services/Implementations/RoomService.cs
+      branch: main
+      repo: https://github.com/1-IT-Gymnazium/1046_Booklink_BE.git
+    id: CreateRoomAsync
+    path: ../../BooklinkBE.API/Services/Implementations/RoomService.cs
+    startLine: 24
+  assemblies:
+  - BooklinkBE.API
+  namespace: BooklinkBE.API.Services.Implementations
+  example: []
+  syntax:
+    content: public Task<Room> CreateRoomAsync(Room room)
+    parameters:
+    - id: room
+      type: BooklinkBE.Data.Models.Room
+    return:
+      type: System.Threading.Tasks.Task{BooklinkBE.Data.Models.Room}
+    content.vb: Public Function CreateRoomAsync(room As Room) As Task(Of Room)
+  overload: BooklinkBE.API.Services.Implementations.RoomService.CreateRoomAsync*
+  implements:
+  - BooklinkBE.API.Services.Interfaces.IRoomService.CreateRoomAsync(BooklinkBE.Data.Models.Room)
+- uid: BooklinkBE.API.Services.Implementations.RoomService.UpdateRoomAsync(System.Guid,BooklinkBE.Data.Models.UpdateRoomRequest)
+  commentId: M:BooklinkBE.API.Services.Implementations.RoomService.UpdateRoomAsync(System.Guid,BooklinkBE.Data.Models.UpdateRoomRequest)
+  id: UpdateRoomAsync(System.Guid,BooklinkBE.Data.Models.UpdateRoomRequest)
+  parent: BooklinkBE.API.Services.Implementations.RoomService
+  langs:
+  - csharp
+  - vb
+  name: UpdateRoomAsync(Guid, UpdateRoomRequest)
+  nameWithType: RoomService.UpdateRoomAsync(Guid, UpdateRoomRequest)
+  fullName: BooklinkBE.API.Services.Implementations.RoomService.UpdateRoomAsync(System.Guid, BooklinkBE.Data.Models.UpdateRoomRequest)
+  type: Method
+  source:
+    remote:
+      path: BooklinkBE.API/Services/Implementations/RoomService.cs
+      branch: main
+      repo: https://github.com/1-IT-Gymnazium/1046_Booklink_BE.git
+    id: UpdateRoomAsync
+    path: ../../BooklinkBE.API/Services/Implementations/RoomService.cs
+    startLine: 35
+  assemblies:
+  - BooklinkBE.API
+  namespace: BooklinkBE.API.Services.Implementations
+  example: []
+  syntax:
+    content: public Task<bool> UpdateRoomAsync(Guid id, UpdateRoomRequest request)
+    parameters:
+    - id: id
+      type: System.Guid
+    - id: request
+      type: BooklinkBE.Data.Models.UpdateRoomRequest
+    return:
+      type: System.Threading.Tasks.Task{System.Boolean}
+    content.vb: Public Function UpdateRoomAsync(id As Guid, request As UpdateRoomRequest) As Task(Of Boolean)
+  overload: BooklinkBE.API.Services.Implementations.RoomService.UpdateRoomAsync*
+  implements:
+  - BooklinkBE.API.Services.Interfaces.IRoomService.UpdateRoomAsync(System.Guid,BooklinkBE.Data.Models.UpdateRoomRequest)
+- uid: BooklinkBE.API.Services.Implementations.RoomService.DeleteRoomAsync(System.Guid)
+  commentId: M:BooklinkBE.API.Services.Implementations.RoomService.DeleteRoomAsync(System.Guid)
+  id: DeleteRoomAsync(System.Guid)
+  parent: BooklinkBE.API.Services.Implementations.RoomService
+  langs:
+  - csharp
+  - vb
+  name: DeleteRoomAsync(Guid)
+  nameWithType: RoomService.DeleteRoomAsync(Guid)
+  fullName: BooklinkBE.API.Services.Implementations.RoomService.DeleteRoomAsync(System.Guid)
+  type: Method
+  source:
+    remote:
+      path: BooklinkBE.API/Services/Implementations/RoomService.cs
+      branch: main
+      repo: https://github.com/1-IT-Gymnazium/1046_Booklink_BE.git
+    id: DeleteRoomAsync
+    path: ../../BooklinkBE.API/Services/Implementations/RoomService.cs
+    startLine: 52
+  assemblies:
+  - BooklinkBE.API
+  namespace: BooklinkBE.API.Services.Implementations
+  example: []
+  syntax:
+    content: public Task<bool> DeleteRoomAsync(Guid id)
+    parameters:
+    - id: id
+      type: System.Guid
+    return:
+      type: System.Threading.Tasks.Task{System.Boolean}
+    content.vb: Public Function DeleteRoomAsync(id As Guid) As Task(Of Boolean)
+  overload: BooklinkBE.API.Services.Implementations.RoomService.DeleteRoomAsync*
+  implements:
+  - BooklinkBE.API.Services.Interfaces.IRoomService.DeleteRoomAsync(System.Guid)
+references:
+- uid: BooklinkBE.API.Services.Implementations
+  commentId: N:BooklinkBE.API.Services.Implementations
+  href: BooklinkBE.html
+  name: BooklinkBE.API.Services.Implementations
+  nameWithType: BooklinkBE.API.Services.Implementations
+  fullName: BooklinkBE.API.Services.Implementations
+  spec.csharp:
+  - uid: BooklinkBE
+    name: BooklinkBE
+    href: BooklinkBE.html
+  - name: .
+  - uid: BooklinkBE.API
+    name: API
+    href: BooklinkBE.API.html
+  - name: .
+  - uid: BooklinkBE.API.Services
+    name: Services
+    href: BooklinkBE.API.Services.html
+  - name: .
+  - uid: BooklinkBE.API.Services.Implementations
+    name: Implementations
+    href: BooklinkBE.API.Services.Implementations.html
+  spec.vb:
+  - uid: BooklinkBE
+    name: BooklinkBE
+    href: BooklinkBE.html
+  - name: .
+  - uid: BooklinkBE.API
+    name: API
+    href: BooklinkBE.API.html
+  - name: .
+  - uid: BooklinkBE.API.Services
+    name: Services
+    href: BooklinkBE.API.Services.html
+  - name: .
+  - uid: BooklinkBE.API.Services.Implementations
+    name: Implementations
+    href: BooklinkBE.API.Services.Implementations.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: BooklinkBE.API.Services.Interfaces.IRoomService
+  commentId: T:BooklinkBE.API.Services.Interfaces.IRoomService
+  parent: BooklinkBE.API.Services.Interfaces
+  href: BooklinkBE.API.Services.Interfaces.IRoomService.html
+  name: IRoomService
+  nameWithType: IRoomService
+  fullName: BooklinkBE.API.Services.Interfaces.IRoomService
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: BooklinkBE.API.Services.Interfaces
+  commentId: N:BooklinkBE.API.Services.Interfaces
+  href: BooklinkBE.html
+  name: BooklinkBE.API.Services.Interfaces
+  nameWithType: BooklinkBE.API.Services.Interfaces
+  fullName: BooklinkBE.API.Services.Interfaces
+  spec.csharp:
+  - uid: BooklinkBE
+    name: BooklinkBE
+    href: BooklinkBE.html
+  - name: .
+  - uid: BooklinkBE.API
+    name: API
+    href: BooklinkBE.API.html
+  - name: .
+  - uid: BooklinkBE.API.Services
+    name: Services
+    href: BooklinkBE.API.Services.html
+  - name: .
+  - uid: BooklinkBE.API.Services.Interfaces
+    name: Interfaces
+    href: BooklinkBE.API.Services.Interfaces.html
+  spec.vb:
+  - uid: BooklinkBE
+    name: BooklinkBE
+    href: BooklinkBE.html
+  - name: .
+  - uid: BooklinkBE.API
+    name: API
+    href: BooklinkBE.API.html
+  - name: .
+  - uid: BooklinkBE.API.Services
+    name: Services
+    href: BooklinkBE.API.Services.html
+  - name: .
+  - uid: BooklinkBE.API.Services.Interfaces
+    name: Interfaces
+    href: BooklinkBE.API.Services.Interfaces.html
+- uid: BooklinkBE.API.Services.Implementations.RoomService.#ctor*
+  commentId: Overload:BooklinkBE.API.Services.Implementations.RoomService.#ctor
+  href: BooklinkBE.API.Services.Implementations.RoomService.html#BooklinkBE_API_Services_Implementations_RoomService__ctor_BooklinkBE_Data_AppDbContext_
+  name: RoomService
+  nameWithType: RoomService.RoomService
+  fullName: BooklinkBE.API.Services.Implementations.RoomService.RoomService
+  nameWithType.vb: RoomService.New
+  fullName.vb: BooklinkBE.API.Services.Implementations.RoomService.New
+  name.vb: New
+- uid: BooklinkBE.Data.AppDbContext
+  commentId: T:BooklinkBE.Data.AppDbContext
+  parent: BooklinkBE.Data
+  href: BooklinkBE.Data.AppDbContext.html
+  name: AppDbContext
+  nameWithType: AppDbContext
+  fullName: BooklinkBE.Data.AppDbContext
+- uid: BooklinkBE.Data
+  commentId: N:BooklinkBE.Data
+  href: BooklinkBE.html
+  name: BooklinkBE.Data
+  nameWithType: BooklinkBE.Data
+  fullName: BooklinkBE.Data
+  spec.csharp:
+  - uid: BooklinkBE
+    name: BooklinkBE
+    href: BooklinkBE.html
+  - name: .
+  - uid: BooklinkBE.Data
+    name: Data
+    href: BooklinkBE.Data.html
+  spec.vb:
+  - uid: BooklinkBE
+    name: BooklinkBE
+    href: BooklinkBE.html
+  - name: .
+  - uid: BooklinkBE.Data
+    name: Data
+    href: BooklinkBE.Data.html
+- uid: BooklinkBE.API.Services.Implementations.RoomService.GetRoomsByUserIdAsync*
+  commentId: Overload:BooklinkBE.API.Services.Implementations.RoomService.GetRoomsByUserIdAsync
+  href: BooklinkBE.API.Services.Implementations.RoomService.html#BooklinkBE_API_Services_Implementations_RoomService_GetRoomsByUserIdAsync_System_Guid_
+  name: GetRoomsByUserIdAsync
+  nameWithType: RoomService.GetRoomsByUserIdAsync
+  fullName: BooklinkBE.API.Services.Implementations.RoomService.GetRoomsByUserIdAsync
+- uid: BooklinkBE.API.Services.Interfaces.IRoomService.GetRoomsByUserIdAsync(System.Guid)
+  commentId: M:BooklinkBE.API.Services.Interfaces.IRoomService.GetRoomsByUserIdAsync(System.Guid)
+  parent: BooklinkBE.API.Services.Interfaces.IRoomService
+  isExternal: true
+  href: BooklinkBE.API.Services.Interfaces.IRoomService.html#BooklinkBE_API_Services_Interfaces_IRoomService_GetRoomsByUserIdAsync_System_Guid_
+  name: GetRoomsByUserIdAsync(Guid)
+  nameWithType: IRoomService.GetRoomsByUserIdAsync(Guid)
+  fullName: BooklinkBE.API.Services.Interfaces.IRoomService.GetRoomsByUserIdAsync(System.Guid)
+  spec.csharp:
+  - uid: BooklinkBE.API.Services.Interfaces.IRoomService.GetRoomsByUserIdAsync(System.Guid)
+    name: GetRoomsByUserIdAsync
+    href: BooklinkBE.API.Services.Interfaces.IRoomService.html#BooklinkBE_API_Services_Interfaces_IRoomService_GetRoomsByUserIdAsync_System_Guid_
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: )
+  spec.vb:
+  - uid: BooklinkBE.API.Services.Interfaces.IRoomService.GetRoomsByUserIdAsync(System.Guid)
+    name: GetRoomsByUserIdAsync
+    href: BooklinkBE.API.Services.Interfaces.IRoomService.html#BooklinkBE_API_Services_Interfaces_IRoomService_GetRoomsByUserIdAsync_System_Guid_
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: )
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
+- uid: System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{BooklinkBE.Data.Models.Room}}
+  commentId: T:System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{BooklinkBE.Data.Models.Room}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<IEnumerable<Room>>
+  nameWithType: Task<IEnumerable<Room>>
+  fullName: System.Threading.Tasks.Task<System.Collections.Generic.IEnumerable<BooklinkBE.Data.Models.Room>>
+  nameWithType.vb: Task(Of IEnumerable(Of Room))
+  fullName.vb: System.Threading.Tasks.Task(Of System.Collections.Generic.IEnumerable(Of BooklinkBE.Data.Models.Room))
+  name.vb: Task(Of IEnumerable(Of Room))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: BooklinkBE.Data.Models.Room
+    name: Room
+    href: BooklinkBE.Data.Models.Room.html
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: BooklinkBE.Data.Models.Room
+    name: Room
+    href: BooklinkBE.Data.Models.Room.html
+  - name: )
+  - name: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: BooklinkBE.API.Services.Implementations.RoomService.GetRoomsAsync*
+  commentId: Overload:BooklinkBE.API.Services.Implementations.RoomService.GetRoomsAsync
+  href: BooklinkBE.API.Services.Implementations.RoomService.html#BooklinkBE_API_Services_Implementations_RoomService_GetRoomsAsync_System_Guid_
+  name: GetRoomsAsync
+  nameWithType: RoomService.GetRoomsAsync
+  fullName: BooklinkBE.API.Services.Implementations.RoomService.GetRoomsAsync
+- uid: BooklinkBE.API.Services.Interfaces.IRoomService.GetRoomsAsync(System.Guid)
+  commentId: M:BooklinkBE.API.Services.Interfaces.IRoomService.GetRoomsAsync(System.Guid)
+  parent: BooklinkBE.API.Services.Interfaces.IRoomService
+  isExternal: true
+  href: BooklinkBE.API.Services.Interfaces.IRoomService.html#BooklinkBE_API_Services_Interfaces_IRoomService_GetRoomsAsync_System_Guid_
+  name: GetRoomsAsync(Guid)
+  nameWithType: IRoomService.GetRoomsAsync(Guid)
+  fullName: BooklinkBE.API.Services.Interfaces.IRoomService.GetRoomsAsync(System.Guid)
+  spec.csharp:
+  - uid: BooklinkBE.API.Services.Interfaces.IRoomService.GetRoomsAsync(System.Guid)
+    name: GetRoomsAsync
+    href: BooklinkBE.API.Services.Interfaces.IRoomService.html#BooklinkBE_API_Services_Interfaces_IRoomService_GetRoomsAsync_System_Guid_
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: )
+  spec.vb:
+  - uid: BooklinkBE.API.Services.Interfaces.IRoomService.GetRoomsAsync(System.Guid)
+    name: GetRoomsAsync
+    href: BooklinkBE.API.Services.Interfaces.IRoomService.html#BooklinkBE_API_Services_Interfaces_IRoomService_GetRoomsAsync_System_Guid_
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: )
+- uid: BooklinkBE.API.Services.Implementations.RoomService.GetRoomByIdAsync*
+  commentId: Overload:BooklinkBE.API.Services.Implementations.RoomService.GetRoomByIdAsync
+  href: BooklinkBE.API.Services.Implementations.RoomService.html#BooklinkBE_API_Services_Implementations_RoomService_GetRoomByIdAsync_System_Guid_
+  name: GetRoomByIdAsync
+  nameWithType: RoomService.GetRoomByIdAsync
+  fullName: BooklinkBE.API.Services.Implementations.RoomService.GetRoomByIdAsync
+- uid: BooklinkBE.API.Services.Interfaces.IRoomService.GetRoomByIdAsync(System.Guid)
+  commentId: M:BooklinkBE.API.Services.Interfaces.IRoomService.GetRoomByIdAsync(System.Guid)
+  parent: BooklinkBE.API.Services.Interfaces.IRoomService
+  isExternal: true
+  href: BooklinkBE.API.Services.Interfaces.IRoomService.html#BooklinkBE_API_Services_Interfaces_IRoomService_GetRoomByIdAsync_System_Guid_
+  name: GetRoomByIdAsync(Guid)
+  nameWithType: IRoomService.GetRoomByIdAsync(Guid)
+  fullName: BooklinkBE.API.Services.Interfaces.IRoomService.GetRoomByIdAsync(System.Guid)
+  spec.csharp:
+  - uid: BooklinkBE.API.Services.Interfaces.IRoomService.GetRoomByIdAsync(System.Guid)
+    name: GetRoomByIdAsync
+    href: BooklinkBE.API.Services.Interfaces.IRoomService.html#BooklinkBE_API_Services_Interfaces_IRoomService_GetRoomByIdAsync_System_Guid_
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: )
+  spec.vb:
+  - uid: BooklinkBE.API.Services.Interfaces.IRoomService.GetRoomByIdAsync(System.Guid)
+    name: GetRoomByIdAsync
+    href: BooklinkBE.API.Services.Interfaces.IRoomService.html#BooklinkBE_API_Services_Interfaces_IRoomService_GetRoomByIdAsync_System_Guid_
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: )
+- uid: System.Threading.Tasks.Task{BooklinkBE.Data.Models.Room}
+  commentId: T:System.Threading.Tasks.Task{BooklinkBE.Data.Models.Room}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<Room>
+  nameWithType: Task<Room>
+  fullName: System.Threading.Tasks.Task<BooklinkBE.Data.Models.Room>
+  nameWithType.vb: Task(Of Room)
+  fullName.vb: System.Threading.Tasks.Task(Of BooklinkBE.Data.Models.Room)
+  name.vb: Task(Of Room)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: BooklinkBE.Data.Models.Room
+    name: Room
+    href: BooklinkBE.Data.Models.Room.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: BooklinkBE.Data.Models.Room
+    name: Room
+    href: BooklinkBE.Data.Models.Room.html
+  - name: )
+- uid: BooklinkBE.API.Services.Implementations.RoomService.CreateRoomAsync*
+  commentId: Overload:BooklinkBE.API.Services.Implementations.RoomService.CreateRoomAsync
+  href: BooklinkBE.API.Services.Implementations.RoomService.html#BooklinkBE_API_Services_Implementations_RoomService_CreateRoomAsync_BooklinkBE_Data_Models_Room_
+  name: CreateRoomAsync
+  nameWithType: RoomService.CreateRoomAsync
+  fullName: BooklinkBE.API.Services.Implementations.RoomService.CreateRoomAsync
+- uid: BooklinkBE.API.Services.Interfaces.IRoomService.CreateRoomAsync(BooklinkBE.Data.Models.Room)
+  commentId: M:BooklinkBE.API.Services.Interfaces.IRoomService.CreateRoomAsync(BooklinkBE.Data.Models.Room)
+  parent: BooklinkBE.API.Services.Interfaces.IRoomService
+  href: BooklinkBE.API.Services.Interfaces.IRoomService.html#BooklinkBE_API_Services_Interfaces_IRoomService_CreateRoomAsync_BooklinkBE_Data_Models_Room_
+  name: CreateRoomAsync(Room)
+  nameWithType: IRoomService.CreateRoomAsync(Room)
+  fullName: BooklinkBE.API.Services.Interfaces.IRoomService.CreateRoomAsync(BooklinkBE.Data.Models.Room)
+  spec.csharp:
+  - uid: BooklinkBE.API.Services.Interfaces.IRoomService.CreateRoomAsync(BooklinkBE.Data.Models.Room)
+    name: CreateRoomAsync
+    href: BooklinkBE.API.Services.Interfaces.IRoomService.html#BooklinkBE_API_Services_Interfaces_IRoomService_CreateRoomAsync_BooklinkBE_Data_Models_Room_
+  - name: (
+  - uid: BooklinkBE.Data.Models.Room
+    name: Room
+    href: BooklinkBE.Data.Models.Room.html
+  - name: )
+  spec.vb:
+  - uid: BooklinkBE.API.Services.Interfaces.IRoomService.CreateRoomAsync(BooklinkBE.Data.Models.Room)
+    name: CreateRoomAsync
+    href: BooklinkBE.API.Services.Interfaces.IRoomService.html#BooklinkBE_API_Services_Interfaces_IRoomService_CreateRoomAsync_BooklinkBE_Data_Models_Room_
+  - name: (
+  - uid: BooklinkBE.Data.Models.Room
+    name: Room
+    href: BooklinkBE.Data.Models.Room.html
+  - name: )
+- uid: BooklinkBE.Data.Models.Room
+  commentId: T:BooklinkBE.Data.Models.Room
+  parent: BooklinkBE.Data.Models
+  href: BooklinkBE.Data.Models.Room.html
+  name: Room
+  nameWithType: Room
+  fullName: BooklinkBE.Data.Models.Room
+- uid: BooklinkBE.Data.Models
+  commentId: N:BooklinkBE.Data.Models
+  href: BooklinkBE.html
+  name: BooklinkBE.Data.Models
+  nameWithType: BooklinkBE.Data.Models
+  fullName: BooklinkBE.Data.Models
+  spec.csharp:
+  - uid: BooklinkBE
+    name: BooklinkBE
+    href: BooklinkBE.html
+  - name: .
+  - uid: BooklinkBE.Data
+    name: Data
+    href: BooklinkBE.Data.html
+  - name: .
+  - uid: BooklinkBE.Data.Models
+    name: Models
+    href: BooklinkBE.Data.Models.html
+  spec.vb:
+  - uid: BooklinkBE
+    name: BooklinkBE
+    href: BooklinkBE.html
+  - name: .
+  - uid: BooklinkBE.Data
+    name: Data
+    href: BooklinkBE.Data.html
+  - name: .
+  - uid: BooklinkBE.Data.Models
+    name: Models
+    href: BooklinkBE.Data.Models.html
+- uid: BooklinkBE.API.Services.Implementations.RoomService.UpdateRoomAsync*
+  commentId: Overload:BooklinkBE.API.Services.Implementations.RoomService.UpdateRoomAsync
+  href: BooklinkBE.API.Services.Implementations.RoomService.html#BooklinkBE_API_Services_Implementations_RoomService_UpdateRoomAsync_System_Guid_BooklinkBE_Data_Models_UpdateRoomRequest_
+  name: UpdateRoomAsync
+  nameWithType: RoomService.UpdateRoomAsync
+  fullName: BooklinkBE.API.Services.Implementations.RoomService.UpdateRoomAsync
+- uid: BooklinkBE.API.Services.Interfaces.IRoomService.UpdateRoomAsync(System.Guid,BooklinkBE.Data.Models.UpdateRoomRequest)
+  commentId: M:BooklinkBE.API.Services.Interfaces.IRoomService.UpdateRoomAsync(System.Guid,BooklinkBE.Data.Models.UpdateRoomRequest)
+  parent: BooklinkBE.API.Services.Interfaces.IRoomService
+  isExternal: true
+  href: BooklinkBE.API.Services.Interfaces.IRoomService.html#BooklinkBE_API_Services_Interfaces_IRoomService_UpdateRoomAsync_System_Guid_BooklinkBE_Data_Models_UpdateRoomRequest_
+  name: UpdateRoomAsync(Guid, UpdateRoomRequest)
+  nameWithType: IRoomService.UpdateRoomAsync(Guid, UpdateRoomRequest)
+  fullName: BooklinkBE.API.Services.Interfaces.IRoomService.UpdateRoomAsync(System.Guid, BooklinkBE.Data.Models.UpdateRoomRequest)
+  spec.csharp:
+  - uid: BooklinkBE.API.Services.Interfaces.IRoomService.UpdateRoomAsync(System.Guid,BooklinkBE.Data.Models.UpdateRoomRequest)
+    name: UpdateRoomAsync
+    href: BooklinkBE.API.Services.Interfaces.IRoomService.html#BooklinkBE_API_Services_Interfaces_IRoomService_UpdateRoomAsync_System_Guid_BooklinkBE_Data_Models_UpdateRoomRequest_
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: ','
+  - name: " "
+  - uid: BooklinkBE.Data.Models.UpdateRoomRequest
+    name: UpdateRoomRequest
+    href: BooklinkBE.Data.Models.UpdateRoomRequest.html
+  - name: )
+  spec.vb:
+  - uid: BooklinkBE.API.Services.Interfaces.IRoomService.UpdateRoomAsync(System.Guid,BooklinkBE.Data.Models.UpdateRoomRequest)
+    name: UpdateRoomAsync
+    href: BooklinkBE.API.Services.Interfaces.IRoomService.html#BooklinkBE_API_Services_Interfaces_IRoomService_UpdateRoomAsync_System_Guid_BooklinkBE_Data_Models_UpdateRoomRequest_
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: ','
+  - name: " "
+  - uid: BooklinkBE.Data.Models.UpdateRoomRequest
+    name: UpdateRoomRequest
+    href: BooklinkBE.Data.Models.UpdateRoomRequest.html
+  - name: )
+- uid: BooklinkBE.Data.Models.UpdateRoomRequest
+  commentId: T:BooklinkBE.Data.Models.UpdateRoomRequest
+  parent: BooklinkBE.Data.Models
+  href: BooklinkBE.Data.Models.UpdateRoomRequest.html
+  name: UpdateRoomRequest
+  nameWithType: UpdateRoomRequest
+  fullName: BooklinkBE.Data.Models.UpdateRoomRequest
+- uid: System.Threading.Tasks.Task{System.Boolean}
+  commentId: T:System.Threading.Tasks.Task{System.Boolean}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<bool>
+  nameWithType: Task<bool>
+  fullName: System.Threading.Tasks.Task<bool>
+  nameWithType.vb: Task(Of Boolean)
+  fullName.vb: System.Threading.Tasks.Task(Of Boolean)
+  name.vb: Task(Of Boolean)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: BooklinkBE.API.Services.Implementations.RoomService.DeleteRoomAsync*
+  commentId: Overload:BooklinkBE.API.Services.Implementations.RoomService.DeleteRoomAsync
+  href: BooklinkBE.API.Services.Implementations.RoomService.html#BooklinkBE_API_Services_Implementations_RoomService_DeleteRoomAsync_System_Guid_
+  name: DeleteRoomAsync
+  nameWithType: RoomService.DeleteRoomAsync
+  fullName: BooklinkBE.API.Services.Implementations.RoomService.DeleteRoomAsync
+- uid: BooklinkBE.API.Services.Interfaces.IRoomService.DeleteRoomAsync(System.Guid)
+  commentId: M:BooklinkBE.API.Services.Interfaces.IRoomService.DeleteRoomAsync(System.Guid)
+  parent: BooklinkBE.API.Services.Interfaces.IRoomService
+  isExternal: true
+  href: BooklinkBE.API.Services.Interfaces.IRoomService.html#BooklinkBE_API_Services_Interfaces_IRoomService_DeleteRoomAsync_System_Guid_
+  name: DeleteRoomAsync(Guid)
+  nameWithType: IRoomService.DeleteRoomAsync(Guid)
+  fullName: BooklinkBE.API.Services.Interfaces.IRoomService.DeleteRoomAsync(System.Guid)
+  spec.csharp:
+  - uid: BooklinkBE.API.Services.Interfaces.IRoomService.DeleteRoomAsync(System.Guid)
+    name: DeleteRoomAsync
+    href: BooklinkBE.API.Services.Interfaces.IRoomService.html#BooklinkBE_API_Services_Interfaces_IRoomService_DeleteRoomAsync_System_Guid_
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: )
+  spec.vb:
+  - uid: BooklinkBE.API.Services.Interfaces.IRoomService.DeleteRoomAsync(System.Guid)
+    name: DeleteRoomAsync
+    href: BooklinkBE.API.Services.Interfaces.IRoomService.html#BooklinkBE_API_Services_Interfaces_IRoomService_DeleteRoomAsync_System_Guid_
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: )

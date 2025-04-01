@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: BooklinkBE.API.BackgroundWorkers
+  commentId: N:BooklinkBE.API.BackgroundWorkers
+  id: BooklinkBE.API.BackgroundWorkers
+  children:
+  - BooklinkBE.API.BackgroundWorkers.EmailSenderBackgroundService
+  langs:
+  - csharp
+  - vb
+  name: BooklinkBE.API.BackgroundWorkers
+  nameWithType: BooklinkBE.API.BackgroundWorkers
+  fullName: BooklinkBE.API.BackgroundWorkers
+  type: Namespace
+  assemblies:
+  - BooklinkBE.API
+references:
+- uid: BooklinkBE.API.BackgroundWorkers.EmailSenderBackgroundService
+  commentId: T:BooklinkBE.API.BackgroundWorkers.EmailSenderBackgroundService
+  href: BooklinkBE.API.BackgroundWorkers.EmailSenderBackgroundService.html
+  name: EmailSenderBackgroundService
+  nameWithType: EmailSenderBackgroundService
+  fullName: BooklinkBE.API.BackgroundWorkers.EmailSenderBackgroundService

@@ -1,0 +1,991 @@
+### YamlMime:ManagedReference
+items:
+- uid: BooklinkBE.API.Services.Implementations.BookService
+  commentId: T:BooklinkBE.API.Services.Implementations.BookService
+  id: BookService
+  parent: BooklinkBE.API.Services.Implementations
+  children:
+  - BooklinkBE.API.Services.Implementations.BookService.#ctor(BooklinkBE.Data.AppDbContext)
+  - BooklinkBE.API.Services.Implementations.BookService.CreateBookAsync(BooklinkBE.Data.Models.CreateBookRequest)
+  - BooklinkBE.API.Services.Implementations.BookService.DeleteBookAsync(System.Guid)
+  - BooklinkBE.API.Services.Implementations.BookService.GetBooksByBookshelfIdAsync(System.Guid)
+  - BooklinkBE.API.Services.Implementations.BookService.GetUserBooksAsync(System.Guid)
+  - BooklinkBE.API.Services.Implementations.BookService.UpdateBookAsync(System.Guid,BooklinkBE.Data.Models.UpdateBookRequest)
+  langs:
+  - csharp
+  - vb
+  name: BookService
+  nameWithType: BookService
+  fullName: BooklinkBE.API.Services.Implementations.BookService
+  type: Class
+  source:
+    remote:
+      path: BooklinkBE.API/Services/Implementations/BookService.cs
+      branch: main
+      repo: https://github.com/1-IT-Gymnazium/1046_Booklink_BE.git
+    id: BookService
+    path: ../../BooklinkBE.API/Services/Implementations/BookService.cs
+    startLine: 7
+  assemblies:
+  - BooklinkBE.API
+  namespace: BooklinkBE.API.Services.Implementations
+  syntax:
+    content: 'public class BookService : IBookService'
+    content.vb: Public Class BookService Implements IBookService
+  inheritance:
+  - System.Object
+  implements:
+  - BooklinkBE.API.Services.Interfaces.IBookService
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: BooklinkBE.API.Services.Implementations.BookService.#ctor(BooklinkBE.Data.AppDbContext)
+  commentId: M:BooklinkBE.API.Services.Implementations.BookService.#ctor(BooklinkBE.Data.AppDbContext)
+  id: '#ctor(BooklinkBE.Data.AppDbContext)'
+  parent: BooklinkBE.API.Services.Implementations.BookService
+  langs:
+  - csharp
+  - vb
+  name: BookService(AppDbContext)
+  nameWithType: BookService.BookService(AppDbContext)
+  fullName: BooklinkBE.API.Services.Implementations.BookService.BookService(BooklinkBE.Data.AppDbContext)
+  type: Constructor
+  source:
+    remote:
+      path: BooklinkBE.API/Services/Implementations/BookService.cs
+      branch: main
+      repo: https://github.com/1-IT-Gymnazium/1046_Booklink_BE.git
+    id: .ctor
+    path: ../../BooklinkBE.API/Services/Implementations/BookService.cs
+    startLine: 7
+  assemblies:
+  - BooklinkBE.API
+  namespace: BooklinkBE.API.Services.Implementations
+  syntax:
+    content: public BookService(AppDbContext context)
+    parameters:
+    - id: context
+      type: BooklinkBE.Data.AppDbContext
+    content.vb: Public Sub New(context As AppDbContext)
+  overload: BooklinkBE.API.Services.Implementations.BookService.#ctor*
+  nameWithType.vb: BookService.New(AppDbContext)
+  fullName.vb: BooklinkBE.API.Services.Implementations.BookService.New(BooklinkBE.Data.AppDbContext)
+  name.vb: New(AppDbContext)
+- uid: BooklinkBE.API.Services.Implementations.BookService.GetUserBooksAsync(System.Guid)
+  commentId: M:BooklinkBE.API.Services.Implementations.BookService.GetUserBooksAsync(System.Guid)
+  id: GetUserBooksAsync(System.Guid)
+  parent: BooklinkBE.API.Services.Implementations.BookService
+  langs:
+  - csharp
+  - vb
+  name: GetUserBooksAsync(Guid)
+  nameWithType: BookService.GetUserBooksAsync(Guid)
+  fullName: BooklinkBE.API.Services.Implementations.BookService.GetUserBooksAsync(System.Guid)
+  type: Method
+  source:
+    remote:
+      path: BooklinkBE.API/Services/Implementations/BookService.cs
+      branch: main
+      repo: https://github.com/1-IT-Gymnazium/1046_Booklink_BE.git
+    id: GetUserBooksAsync
+    path: ../../BooklinkBE.API/Services/Implementations/BookService.cs
+    startLine: 9
+  assemblies:
+  - BooklinkBE.API
+  namespace: BooklinkBE.API.Services.Implementations
+  example: []
+  syntax:
+    content: public Task<IEnumerable<Book>> GetUserBooksAsync(Guid userId)
+    parameters:
+    - id: userId
+      type: System.Guid
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{BooklinkBE.Data.Models.Book}}
+    content.vb: Public Function GetUserBooksAsync(userId As Guid) As Task(Of IEnumerable(Of Book))
+  overload: BooklinkBE.API.Services.Implementations.BookService.GetUserBooksAsync*
+  implements:
+  - BooklinkBE.API.Services.Interfaces.IBookService.GetUserBooksAsync(System.Guid)
+- uid: BooklinkBE.API.Services.Implementations.BookService.GetBooksByBookshelfIdAsync(System.Guid)
+  commentId: M:BooklinkBE.API.Services.Implementations.BookService.GetBooksByBookshelfIdAsync(System.Guid)
+  id: GetBooksByBookshelfIdAsync(System.Guid)
+  parent: BooklinkBE.API.Services.Implementations.BookService
+  langs:
+  - csharp
+  - vb
+  name: GetBooksByBookshelfIdAsync(Guid)
+  nameWithType: BookService.GetBooksByBookshelfIdAsync(Guid)
+  fullName: BooklinkBE.API.Services.Implementations.BookService.GetBooksByBookshelfIdAsync(System.Guid)
+  type: Method
+  source:
+    remote:
+      path: BooklinkBE.API/Services/Implementations/BookService.cs
+      branch: main
+      repo: https://github.com/1-IT-Gymnazium/1046_Booklink_BE.git
+    id: GetBooksByBookshelfIdAsync
+    path: ../../BooklinkBE.API/Services/Implementations/BookService.cs
+    startLine: 19
+  assemblies:
+  - BooklinkBE.API
+  namespace: BooklinkBE.API.Services.Implementations
+  example: []
+  syntax:
+    content: public Task<IEnumerable<Book>> GetBooksByBookshelfIdAsync(Guid bookshelfId)
+    parameters:
+    - id: bookshelfId
+      type: System.Guid
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{BooklinkBE.Data.Models.Book}}
+    content.vb: Public Function GetBooksByBookshelfIdAsync(bookshelfId As Guid) As Task(Of IEnumerable(Of Book))
+  overload: BooklinkBE.API.Services.Implementations.BookService.GetBooksByBookshelfIdAsync*
+  implements:
+  - BooklinkBE.API.Services.Interfaces.IBookService.GetBooksByBookshelfIdAsync(System.Guid)
+- uid: BooklinkBE.API.Services.Implementations.BookService.CreateBookAsync(BooklinkBE.Data.Models.CreateBookRequest)
+  commentId: M:BooklinkBE.API.Services.Implementations.BookService.CreateBookAsync(BooklinkBE.Data.Models.CreateBookRequest)
+  id: CreateBookAsync(BooklinkBE.Data.Models.CreateBookRequest)
+  parent: BooklinkBE.API.Services.Implementations.BookService
+  langs:
+  - csharp
+  - vb
+  name: CreateBookAsync(CreateBookRequest)
+  nameWithType: BookService.CreateBookAsync(CreateBookRequest)
+  fullName: BooklinkBE.API.Services.Implementations.BookService.CreateBookAsync(BooklinkBE.Data.Models.CreateBookRequest)
+  type: Method
+  source:
+    remote:
+      path: BooklinkBE.API/Services/Implementations/BookService.cs
+      branch: main
+      repo: https://github.com/1-IT-Gymnazium/1046_Booklink_BE.git
+    id: CreateBookAsync
+    path: ../../BooklinkBE.API/Services/Implementations/BookService.cs
+    startLine: 26
+  assemblies:
+  - BooklinkBE.API
+  namespace: BooklinkBE.API.Services.Implementations
+  example: []
+  syntax:
+    content: public Task<Book> CreateBookAsync(CreateBookRequest request)
+    parameters:
+    - id: request
+      type: BooklinkBE.Data.Models.CreateBookRequest
+    return:
+      type: System.Threading.Tasks.Task{BooklinkBE.Data.Models.Book}
+    content.vb: Public Function CreateBookAsync(request As CreateBookRequest) As Task(Of Book)
+  overload: BooklinkBE.API.Services.Implementations.BookService.CreateBookAsync*
+  implements:
+  - BooklinkBE.API.Services.Interfaces.IBookService.CreateBookAsync(BooklinkBE.Data.Models.CreateBookRequest)
+- uid: BooklinkBE.API.Services.Implementations.BookService.UpdateBookAsync(System.Guid,BooklinkBE.Data.Models.UpdateBookRequest)
+  commentId: M:BooklinkBE.API.Services.Implementations.BookService.UpdateBookAsync(System.Guid,BooklinkBE.Data.Models.UpdateBookRequest)
+  id: UpdateBookAsync(System.Guid,BooklinkBE.Data.Models.UpdateBookRequest)
+  parent: BooklinkBE.API.Services.Implementations.BookService
+  langs:
+  - csharp
+  - vb
+  name: UpdateBookAsync(Guid, UpdateBookRequest)
+  nameWithType: BookService.UpdateBookAsync(Guid, UpdateBookRequest)
+  fullName: BooklinkBE.API.Services.Implementations.BookService.UpdateBookAsync(System.Guid, BooklinkBE.Data.Models.UpdateBookRequest)
+  type: Method
+  source:
+    remote:
+      path: BooklinkBE.API/Services/Implementations/BookService.cs
+      branch: main
+      repo: https://github.com/1-IT-Gymnazium/1046_Booklink_BE.git
+    id: UpdateBookAsync
+    path: ../../BooklinkBE.API/Services/Implementations/BookService.cs
+    startLine: 51
+  assemblies:
+  - BooklinkBE.API
+  namespace: BooklinkBE.API.Services.Implementations
+  example: []
+  syntax:
+    content: public Task<Book> UpdateBookAsync(Guid id, UpdateBookRequest request)
+    parameters:
+    - id: id
+      type: System.Guid
+    - id: request
+      type: BooklinkBE.Data.Models.UpdateBookRequest
+    return:
+      type: System.Threading.Tasks.Task{BooklinkBE.Data.Models.Book}
+    content.vb: Public Function UpdateBookAsync(id As Guid, request As UpdateBookRequest) As Task(Of Book)
+  overload: BooklinkBE.API.Services.Implementations.BookService.UpdateBookAsync*
+  implements:
+  - BooklinkBE.API.Services.Interfaces.IBookService.UpdateBookAsync(System.Guid,BooklinkBE.Data.Models.UpdateBookRequest)
+- uid: BooklinkBE.API.Services.Implementations.BookService.DeleteBookAsync(System.Guid)
+  commentId: M:BooklinkBE.API.Services.Implementations.BookService.DeleteBookAsync(System.Guid)
+  id: DeleteBookAsync(System.Guid)
+  parent: BooklinkBE.API.Services.Implementations.BookService
+  langs:
+  - csharp
+  - vb
+  name: DeleteBookAsync(Guid)
+  nameWithType: BookService.DeleteBookAsync(Guid)
+  fullName: BooklinkBE.API.Services.Implementations.BookService.DeleteBookAsync(System.Guid)
+  type: Method
+  source:
+    remote:
+      path: BooklinkBE.API/Services/Implementations/BookService.cs
+      branch: main
+      repo: https://github.com/1-IT-Gymnazium/1046_Booklink_BE.git
+    id: DeleteBookAsync
+    path: ../../BooklinkBE.API/Services/Implementations/BookService.cs
+    startLine: 78
+  assemblies:
+  - BooklinkBE.API
+  namespace: BooklinkBE.API.Services.Implementations
+  example: []
+  syntax:
+    content: public Task DeleteBookAsync(Guid id)
+    parameters:
+    - id: id
+      type: System.Guid
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function DeleteBookAsync(id As Guid) As Task
+  overload: BooklinkBE.API.Services.Implementations.BookService.DeleteBookAsync*
+  implements:
+  - BooklinkBE.API.Services.Interfaces.IBookService.DeleteBookAsync(System.Guid)
+references:
+- uid: BooklinkBE.API.Services.Implementations
+  commentId: N:BooklinkBE.API.Services.Implementations
+  href: BooklinkBE.html
+  name: BooklinkBE.API.Services.Implementations
+  nameWithType: BooklinkBE.API.Services.Implementations
+  fullName: BooklinkBE.API.Services.Implementations
+  spec.csharp:
+  - uid: BooklinkBE
+    name: BooklinkBE
+    href: BooklinkBE.html
+  - name: .
+  - uid: BooklinkBE.API
+    name: API
+    href: BooklinkBE.API.html
+  - name: .
+  - uid: BooklinkBE.API.Services
+    name: Services
+    href: BooklinkBE.API.Services.html
+  - name: .
+  - uid: BooklinkBE.API.Services.Implementations
+    name: Implementations
+    href: BooklinkBE.API.Services.Implementations.html
+  spec.vb:
+  - uid: BooklinkBE
+    name: BooklinkBE
+    href: BooklinkBE.html
+  - name: .
+  - uid: BooklinkBE.API
+    name: API
+    href: BooklinkBE.API.html
+  - name: .
+  - uid: BooklinkBE.API.Services
+    name: Services
+    href: BooklinkBE.API.Services.html
+  - name: .
+  - uid: BooklinkBE.API.Services.Implementations
+    name: Implementations
+    href: BooklinkBE.API.Services.Implementations.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: BooklinkBE.API.Services.Interfaces.IBookService
+  commentId: T:BooklinkBE.API.Services.Interfaces.IBookService
+  parent: BooklinkBE.API.Services.Interfaces
+  href: BooklinkBE.API.Services.Interfaces.IBookService.html
+  name: IBookService
+  nameWithType: IBookService
+  fullName: BooklinkBE.API.Services.Interfaces.IBookService
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: BooklinkBE.API.Services.Interfaces
+  commentId: N:BooklinkBE.API.Services.Interfaces
+  href: BooklinkBE.html
+  name: BooklinkBE.API.Services.Interfaces
+  nameWithType: BooklinkBE.API.Services.Interfaces
+  fullName: BooklinkBE.API.Services.Interfaces
+  spec.csharp:
+  - uid: BooklinkBE
+    name: BooklinkBE
+    href: BooklinkBE.html
+  - name: .
+  - uid: BooklinkBE.API
+    name: API
+    href: BooklinkBE.API.html
+  - name: .
+  - uid: BooklinkBE.API.Services
+    name: Services
+    href: BooklinkBE.API.Services.html
+  - name: .
+  - uid: BooklinkBE.API.Services.Interfaces
+    name: Interfaces
+    href: BooklinkBE.API.Services.Interfaces.html
+  spec.vb:
+  - uid: BooklinkBE
+    name: BooklinkBE
+    href: BooklinkBE.html
+  - name: .
+  - uid: BooklinkBE.API
+    name: API
+    href: BooklinkBE.API.html
+  - name: .
+  - uid: BooklinkBE.API.Services
+    name: Services
+    href: BooklinkBE.API.Services.html
+  - name: .
+  - uid: BooklinkBE.API.Services.Interfaces
+    name: Interfaces
+    href: BooklinkBE.API.Services.Interfaces.html
+- uid: BooklinkBE.API.Services.Implementations.BookService.#ctor*
+  commentId: Overload:BooklinkBE.API.Services.Implementations.BookService.#ctor
+  href: BooklinkBE.API.Services.Implementations.BookService.html#BooklinkBE_API_Services_Implementations_BookService__ctor_BooklinkBE_Data_AppDbContext_
+  name: BookService
+  nameWithType: BookService.BookService
+  fullName: BooklinkBE.API.Services.Implementations.BookService.BookService
+  nameWithType.vb: BookService.New
+  fullName.vb: BooklinkBE.API.Services.Implementations.BookService.New
+  name.vb: New
+- uid: BooklinkBE.Data.AppDbContext
+  commentId: T:BooklinkBE.Data.AppDbContext
+  parent: BooklinkBE.Data
+  href: BooklinkBE.Data.AppDbContext.html
+  name: AppDbContext
+  nameWithType: AppDbContext
+  fullName: BooklinkBE.Data.AppDbContext
+- uid: BooklinkBE.Data
+  commentId: N:BooklinkBE.Data
+  href: BooklinkBE.html
+  name: BooklinkBE.Data
+  nameWithType: BooklinkBE.Data
+  fullName: BooklinkBE.Data
+  spec.csharp:
+  - uid: BooklinkBE
+    name: BooklinkBE
+    href: BooklinkBE.html
+  - name: .
+  - uid: BooklinkBE.Data
+    name: Data
+    href: BooklinkBE.Data.html
+  spec.vb:
+  - uid: BooklinkBE
+    name: BooklinkBE
+    href: BooklinkBE.html
+  - name: .
+  - uid: BooklinkBE.Data
+    name: Data
+    href: BooklinkBE.Data.html
+- uid: BooklinkBE.API.Services.Implementations.BookService.GetUserBooksAsync*
+  commentId: Overload:BooklinkBE.API.Services.Implementations.BookService.GetUserBooksAsync
+  href: BooklinkBE.API.Services.Implementations.BookService.html#BooklinkBE_API_Services_Implementations_BookService_GetUserBooksAsync_System_Guid_
+  name: GetUserBooksAsync
+  nameWithType: BookService.GetUserBooksAsync
+  fullName: BooklinkBE.API.Services.Implementations.BookService.GetUserBooksAsync
+- uid: BooklinkBE.API.Services.Interfaces.IBookService.GetUserBooksAsync(System.Guid)
+  commentId: M:BooklinkBE.API.Services.Interfaces.IBookService.GetUserBooksAsync(System.Guid)
+  parent: BooklinkBE.API.Services.Interfaces.IBookService
+  isExternal: true
+  href: BooklinkBE.API.Services.Interfaces.IBookService.html#BooklinkBE_API_Services_Interfaces_IBookService_GetUserBooksAsync_System_Guid_
+  name: GetUserBooksAsync(Guid)
+  nameWithType: IBookService.GetUserBooksAsync(Guid)
+  fullName: BooklinkBE.API.Services.Interfaces.IBookService.GetUserBooksAsync(System.Guid)
+  spec.csharp:
+  - uid: BooklinkBE.API.Services.Interfaces.IBookService.GetUserBooksAsync(System.Guid)
+    name: GetUserBooksAsync
+    href: BooklinkBE.API.Services.Interfaces.IBookService.html#BooklinkBE_API_Services_Interfaces_IBookService_GetUserBooksAsync_System_Guid_
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: )
+  spec.vb:
+  - uid: BooklinkBE.API.Services.Interfaces.IBookService.GetUserBooksAsync(System.Guid)
+    name: GetUserBooksAsync
+    href: BooklinkBE.API.Services.Interfaces.IBookService.html#BooklinkBE_API_Services_Interfaces_IBookService_GetUserBooksAsync_System_Guid_
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: )
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
+- uid: System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{BooklinkBE.Data.Models.Book}}
+  commentId: T:System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{BooklinkBE.Data.Models.Book}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<IEnumerable<Book>>
+  nameWithType: Task<IEnumerable<Book>>
+  fullName: System.Threading.Tasks.Task<System.Collections.Generic.IEnumerable<BooklinkBE.Data.Models.Book>>
+  nameWithType.vb: Task(Of IEnumerable(Of Book))
+  fullName.vb: System.Threading.Tasks.Task(Of System.Collections.Generic.IEnumerable(Of BooklinkBE.Data.Models.Book))
+  name.vb: Task(Of IEnumerable(Of Book))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: BooklinkBE.Data.Models.Book
+    name: Book
+    href: BooklinkBE.Data.Models.Book.html
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: BooklinkBE.Data.Models.Book
+    name: Book
+    href: BooklinkBE.Data.Models.Book.html
+  - name: )
+  - name: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: BooklinkBE.API.Services.Implementations.BookService.GetBooksByBookshelfIdAsync*
+  commentId: Overload:BooklinkBE.API.Services.Implementations.BookService.GetBooksByBookshelfIdAsync
+  href: BooklinkBE.API.Services.Implementations.BookService.html#BooklinkBE_API_Services_Implementations_BookService_GetBooksByBookshelfIdAsync_System_Guid_
+  name: GetBooksByBookshelfIdAsync
+  nameWithType: BookService.GetBooksByBookshelfIdAsync
+  fullName: BooklinkBE.API.Services.Implementations.BookService.GetBooksByBookshelfIdAsync
+- uid: BooklinkBE.API.Services.Interfaces.IBookService.GetBooksByBookshelfIdAsync(System.Guid)
+  commentId: M:BooklinkBE.API.Services.Interfaces.IBookService.GetBooksByBookshelfIdAsync(System.Guid)
+  parent: BooklinkBE.API.Services.Interfaces.IBookService
+  isExternal: true
+  href: BooklinkBE.API.Services.Interfaces.IBookService.html#BooklinkBE_API_Services_Interfaces_IBookService_GetBooksByBookshelfIdAsync_System_Guid_
+  name: GetBooksByBookshelfIdAsync(Guid)
+  nameWithType: IBookService.GetBooksByBookshelfIdAsync(Guid)
+  fullName: BooklinkBE.API.Services.Interfaces.IBookService.GetBooksByBookshelfIdAsync(System.Guid)
+  spec.csharp:
+  - uid: BooklinkBE.API.Services.Interfaces.IBookService.GetBooksByBookshelfIdAsync(System.Guid)
+    name: GetBooksByBookshelfIdAsync
+    href: BooklinkBE.API.Services.Interfaces.IBookService.html#BooklinkBE_API_Services_Interfaces_IBookService_GetBooksByBookshelfIdAsync_System_Guid_
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: )
+  spec.vb:
+  - uid: BooklinkBE.API.Services.Interfaces.IBookService.GetBooksByBookshelfIdAsync(System.Guid)
+    name: GetBooksByBookshelfIdAsync
+    href: BooklinkBE.API.Services.Interfaces.IBookService.html#BooklinkBE_API_Services_Interfaces_IBookService_GetBooksByBookshelfIdAsync_System_Guid_
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: )
+- uid: BooklinkBE.API.Services.Implementations.BookService.CreateBookAsync*
+  commentId: Overload:BooklinkBE.API.Services.Implementations.BookService.CreateBookAsync
+  href: BooklinkBE.API.Services.Implementations.BookService.html#BooklinkBE_API_Services_Implementations_BookService_CreateBookAsync_BooklinkBE_Data_Models_CreateBookRequest_
+  name: CreateBookAsync
+  nameWithType: BookService.CreateBookAsync
+  fullName: BooklinkBE.API.Services.Implementations.BookService.CreateBookAsync
+- uid: BooklinkBE.API.Services.Interfaces.IBookService.CreateBookAsync(BooklinkBE.Data.Models.CreateBookRequest)
+  commentId: M:BooklinkBE.API.Services.Interfaces.IBookService.CreateBookAsync(BooklinkBE.Data.Models.CreateBookRequest)
+  parent: BooklinkBE.API.Services.Interfaces.IBookService
+  href: BooklinkBE.API.Services.Interfaces.IBookService.html#BooklinkBE_API_Services_Interfaces_IBookService_CreateBookAsync_BooklinkBE_Data_Models_CreateBookRequest_
+  name: CreateBookAsync(CreateBookRequest)
+  nameWithType: IBookService.CreateBookAsync(CreateBookRequest)
+  fullName: BooklinkBE.API.Services.Interfaces.IBookService.CreateBookAsync(BooklinkBE.Data.Models.CreateBookRequest)
+  spec.csharp:
+  - uid: BooklinkBE.API.Services.Interfaces.IBookService.CreateBookAsync(BooklinkBE.Data.Models.CreateBookRequest)
+    name: CreateBookAsync
+    href: BooklinkBE.API.Services.Interfaces.IBookService.html#BooklinkBE_API_Services_Interfaces_IBookService_CreateBookAsync_BooklinkBE_Data_Models_CreateBookRequest_
+  - name: (
+  - uid: BooklinkBE.Data.Models.CreateBookRequest
+    name: CreateBookRequest
+    href: BooklinkBE.Data.Models.CreateBookRequest.html
+  - name: )
+  spec.vb:
+  - uid: BooklinkBE.API.Services.Interfaces.IBookService.CreateBookAsync(BooklinkBE.Data.Models.CreateBookRequest)
+    name: CreateBookAsync
+    href: BooklinkBE.API.Services.Interfaces.IBookService.html#BooklinkBE_API_Services_Interfaces_IBookService_CreateBookAsync_BooklinkBE_Data_Models_CreateBookRequest_
+  - name: (
+  - uid: BooklinkBE.Data.Models.CreateBookRequest
+    name: CreateBookRequest
+    href: BooklinkBE.Data.Models.CreateBookRequest.html
+  - name: )
+- uid: BooklinkBE.Data.Models.CreateBookRequest
+  commentId: T:BooklinkBE.Data.Models.CreateBookRequest
+  parent: BooklinkBE.Data.Models
+  href: BooklinkBE.Data.Models.CreateBookRequest.html
+  name: CreateBookRequest
+  nameWithType: CreateBookRequest
+  fullName: BooklinkBE.Data.Models.CreateBookRequest
+- uid: System.Threading.Tasks.Task{BooklinkBE.Data.Models.Book}
+  commentId: T:System.Threading.Tasks.Task{BooklinkBE.Data.Models.Book}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<Book>
+  nameWithType: Task<Book>
+  fullName: System.Threading.Tasks.Task<BooklinkBE.Data.Models.Book>
+  nameWithType.vb: Task(Of Book)
+  fullName.vb: System.Threading.Tasks.Task(Of BooklinkBE.Data.Models.Book)
+  name.vb: Task(Of Book)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: BooklinkBE.Data.Models.Book
+    name: Book
+    href: BooklinkBE.Data.Models.Book.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: BooklinkBE.Data.Models.Book
+    name: Book
+    href: BooklinkBE.Data.Models.Book.html
+  - name: )
+- uid: BooklinkBE.Data.Models
+  commentId: N:BooklinkBE.Data.Models
+  href: BooklinkBE.html
+  name: BooklinkBE.Data.Models
+  nameWithType: BooklinkBE.Data.Models
+  fullName: BooklinkBE.Data.Models
+  spec.csharp:
+  - uid: BooklinkBE
+    name: BooklinkBE
+    href: BooklinkBE.html
+  - name: .
+  - uid: BooklinkBE.Data
+    name: Data
+    href: BooklinkBE.Data.html
+  - name: .
+  - uid: BooklinkBE.Data.Models
+    name: Models
+    href: BooklinkBE.Data.Models.html
+  spec.vb:
+  - uid: BooklinkBE
+    name: BooklinkBE
+    href: BooklinkBE.html
+  - name: .
+  - uid: BooklinkBE.Data
+    name: Data
+    href: BooklinkBE.Data.html
+  - name: .
+  - uid: BooklinkBE.Data.Models
+    name: Models
+    href: BooklinkBE.Data.Models.html
+- uid: BooklinkBE.API.Services.Implementations.BookService.UpdateBookAsync*
+  commentId: Overload:BooklinkBE.API.Services.Implementations.BookService.UpdateBookAsync
+  href: BooklinkBE.API.Services.Implementations.BookService.html#BooklinkBE_API_Services_Implementations_BookService_UpdateBookAsync_System_Guid_BooklinkBE_Data_Models_UpdateBookRequest_
+  name: UpdateBookAsync
+  nameWithType: BookService.UpdateBookAsync
+  fullName: BooklinkBE.API.Services.Implementations.BookService.UpdateBookAsync
+- uid: BooklinkBE.API.Services.Interfaces.IBookService.UpdateBookAsync(System.Guid,BooklinkBE.Data.Models.UpdateBookRequest)
+  commentId: M:BooklinkBE.API.Services.Interfaces.IBookService.UpdateBookAsync(System.Guid,BooklinkBE.Data.Models.UpdateBookRequest)
+  parent: BooklinkBE.API.Services.Interfaces.IBookService
+  isExternal: true
+  href: BooklinkBE.API.Services.Interfaces.IBookService.html#BooklinkBE_API_Services_Interfaces_IBookService_UpdateBookAsync_System_Guid_BooklinkBE_Data_Models_UpdateBookRequest_
+  name: UpdateBookAsync(Guid, UpdateBookRequest)
+  nameWithType: IBookService.UpdateBookAsync(Guid, UpdateBookRequest)
+  fullName: BooklinkBE.API.Services.Interfaces.IBookService.UpdateBookAsync(System.Guid, BooklinkBE.Data.Models.UpdateBookRequest)
+  spec.csharp:
+  - uid: BooklinkBE.API.Services.Interfaces.IBookService.UpdateBookAsync(System.Guid,BooklinkBE.Data.Models.UpdateBookRequest)
+    name: UpdateBookAsync
+    href: BooklinkBE.API.Services.Interfaces.IBookService.html#BooklinkBE_API_Services_Interfaces_IBookService_UpdateBookAsync_System_Guid_BooklinkBE_Data_Models_UpdateBookRequest_
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: ','
+  - name: " "
+  - uid: BooklinkBE.Data.Models.UpdateBookRequest
+    name: UpdateBookRequest
+    href: BooklinkBE.Data.Models.UpdateBookRequest.html
+  - name: )
+  spec.vb:
+  - uid: BooklinkBE.API.Services.Interfaces.IBookService.UpdateBookAsync(System.Guid,BooklinkBE.Data.Models.UpdateBookRequest)
+    name: UpdateBookAsync
+    href: BooklinkBE.API.Services.Interfaces.IBookService.html#BooklinkBE_API_Services_Interfaces_IBookService_UpdateBookAsync_System_Guid_BooklinkBE_Data_Models_UpdateBookRequest_
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: ','
+  - name: " "
+  - uid: BooklinkBE.Data.Models.UpdateBookRequest
+    name: UpdateBookRequest
+    href: BooklinkBE.Data.Models.UpdateBookRequest.html
+  - name: )
+- uid: BooklinkBE.Data.Models.UpdateBookRequest
+  commentId: T:BooklinkBE.Data.Models.UpdateBookRequest
+  parent: BooklinkBE.Data.Models
+  href: BooklinkBE.Data.Models.UpdateBookRequest.html
+  name: UpdateBookRequest
+  nameWithType: UpdateBookRequest
+  fullName: BooklinkBE.Data.Models.UpdateBookRequest
+- uid: BooklinkBE.API.Services.Implementations.BookService.DeleteBookAsync*
+  commentId: Overload:BooklinkBE.API.Services.Implementations.BookService.DeleteBookAsync
+  href: BooklinkBE.API.Services.Implementations.BookService.html#BooklinkBE_API_Services_Implementations_BookService_DeleteBookAsync_System_Guid_
+  name: DeleteBookAsync
+  nameWithType: BookService.DeleteBookAsync
+  fullName: BooklinkBE.API.Services.Implementations.BookService.DeleteBookAsync
+- uid: BooklinkBE.API.Services.Interfaces.IBookService.DeleteBookAsync(System.Guid)
+  commentId: M:BooklinkBE.API.Services.Interfaces.IBookService.DeleteBookAsync(System.Guid)
+  parent: BooklinkBE.API.Services.Interfaces.IBookService
+  isExternal: true
+  href: BooklinkBE.API.Services.Interfaces.IBookService.html#BooklinkBE_API_Services_Interfaces_IBookService_DeleteBookAsync_System_Guid_
+  name: DeleteBookAsync(Guid)
+  nameWithType: IBookService.DeleteBookAsync(Guid)
+  fullName: BooklinkBE.API.Services.Interfaces.IBookService.DeleteBookAsync(System.Guid)
+  spec.csharp:
+  - uid: BooklinkBE.API.Services.Interfaces.IBookService.DeleteBookAsync(System.Guid)
+    name: DeleteBookAsync
+    href: BooklinkBE.API.Services.Interfaces.IBookService.html#BooklinkBE_API_Services_Interfaces_IBookService_DeleteBookAsync_System_Guid_
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: )
+  spec.vb:
+  - uid: BooklinkBE.API.Services.Interfaces.IBookService.DeleteBookAsync(System.Guid)
+    name: DeleteBookAsync
+    href: BooklinkBE.API.Services.Interfaces.IBookService.html#BooklinkBE_API_Services_Interfaces_IBookService_DeleteBookAsync_System_Guid_
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: )
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task

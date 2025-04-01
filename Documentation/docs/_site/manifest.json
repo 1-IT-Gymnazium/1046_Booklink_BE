@@ -1,0 +1,661 @@
+{
+  "source_base_path": "/Users/f3l1x/Coding/Maturita/BooklinkBE.API/Documentation/docs",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "source_relative_path": "api/Booklink.Controllers.BooksController.yml",
+      "output": {
+        "resource": {
+          "relative_path": "api/Booklink.Controllers.BooksController.yml"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "api/Booklink.Controllers.yml",
+      "output": {
+        "resource": {
+          "relative_path": "api/Booklink.Controllers.yml"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "api/Booklink.Migrations.AddedISBN.yml",
+      "output": {
+        "resource": {
+          "relative_path": "api/Booklink.Migrations.AddedISBN.yml"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "api/Booklink.Migrations.InitialCreate.yml",
+      "output": {
+        "resource": {
+          "relative_path": "api/Booklink.Migrations.InitialCreate.yml"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "api/Booklink.Migrations.yml",
+      "output": {
+        "resource": {
+          "relative_path": "api/Booklink.Migrations.yml"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "api/Booklink.Models.AppDbContext.yml",
+      "output": {
+        "resource": {
+          "relative_path": "api/Booklink.Models.AppDbContext.yml"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "api/Booklink.Models.Book.yml",
+      "output": {
+        "resource": {
+          "relative_path": "api/Booklink.Models.Book.yml"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "api/Booklink.Models.BookRepository.yml",
+      "output": {
+        "resource": {
+          "relative_path": "api/Booklink.Models.BookRepository.yml"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "api/Booklink.Models.IBookRepository.yml",
+      "output": {
+        "resource": {
+          "relative_path": "api/Booklink.Models.IBookRepository.yml"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "api/Booklink.Models.PhysicalLocation.yml",
+      "output": {
+        "resource": {
+          "relative_path": "api/Booklink.Models.PhysicalLocation.yml"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "api/Booklink.Models.User.yml",
+      "output": {
+        "resource": {
+          "relative_path": "api/Booklink.Models.User.yml"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "api/Booklink.Models.yml",
+      "output": {
+        "resource": {
+          "relative_path": "api/Booklink.Models.yml"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "api/BooklinkBE.API.BackgroundWorkers.EmailSenderBackgroundService.yml",
+      "output": {
+        "resource": {
+          "relative_path": "api/BooklinkBE.API.BackgroundWorkers.EmailSenderBackgroundService.yml"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "api/BooklinkBE.API.BackgroundWorkers.yml",
+      "output": {
+        "resource": {
+          "relative_path": "api/BooklinkBE.API.BackgroundWorkers.yml"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "api/BooklinkBE.API.Controllers.AuthController.yml",
+      "output": {
+        "resource": {
+          "relative_path": "api/BooklinkBE.API.Controllers.AuthController.yml"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "api/BooklinkBE.API.Controllers.BookController.yml",
+      "output": {
+        "resource": {
+          "relative_path": "api/BooklinkBE.API.Controllers.BookController.yml"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "api/BooklinkBE.API.Controllers.BookshelfController.yml",
+      "output": {
+        "resource": {
+          "relative_path": "api/BooklinkBE.API.Controllers.BookshelfController.yml"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "api/BooklinkBE.API.Controllers.HouseholdController.yml",
+      "output": {
+        "resource": {
+          "relative_path": "api/BooklinkBE.API.Controllers.HouseholdController.yml"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "api/BooklinkBE.API.Controllers.RoomsController.yml",
+      "output": {
+        "resource": {
+          "relative_path": "api/BooklinkBE.API.Controllers.RoomsController.yml"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "api/BooklinkBE.API.Controllers.yml",
+      "output": {
+        "resource": {
+          "relative_path": "api/BooklinkBE.API.Controllers.yml"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "api/BooklinkBE.API.Entities.ForgotPassword.yml",
+      "output": {
+        "resource": {
+          "relative_path": "api/BooklinkBE.API.Entities.ForgotPassword.yml"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "api/BooklinkBE.API.Entities.LoggedUser.yml",
+      "output": {
+        "resource": {
+          "relative_path": "api/BooklinkBE.API.Entities.LoggedUser.yml"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "api/BooklinkBE.API.Entities.Login.yml",
+      "output": {
+        "resource": {
+          "relative_path": "api/BooklinkBE.API.Entities.Login.yml"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "api/BooklinkBE.API.Entities.Register.yml",
+      "output": {
+        "resource": {
+          "relative_path": "api/BooklinkBE.API.Entities.Register.yml"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "api/BooklinkBE.API.Entities.ResetPasswordRequest.yml",
+      "output": {
+        "resource": {
+          "relative_path": "api/BooklinkBE.API.Entities.ResetPasswordRequest.yml"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "api/BooklinkBE.API.Entities.Token.yml",
+      "output": {
+        "resource": {
+          "relative_path": "api/BooklinkBE.API.Entities.Token.yml"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "api/BooklinkBE.API.Entities.yml",
+      "output": {
+        "resource": {
+          "relative_path": "api/BooklinkBE.API.Entities.yml"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "api/BooklinkBE.API.Options.EnvironmentOptions.yml",
+      "output": {
+        "resource": {
+          "relative_path": "api/BooklinkBE.API.Options.EnvironmentOptions.yml"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "api/BooklinkBE.API.Options.JwtSettings.yml",
+      "output": {
+        "resource": {
+          "relative_path": "api/BooklinkBE.API.Options.JwtSettings.yml"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "api/BooklinkBE.API.Options.SmtpOptions.yml",
+      "output": {
+        "resource": {
+          "relative_path": "api/BooklinkBE.API.Options.SmtpOptions.yml"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "api/BooklinkBE.API.Options.yml",
+      "output": {
+        "resource": {
+          "relative_path": "api/BooklinkBE.API.Options.yml"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "api/BooklinkBE.API.Services.Implementations.BookService.yml",
+      "output": {
+        "resource": {
+          "relative_path": "api/BooklinkBE.API.Services.Implementations.BookService.yml"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "api/BooklinkBE.API.Services.Implementations.BookshelfService.yml",
+      "output": {
+        "resource": {
+          "relative_path": "api/BooklinkBE.API.Services.Implementations.BookshelfService.yml"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "api/BooklinkBE.API.Services.Implementations.EmailSenderService.yml",
+      "output": {
+        "resource": {
+          "relative_path": "api/BooklinkBE.API.Services.Implementations.EmailSenderService.yml"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "api/BooklinkBE.API.Services.Implementations.HouseholdService.yml",
+      "output": {
+        "resource": {
+          "relative_path": "api/BooklinkBE.API.Services.Implementations.HouseholdService.yml"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "api/BooklinkBE.API.Services.Implementations.RoomService.yml",
+      "output": {
+        "resource": {
+          "relative_path": "api/BooklinkBE.API.Services.Implementations.RoomService.yml"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "api/BooklinkBE.API.Services.Implementations.yml",
+      "output": {
+        "resource": {
+          "relative_path": "api/BooklinkBE.API.Services.Implementations.yml"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "api/BooklinkBE.API.Services.Interfaces.IBookService.yml",
+      "output": {
+        "resource": {
+          "relative_path": "api/BooklinkBE.API.Services.Interfaces.IBookService.yml"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "api/BooklinkBE.API.Services.Interfaces.IBookshelfService.yml",
+      "output": {
+        "resource": {
+          "relative_path": "api/BooklinkBE.API.Services.Interfaces.IBookshelfService.yml"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "api/BooklinkBE.API.Services.Interfaces.IHouseholdService.yml",
+      "output": {
+        "resource": {
+          "relative_path": "api/BooklinkBE.API.Services.Interfaces.IHouseholdService.yml"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "api/BooklinkBE.API.Services.Interfaces.IRoomService.yml",
+      "output": {
+        "resource": {
+          "relative_path": "api/BooklinkBE.API.Services.Interfaces.IRoomService.yml"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "api/BooklinkBE.API.Services.Interfaces.yml",
+      "output": {
+        "resource": {
+          "relative_path": "api/BooklinkBE.API.Services.Interfaces.yml"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "api/BooklinkBE.API.Utils.ClaimsPrincipalExtensions.yml",
+      "output": {
+        "resource": {
+          "relative_path": "api/BooklinkBE.API.Utils.ClaimsPrincipalExtensions.yml"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "api/BooklinkBE.API.Utils.yml",
+      "output": {
+        "resource": {
+          "relative_path": "api/BooklinkBE.API.Utils.yml"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "api/BooklinkBE.Data.AppDbContext.yml",
+      "output": {
+        "resource": {
+          "relative_path": "api/BooklinkBE.Data.AppDbContext.yml"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "api/BooklinkBE.Data.Migrations.InitialCreate.yml",
+      "output": {
+        "resource": {
+          "relative_path": "api/BooklinkBE.Data.Migrations.InitialCreate.yml"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "api/BooklinkBE.Data.Migrations.yml",
+      "output": {
+        "resource": {
+          "relative_path": "api/BooklinkBE.Data.Migrations.yml"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "api/BooklinkBE.Data.Models.Book.yml",
+      "output": {
+        "resource": {
+          "relative_path": "api/BooklinkBE.Data.Models.Book.yml"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "api/BooklinkBE.Data.Models.Bookshelf.yml",
+      "output": {
+        "resource": {
+          "relative_path": "api/BooklinkBE.Data.Models.Bookshelf.yml"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "api/BooklinkBE.Data.Models.CreateBookRequest.yml",
+      "output": {
+        "resource": {
+          "relative_path": "api/BooklinkBE.Data.Models.CreateBookRequest.yml"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "api/BooklinkBE.Data.Models.CreateBookshelfModel.yml",
+      "output": {
+        "resource": {
+          "relative_path": "api/BooklinkBE.Data.Models.CreateBookshelfModel.yml"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "api/BooklinkBE.Data.Models.CreateHouseholdRequest.yml",
+      "output": {
+        "resource": {
+          "relative_path": "api/BooklinkBE.Data.Models.CreateHouseholdRequest.yml"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "api/BooklinkBE.Data.Models.CreateRoomRequest.yml",
+      "output": {
+        "resource": {
+          "relative_path": "api/BooklinkBE.Data.Models.CreateRoomRequest.yml"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "api/BooklinkBE.Data.Models.EmailMessage.yml",
+      "output": {
+        "resource": {
+          "relative_path": "api/BooklinkBE.Data.Models.EmailMessage.yml"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "api/BooklinkBE.Data.Models.Household.yml",
+      "output": {
+        "resource": {
+          "relative_path": "api/BooklinkBE.Data.Models.Household.yml"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "api/BooklinkBE.Data.Models.RefreshToken.yml",
+      "output": {
+        "resource": {
+          "relative_path": "api/BooklinkBE.Data.Models.RefreshToken.yml"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "api/BooklinkBE.Data.Models.Room.yml",
+      "output": {
+        "resource": {
+          "relative_path": "api/BooklinkBE.Data.Models.Room.yml"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "api/BooklinkBE.Data.Models.UpdateBookRequest.yml",
+      "output": {
+        "resource": {
+          "relative_path": "api/BooklinkBE.Data.Models.UpdateBookRequest.yml"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "api/BooklinkBE.Data.Models.UpdateBookshelfModel.yml",
+      "output": {
+        "resource": {
+          "relative_path": "api/BooklinkBE.Data.Models.UpdateBookshelfModel.yml"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "api/BooklinkBE.Data.Models.UpdateHouseholdRequest.yml",
+      "output": {
+        "resource": {
+          "relative_path": "api/BooklinkBE.Data.Models.UpdateHouseholdRequest.yml"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "api/BooklinkBE.Data.Models.UpdateRoomRequest.yml",
+      "output": {
+        "resource": {
+          "relative_path": "api/BooklinkBE.Data.Models.UpdateRoomRequest.yml"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "api/BooklinkBE.Data.Models.User.yml",
+      "output": {
+        "resource": {
+          "relative_path": "api/BooklinkBE.Data.Models.User.yml"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "api/BooklinkBE.Data.Models.yml",
+      "output": {
+        "resource": {
+          "relative_path": "api/BooklinkBE.Data.Models.yml"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "api/BooklinkBE.Data.yml",
+      "output": {
+        "resource": {
+          "relative_path": "api/BooklinkBE.Data.yml"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        "resource": {
+          "relative_path": "api/toc.yml"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

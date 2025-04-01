@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: BooklinkBE.API.Utils
+  commentId: N:BooklinkBE.API.Utils
+  id: BooklinkBE.API.Utils
+  children:
+  - BooklinkBE.API.Utils.ClaimsPrincipalExtensions
+  langs:
+  - csharp
+  - vb
+  name: BooklinkBE.API.Utils
+  nameWithType: BooklinkBE.API.Utils
+  fullName: BooklinkBE.API.Utils
+  type: Namespace
+  assemblies:
+  - BooklinkBE.API
+references:
+- uid: BooklinkBE.API.Utils.ClaimsPrincipalExtensions
+  commentId: T:BooklinkBE.API.Utils.ClaimsPrincipalExtensions
+  href: BooklinkBE.API.Utils.ClaimsPrincipalExtensions.html
+  name: ClaimsPrincipalExtensions
+  nameWithType: ClaimsPrincipalExtensions
+  fullName: BooklinkBE.API.Utils.ClaimsPrincipalExtensions

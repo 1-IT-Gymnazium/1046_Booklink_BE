@@ -1,0 +1,93 @@
+### YamlMime:ManagedReference
+items:
+- uid: BooklinkBE.API.Entities
+  commentId: N:BooklinkBE.API.Entities
+  id: BooklinkBE.API.Entities
+  children:
+  - BooklinkBE.API.Entities.ForgotPassword
+  - BooklinkBE.API.Entities.LoggedUser
+  - BooklinkBE.API.Entities.Login
+  - BooklinkBE.API.Entities.Register
+  - BooklinkBE.API.Entities.ResetPasswordRequest
+  - BooklinkBE.API.Entities.Token
+  langs:
+  - csharp
+  - vb
+  name: BooklinkBE.API.Entities
+  nameWithType: BooklinkBE.API.Entities
+  fullName: BooklinkBE.API.Entities
+  type: Namespace
+  assemblies:
+  - BooklinkBE.API
+references:
+- uid: BooklinkBE.API.Entities.ForgotPassword
+  commentId: T:BooklinkBE.API.Entities.ForgotPassword
+  parent: BooklinkBE.API.Entities
+  href: BooklinkBE.API.Entities.ForgotPassword.html
+  name: ForgotPassword
+  nameWithType: ForgotPassword
+  fullName: BooklinkBE.API.Entities.ForgotPassword
+- uid: BooklinkBE.API.Entities.ResetPasswordRequest
+  commentId: T:BooklinkBE.API.Entities.ResetPasswordRequest
+  parent: BooklinkBE.API.Entities
+  href: BooklinkBE.API.Entities.ResetPasswordRequest.html
+  name: ResetPasswordRequest
+  nameWithType: ResetPasswordRequest
+  fullName: BooklinkBE.API.Entities.ResetPasswordRequest
+- uid: BooklinkBE.API.Entities.LoggedUser
+  commentId: T:BooklinkBE.API.Entities.LoggedUser
+  href: BooklinkBE.API.Entities.LoggedUser.html
+  name: LoggedUser
+  nameWithType: LoggedUser
+  fullName: BooklinkBE.API.Entities.LoggedUser
+- uid: BooklinkBE.API.Entities.Login
+  commentId: T:BooklinkBE.API.Entities.Login
+  parent: BooklinkBE.API.Entities
+  href: BooklinkBE.API.Entities.Login.html
+  name: Login
+  nameWithType: Login
+  fullName: BooklinkBE.API.Entities.Login
+- uid: BooklinkBE.API.Entities.Register
+  commentId: T:BooklinkBE.API.Entities.Register
+  parent: BooklinkBE.API.Entities
+  href: BooklinkBE.API.Entities.Register.html
+  name: Register
+  nameWithType: Register
+  fullName: BooklinkBE.API.Entities.Register
+- uid: BooklinkBE.API.Entities.Token
+  commentId: T:BooklinkBE.API.Entities.Token
+  parent: BooklinkBE.API.Entities
+  href: BooklinkBE.API.Entities.Token.html
+  name: Token
+  nameWithType: Token
+  fullName: BooklinkBE.API.Entities.Token
+- uid: BooklinkBE.API.Entities
+  commentId: N:BooklinkBE.API.Entities
+  href: BooklinkBE.html
+  name: BooklinkBE.API.Entities
+  nameWithType: BooklinkBE.API.Entities
+  fullName: BooklinkBE.API.Entities
+  spec.csharp:
+  - uid: BooklinkBE
+    name: BooklinkBE
+    href: BooklinkBE.html
+  - name: .
+  - uid: BooklinkBE.API
+    name: API
+    href: BooklinkBE.API.html
+  - name: .
+  - uid: BooklinkBE.API.Entities
+    name: Entities
+    href: BooklinkBE.API.Entities.html
+  spec.vb:
+  - uid: BooklinkBE
+    name: BooklinkBE
+    href: BooklinkBE.html
+  - name: .
+  - uid: BooklinkBE.API
+    name: API
+    href: BooklinkBE.API.html
+  - name: .
+  - uid: BooklinkBE.API.Entities
+    name: Entities
+    href: BooklinkBE.API.Entities.html

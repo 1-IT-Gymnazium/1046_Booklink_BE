@@ -1,0 +1,678 @@
+### YamlMime:ManagedReference
+items:
+- uid: BooklinkBE.Data.Models.Room
+  commentId: T:BooklinkBE.Data.Models.Room
+  id: Room
+  parent: BooklinkBE.Data.Models
+  children:
+  - BooklinkBE.Data.Models.Room.Bookshelves
+  - BooklinkBE.Data.Models.Room.Household
+  - BooklinkBE.Data.Models.Room.HouseholdId
+  - BooklinkBE.Data.Models.Room.Id
+  - BooklinkBE.Data.Models.Room.Name
+  - BooklinkBE.Data.Models.Room.UserId
+  langs:
+  - csharp
+  - vb
+  name: Room
+  nameWithType: Room
+  fullName: BooklinkBE.Data.Models.Room
+  type: Class
+  source:
+    remote:
+      path: BooklinkBE.Data/Models/Room.cs
+      branch: main
+      repo: https://github.com/1-IT-Gymnazium/1046_Booklink_BE.git
+    id: Room
+    path: ../../BooklinkBE.Data/Models/Room.cs
+    startLine: 5
+  assemblies:
+  - BooklinkBE.Data
+  namespace: BooklinkBE.Data.Models
+  syntax:
+    content: >-
+      [Table("Room")]
+
+      public class Room
+    content.vb: >-
+      <Table("Room")>
+
+      Public Class Room
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: System.ComponentModel.DataAnnotations.Schema.TableAttribute
+    ctor: System.ComponentModel.DataAnnotations.Schema.TableAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Room
+- uid: BooklinkBE.Data.Models.Room.Id
+  commentId: P:BooklinkBE.Data.Models.Room.Id
+  id: Id
+  parent: BooklinkBE.Data.Models.Room
+  langs:
+  - csharp
+  - vb
+  name: Id
+  nameWithType: Room.Id
+  fullName: BooklinkBE.Data.Models.Room.Id
+  type: Property
+  source:
+    remote:
+      path: BooklinkBE.Data/Models/Room.cs
+      branch: main
+      repo: https://github.com/1-IT-Gymnazium/1046_Booklink_BE.git
+    id: Id
+    path: ../../BooklinkBE.Data/Models/Room.cs
+    startLine: 8
+  assemblies:
+  - BooklinkBE.Data
+  namespace: BooklinkBE.Data.Models
+  syntax:
+    content: >-
+      [Key]
+
+      public Guid Id { get; set; }
+    parameters: []
+    return:
+      type: System.Guid
+    content.vb: >-
+      <Key>
+
+      Public Property Id As Guid
+  overload: BooklinkBE.Data.Models.Room.Id*
+  attributes:
+  - type: System.ComponentModel.DataAnnotations.KeyAttribute
+    ctor: System.ComponentModel.DataAnnotations.KeyAttribute.#ctor
+    arguments: []
+- uid: BooklinkBE.Data.Models.Room.UserId
+  commentId: P:BooklinkBE.Data.Models.Room.UserId
+  id: UserId
+  parent: BooklinkBE.Data.Models.Room
+  langs:
+  - csharp
+  - vb
+  name: UserId
+  nameWithType: Room.UserId
+  fullName: BooklinkBE.Data.Models.Room.UserId
+  type: Property
+  source:
+    remote:
+      path: BooklinkBE.Data/Models/Room.cs
+      branch: main
+      repo: https://github.com/1-IT-Gymnazium/1046_Booklink_BE.git
+    id: UserId
+    path: ../../BooklinkBE.Data/Models/Room.cs
+    startLine: 10
+  assemblies:
+  - BooklinkBE.Data
+  namespace: BooklinkBE.Data.Models
+  syntax:
+    content: public Guid UserId { get; set; }
+    parameters: []
+    return:
+      type: System.Guid
+    content.vb: Public Property UserId As Guid
+  overload: BooklinkBE.Data.Models.Room.UserId*
+- uid: BooklinkBE.Data.Models.Room.Name
+  commentId: P:BooklinkBE.Data.Models.Room.Name
+  id: Name
+  parent: BooklinkBE.Data.Models.Room
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: Room.Name
+  fullName: BooklinkBE.Data.Models.Room.Name
+  type: Property
+  source:
+    remote:
+      path: BooklinkBE.Data/Models/Room.cs
+      branch: main
+      repo: https://github.com/1-IT-Gymnazium/1046_Booklink_BE.git
+    id: Name
+    path: ../../BooklinkBE.Data/Models/Room.cs
+    startLine: 11
+  assemblies:
+  - BooklinkBE.Data
+  namespace: BooklinkBE.Data.Models
+  syntax:
+    content: public string Name { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Name As String
+  overload: BooklinkBE.Data.Models.Room.Name*
+- uid: BooklinkBE.Data.Models.Room.HouseholdId
+  commentId: P:BooklinkBE.Data.Models.Room.HouseholdId
+  id: HouseholdId
+  parent: BooklinkBE.Data.Models.Room
+  langs:
+  - csharp
+  - vb
+  name: HouseholdId
+  nameWithType: Room.HouseholdId
+  fullName: BooklinkBE.Data.Models.Room.HouseholdId
+  type: Property
+  source:
+    remote:
+      path: BooklinkBE.Data/Models/Room.cs
+      branch: main
+      repo: https://github.com/1-IT-Gymnazium/1046_Booklink_BE.git
+    id: HouseholdId
+    path: ../../BooklinkBE.Data/Models/Room.cs
+    startLine: 12
+  assemblies:
+  - BooklinkBE.Data
+  namespace: BooklinkBE.Data.Models
+  syntax:
+    content: public Guid HouseholdId { get; set; }
+    parameters: []
+    return:
+      type: System.Guid
+    content.vb: Public Property HouseholdId As Guid
+  overload: BooklinkBE.Data.Models.Room.HouseholdId*
+- uid: BooklinkBE.Data.Models.Room.Household
+  commentId: P:BooklinkBE.Data.Models.Room.Household
+  id: Household
+  parent: BooklinkBE.Data.Models.Room
+  langs:
+  - csharp
+  - vb
+  name: Household
+  nameWithType: Room.Household
+  fullName: BooklinkBE.Data.Models.Room.Household
+  type: Property
+  source:
+    remote:
+      path: BooklinkBE.Data/Models/Room.cs
+      branch: main
+      repo: https://github.com/1-IT-Gymnazium/1046_Booklink_BE.git
+    id: Household
+    path: ../../BooklinkBE.Data/Models/Room.cs
+    startLine: 13
+  assemblies:
+  - BooklinkBE.Data
+  namespace: BooklinkBE.Data.Models
+  syntax:
+    content: >-
+      [JsonIgnore]
+
+      public Household Household { get; set; }
+    parameters: []
+    return:
+      type: BooklinkBE.Data.Models.Household
+    content.vb: >-
+      <JsonIgnore>
+
+      Public Property Household As Household
+  overload: BooklinkBE.Data.Models.Room.Household*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
+    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
+    arguments: []
+- uid: BooklinkBE.Data.Models.Room.Bookshelves
+  commentId: P:BooklinkBE.Data.Models.Room.Bookshelves
+  id: Bookshelves
+  parent: BooklinkBE.Data.Models.Room
+  langs:
+  - csharp
+  - vb
+  name: Bookshelves
+  nameWithType: Room.Bookshelves
+  fullName: BooklinkBE.Data.Models.Room.Bookshelves
+  type: Property
+  source:
+    remote:
+      path: BooklinkBE.Data/Models/Room.cs
+      branch: main
+      repo: https://github.com/1-IT-Gymnazium/1046_Booklink_BE.git
+    id: Bookshelves
+    path: ../../BooklinkBE.Data/Models/Room.cs
+    startLine: 15
+  assemblies:
+  - BooklinkBE.Data
+  namespace: BooklinkBE.Data.Models
+  syntax:
+    content: public ICollection<Bookshelf>? Bookshelves { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.ICollection{BooklinkBE.Data.Models.Bookshelf}
+    content.vb: Public Property Bookshelves As ICollection(Of Bookshelf)
+  overload: BooklinkBE.Data.Models.Room.Bookshelves*
+references:
+- uid: BooklinkBE.Data.Models
+  commentId: N:BooklinkBE.Data.Models
+  href: BooklinkBE.html
+  name: BooklinkBE.Data.Models
+  nameWithType: BooklinkBE.Data.Models
+  fullName: BooklinkBE.Data.Models
+  spec.csharp:
+  - uid: BooklinkBE
+    name: BooklinkBE
+    href: BooklinkBE.html
+  - name: .
+  - uid: BooklinkBE.Data
+    name: Data
+    href: BooklinkBE.Data.html
+  - name: .
+  - uid: BooklinkBE.Data.Models
+    name: Models
+    href: BooklinkBE.Data.Models.html
+  spec.vb:
+  - uid: BooklinkBE
+    name: BooklinkBE
+    href: BooklinkBE.html
+  - name: .
+  - uid: BooklinkBE.Data
+    name: Data
+    href: BooklinkBE.Data.html
+  - name: .
+  - uid: BooklinkBE.Data.Models
+    name: Models
+    href: BooklinkBE.Data.Models.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: BooklinkBE.Data.Models.Room.Id*
+  commentId: Overload:BooklinkBE.Data.Models.Room.Id
+  href: BooklinkBE.Data.Models.Room.html#BooklinkBE_Data_Models_Room_Id
+  name: Id
+  nameWithType: Room.Id
+  fullName: BooklinkBE.Data.Models.Room.Id
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
+- uid: BooklinkBE.Data.Models.Room.UserId*
+  commentId: Overload:BooklinkBE.Data.Models.Room.UserId
+  href: BooklinkBE.Data.Models.Room.html#BooklinkBE_Data_Models_Room_UserId
+  name: UserId
+  nameWithType: Room.UserId
+  fullName: BooklinkBE.Data.Models.Room.UserId
+- uid: BooklinkBE.Data.Models.Room.Name*
+  commentId: Overload:BooklinkBE.Data.Models.Room.Name
+  href: BooklinkBE.Data.Models.Room.html#BooklinkBE_Data_Models_Room_Name
+  name: Name
+  nameWithType: Room.Name
+  fullName: BooklinkBE.Data.Models.Room.Name
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: BooklinkBE.Data.Models.Room.HouseholdId*
+  commentId: Overload:BooklinkBE.Data.Models.Room.HouseholdId
+  href: BooklinkBE.Data.Models.Room.html#BooklinkBE_Data_Models_Room_HouseholdId
+  name: HouseholdId
+  nameWithType: Room.HouseholdId
+  fullName: BooklinkBE.Data.Models.Room.HouseholdId
+- uid: BooklinkBE.Data.Models.Room.Household*
+  commentId: Overload:BooklinkBE.Data.Models.Room.Household
+  href: BooklinkBE.Data.Models.Room.html#BooklinkBE_Data_Models_Room_Household
+  name: Household
+  nameWithType: Room.Household
+  fullName: BooklinkBE.Data.Models.Room.Household
+- uid: BooklinkBE.Data.Models.Household
+  commentId: T:BooklinkBE.Data.Models.Household
+  parent: BooklinkBE.Data.Models
+  href: BooklinkBE.Data.Models.Household.html
+  name: Household
+  nameWithType: Household
+  fullName: BooklinkBE.Data.Models.Household
+- uid: BooklinkBE.Data.Models.Room.Bookshelves*
+  commentId: Overload:BooklinkBE.Data.Models.Room.Bookshelves
+  href: BooklinkBE.Data.Models.Room.html#BooklinkBE_Data_Models_Room_Bookshelves
+  name: Bookshelves
+  nameWithType: Room.Bookshelves
+  fullName: BooklinkBE.Data.Models.Room.Bookshelves
+- uid: System.Collections.Generic.ICollection{BooklinkBE.Data.Models.Bookshelf}
+  commentId: T:System.Collections.Generic.ICollection{BooklinkBE.Data.Models.Bookshelf}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.ICollection`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  name: ICollection<Bookshelf>
+  nameWithType: ICollection<Bookshelf>
+  fullName: System.Collections.Generic.ICollection<BooklinkBE.Data.Models.Bookshelf>
+  nameWithType.vb: ICollection(Of Bookshelf)
+  fullName.vb: System.Collections.Generic.ICollection(Of BooklinkBE.Data.Models.Bookshelf)
+  name.vb: ICollection(Of Bookshelf)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  - name: <
+  - uid: BooklinkBE.Data.Models.Bookshelf
+    name: Bookshelf
+    href: BooklinkBE.Data.Models.Bookshelf.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: BooklinkBE.Data.Models.Bookshelf
+    name: Bookshelf
+    href: BooklinkBE.Data.Models.Bookshelf.html
+  - name: )
+- uid: System.Collections.Generic.ICollection`1
+  commentId: T:System.Collections.Generic.ICollection`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  name: ICollection<T>
+  nameWithType: ICollection<T>
+  fullName: System.Collections.Generic.ICollection<T>
+  nameWithType.vb: ICollection(Of T)
+  fullName.vb: System.Collections.Generic.ICollection(Of T)
+  name.vb: ICollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic

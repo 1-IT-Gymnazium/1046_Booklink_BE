@@ -1,0 +1,163 @@
+### YamlMime:ManagedReference
+items:
+- uid: BooklinkBE.Data.Models
+  commentId: N:BooklinkBE.Data.Models
+  id: BooklinkBE.Data.Models
+  children:
+  - BooklinkBE.Data.Models.Book
+  - BooklinkBE.Data.Models.Bookshelf
+  - BooklinkBE.Data.Models.CreateBookRequest
+  - BooklinkBE.Data.Models.CreateBookshelfModel
+  - BooklinkBE.Data.Models.CreateHouseholdRequest
+  - BooklinkBE.Data.Models.CreateRoomRequest
+  - BooklinkBE.Data.Models.EmailMessage
+  - BooklinkBE.Data.Models.Household
+  - BooklinkBE.Data.Models.RefreshToken
+  - BooklinkBE.Data.Models.Room
+  - BooklinkBE.Data.Models.UpdateBookRequest
+  - BooklinkBE.Data.Models.UpdateBookshelfModel
+  - BooklinkBE.Data.Models.UpdateHouseholdRequest
+  - BooklinkBE.Data.Models.UpdateRoomRequest
+  - BooklinkBE.Data.Models.User
+  langs:
+  - csharp
+  - vb
+  name: BooklinkBE.Data.Models
+  nameWithType: BooklinkBE.Data.Models
+  fullName: BooklinkBE.Data.Models
+  type: Namespace
+  assemblies:
+  - BooklinkBE.Data
+references:
+- uid: BooklinkBE.Data.Models.Book
+  commentId: T:BooklinkBE.Data.Models.Book
+  href: BooklinkBE.Data.Models.Book.html
+  name: Book
+  nameWithType: Book
+  fullName: BooklinkBE.Data.Models.Book
+- uid: BooklinkBE.Data.Models.CreateBookRequest
+  commentId: T:BooklinkBE.Data.Models.CreateBookRequest
+  parent: BooklinkBE.Data.Models
+  href: BooklinkBE.Data.Models.CreateBookRequest.html
+  name: CreateBookRequest
+  nameWithType: CreateBookRequest
+  fullName: BooklinkBE.Data.Models.CreateBookRequest
+- uid: BooklinkBE.Data.Models.UpdateBookRequest
+  commentId: T:BooklinkBE.Data.Models.UpdateBookRequest
+  parent: BooklinkBE.Data.Models
+  href: BooklinkBE.Data.Models.UpdateBookRequest.html
+  name: UpdateBookRequest
+  nameWithType: UpdateBookRequest
+  fullName: BooklinkBE.Data.Models.UpdateBookRequest
+- uid: BooklinkBE.Data.Models.Bookshelf
+  commentId: T:BooklinkBE.Data.Models.Bookshelf
+  parent: BooklinkBE.Data.Models
+  href: BooklinkBE.Data.Models.Bookshelf.html
+  name: Bookshelf
+  nameWithType: Bookshelf
+  fullName: BooklinkBE.Data.Models.Bookshelf
+- uid: BooklinkBE.Data.Models.CreateBookshelfModel
+  commentId: T:BooklinkBE.Data.Models.CreateBookshelfModel
+  parent: BooklinkBE.Data.Models
+  href: BooklinkBE.Data.Models.CreateBookshelfModel.html
+  name: CreateBookshelfModel
+  nameWithType: CreateBookshelfModel
+  fullName: BooklinkBE.Data.Models.CreateBookshelfModel
+- uid: BooklinkBE.Data.Models.UpdateBookshelfModel
+  commentId: T:BooklinkBE.Data.Models.UpdateBookshelfModel
+  parent: BooklinkBE.Data.Models
+  href: BooklinkBE.Data.Models.UpdateBookshelfModel.html
+  name: UpdateBookshelfModel
+  nameWithType: UpdateBookshelfModel
+  fullName: BooklinkBE.Data.Models.UpdateBookshelfModel
+- uid: BooklinkBE.Data.Models.EmailMessage
+  commentId: T:BooklinkBE.Data.Models.EmailMessage
+  href: BooklinkBE.Data.Models.EmailMessage.html
+  name: EmailMessage
+  nameWithType: EmailMessage
+  fullName: BooklinkBE.Data.Models.EmailMessage
+- uid: BooklinkBE.Data.Models.Household
+  commentId: T:BooklinkBE.Data.Models.Household
+  parent: BooklinkBE.Data.Models
+  href: BooklinkBE.Data.Models.Household.html
+  name: Household
+  nameWithType: Household
+  fullName: BooklinkBE.Data.Models.Household
+- uid: BooklinkBE.Data.Models.CreateHouseholdRequest
+  commentId: T:BooklinkBE.Data.Models.CreateHouseholdRequest
+  parent: BooklinkBE.Data.Models
+  href: BooklinkBE.Data.Models.CreateHouseholdRequest.html
+  name: CreateHouseholdRequest
+  nameWithType: CreateHouseholdRequest
+  fullName: BooklinkBE.Data.Models.CreateHouseholdRequest
+- uid: BooklinkBE.Data.Models.UpdateHouseholdRequest
+  commentId: T:BooklinkBE.Data.Models.UpdateHouseholdRequest
+  parent: BooklinkBE.Data.Models
+  href: BooklinkBE.Data.Models.UpdateHouseholdRequest.html
+  name: UpdateHouseholdRequest
+  nameWithType: UpdateHouseholdRequest
+  fullName: BooklinkBE.Data.Models.UpdateHouseholdRequest
+- uid: BooklinkBE.Data.Models.RefreshToken
+  commentId: T:BooklinkBE.Data.Models.RefreshToken
+  href: BooklinkBE.Data.Models.RefreshToken.html
+  name: RefreshToken
+  nameWithType: RefreshToken
+  fullName: BooklinkBE.Data.Models.RefreshToken
+- uid: BooklinkBE.Data.Models.Room
+  commentId: T:BooklinkBE.Data.Models.Room
+  parent: BooklinkBE.Data.Models
+  href: BooklinkBE.Data.Models.Room.html
+  name: Room
+  nameWithType: Room
+  fullName: BooklinkBE.Data.Models.Room
+- uid: BooklinkBE.Data.Models.CreateRoomRequest
+  commentId: T:BooklinkBE.Data.Models.CreateRoomRequest
+  parent: BooklinkBE.Data.Models
+  href: BooklinkBE.Data.Models.CreateRoomRequest.html
+  name: CreateRoomRequest
+  nameWithType: CreateRoomRequest
+  fullName: BooklinkBE.Data.Models.CreateRoomRequest
+- uid: BooklinkBE.Data.Models.UpdateRoomRequest
+  commentId: T:BooklinkBE.Data.Models.UpdateRoomRequest
+  parent: BooklinkBE.Data.Models
+  href: BooklinkBE.Data.Models.UpdateRoomRequest.html
+  name: UpdateRoomRequest
+  nameWithType: UpdateRoomRequest
+  fullName: BooklinkBE.Data.Models.UpdateRoomRequest
+- uid: BooklinkBE.Data.Models.User
+  commentId: T:BooklinkBE.Data.Models.User
+  parent: BooklinkBE.Data.Models
+  href: BooklinkBE.Data.Models.User.html
+  name: User
+  nameWithType: User
+  fullName: BooklinkBE.Data.Models.User
+- uid: BooklinkBE.Data.Models
+  commentId: N:BooklinkBE.Data.Models
+  href: BooklinkBE.html
+  name: BooklinkBE.Data.Models
+  nameWithType: BooklinkBE.Data.Models
+  fullName: BooklinkBE.Data.Models
+  spec.csharp:
+  - uid: BooklinkBE
+    name: BooklinkBE
+    href: BooklinkBE.html
+  - name: .
+  - uid: BooklinkBE.Data
+    name: Data
+    href: BooklinkBE.Data.html
+  - name: .
+  - uid: BooklinkBE.Data.Models
+    name: Models
+    href: BooklinkBE.Data.Models.html
+  spec.vb:
+  - uid: BooklinkBE
+    name: BooklinkBE
+    href: BooklinkBE.html
+  - name: .
+  - uid: BooklinkBE.Data
+    name: Data
+    href: BooklinkBE.Data.html
+  - name: .
+  - uid: BooklinkBE.Data.Models
+    name: Models
+    href: BooklinkBE.Data.Models.html

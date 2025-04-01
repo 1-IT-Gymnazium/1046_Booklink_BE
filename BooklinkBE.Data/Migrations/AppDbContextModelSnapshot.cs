@@ -22,7 +22,7 @@ namespace BooklinkBE.Data.Migrations
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
 
-            modelBuilder.Entity("BooklinkBE.Data.Entities.Book", b =>
+            modelBuilder.Entity("BooklinkBE.Data.Models.Book", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
@@ -30,28 +30,43 @@ namespace BooklinkBE.Data.Migrations
 
                     b.Property<string>("Author")
                         .IsRequired()
-                        .HasColumnType("text");
+                        .HasMaxLength(100)
+                        .HasColumnType("character varying(100)");
 
                     b.Property<Guid>("BookshelfId")
                         .HasColumnType("uuid");
 
+                    b.Property<int>("ColumnsFromLeft")
+                        .HasColumnType("integer");
+
                     b.Property<string>("Genre")
                         .IsRequired()
-                        .HasColumnType("text");
+                        .HasMaxLength(50)
+                        .HasColumnType("character varying(50)");
 
-                    b.Property<string>("ISBN")
-                        .IsRequired()
-                        .HasColumnType("text");
+                    b.Property<Guid>("HouseholdId")
+                        .HasColumnType("uuid");
+
+                    b.Property<bool>("IsInReadingList")
+                        .HasColumnType("boolean");
+
+                    b.Property<string>("Isbn")
+                        .HasMaxLength(17)
+                        .HasColumnType("character varying(17)");
 
                     b.Property<int>("PublicationYear")
                         .HasColumnType("integer");
 
-                    b.Property<Guid?>("RealEstateId")
+                    b.Property<Guid>("RoomId")
                         .HasColumnType("uuid");
+
+                    b.Property<int>("RowsFromTop")
+                        .HasColumnType("integer");
 
                     b.Property<string>("Title")
                         .IsRequired()
-                        .HasColumnType("text");
+                        .HasMaxLength(100)
+                        .HasColumnType("character varying(100)");
 
                     b.Property<Guid>("UserId")
                         .HasColumnType("uuid");
@@ -60,14 +75,14 @@ namespace BooklinkBE.Data.Migrations
 
                     b.HasIndex("BookshelfId");
 
-                    b.HasIndex("RealEstateId");
+                    b.HasIndex("HouseholdId");
 
                     b.HasIndex("UserId");
 
                     b.ToTable("Book");
                 });
 
-            modelBuilder.Entity("BooklinkBE.Data.Entities.Bookshelf", b =>
+            modelBuilder.Entity("BooklinkBE.Data.Models.Bookshelf", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
@@ -90,6 +105,9 @@ namespace BooklinkBE.Data.Migrations
                     b.Property<Guid>("RoomId")
                         .HasColumnType("uuid");
 
+                    b.Property<Guid>("UserId")
+                        .HasColumnType("uuid");
+
                     b.HasKey("Id");
 
                     b.HasIndex("RoomId");
@@ -97,7 +115,7 @@ namespace BooklinkBE.Data.Migrations
                     b.ToTable("Bookshelf");
                 });
 
-            modelBuilder.Entity("BooklinkBE.Data.Entities.EmailMessage", b =>
+            modelBuilder.Entity("BooklinkBE.Data.Models.EmailMessage", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
@@ -137,7 +155,7 @@ namespace BooklinkBE.Data.Migrations
                     b.ToTable("EmailMessage");
                 });
 
-            modelBuilder.Entity("BooklinkBE.Data.Entities.RealEstate", b =>
+            modelBuilder.Entity("BooklinkBE.Data.Models.Household", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
@@ -154,10 +172,10 @@ namespace BooklinkBE.Data.Migrations
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("RealEstate");
+                    b.ToTable("Household");
                 });
 
-            modelBuilder.Entity("BooklinkBE.Data.Entities.RefreshToken", b =>
+            modelBuilder.Entity("BooklinkBE.Data.Models.RefreshToken", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
@@ -187,27 +205,30 @@ namespace BooklinkBE.Data.Migrations
                     b.ToTable("RefreshToken");
                 });
 
-            modelBuilder.Entity("BooklinkBE.Data.Entities.Room", b =>
+            modelBuilder.Entity("BooklinkBE.Data.Models.Room", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
+                        .HasColumnType("uuid");
+
+                    b.Property<Guid>("HouseholdId")
                         .HasColumnType("uuid");
 
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.Property<Guid>("RealEstateId")
+                    b.Property<Guid>("UserId")
                         .HasColumnType("uuid");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("RealEstateId");
+                    b.HasIndex("HouseholdId");
 
                     b.ToTable("Room");
                 });
 
-            modelBuilder.Entity("BooklinkBE.Data.Entities.User", b =>
+            modelBuilder.Entity("BooklinkBE.Data.Models.User", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
@@ -269,30 +290,34 @@ namespace BooklinkBE.Data.Migrations
                     b.ToTable("User");
                 });
 
-            modelBuilder.Entity("BooklinkBE.Data.Entities.Book", b =>
+            modelBuilder.Entity("BooklinkBE.Data.Models.Book", b =>
                 {
-                    b.HasOne("BooklinkBE.Data.Entities.Bookshelf", "Bookshelf")
+                    b.HasOne("BooklinkBE.Data.Models.Bookshelf", "Bookshelf")
                         .WithMany("Books")
                         .HasForeignKey("BookshelfId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("BooklinkBE.Data.Entities.RealEstate", null)
+                    b.HasOne("BooklinkBE.Data.Models.Household", null)
                         .WithMany("Books")
-                        .HasForeignKey("RealEstateId");
+                        .HasForeignKey("HouseholdId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
-                    b.HasOne("BooklinkBE.Data.Entities.User", null)
+                    b.HasOne("BooklinkBE.Data.Models.User", "User")
                         .WithMany("Books")
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.Navigation("Bookshelf");
+
+                    b.Navigation("User");
                 });
 
-            modelBuilder.Entity("BooklinkBE.Data.Entities.Bookshelf", b =>
+            modelBuilder.Entity("BooklinkBE.Data.Models.Bookshelf", b =>
                 {
-                    b.HasOne("BooklinkBE.Data.Entities.Room", "Room")
+                    b.HasOne("BooklinkBE.Data.Models.Room", "Room")
                         .WithMany("Bookshelves")
                         .HasForeignKey("RoomId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -301,10 +326,10 @@ namespace BooklinkBE.Data.Migrations
                     b.Navigation("Room");
                 });
 
-            modelBuilder.Entity("BooklinkBE.Data.Entities.RealEstate", b =>
+            modelBuilder.Entity("BooklinkBE.Data.Models.Household", b =>
                 {
-                    b.HasOne("BooklinkBE.Data.Entities.User", "User")
-                        .WithMany("RealEstates")
+                    b.HasOne("BooklinkBE.Data.Models.User", "User")
+                        .WithMany("Households")
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -312,39 +337,39 @@ namespace BooklinkBE.Data.Migrations
                     b.Navigation("User");
                 });
 
-            modelBuilder.Entity("BooklinkBE.Data.Entities.Room", b =>
+            modelBuilder.Entity("BooklinkBE.Data.Models.Room", b =>
                 {
-                    b.HasOne("BooklinkBE.Data.Entities.RealEstate", "RealEstate")
+                    b.HasOne("BooklinkBE.Data.Models.Household", "Household")
                         .WithMany("Rooms")
-                        .HasForeignKey("RealEstateId")
+                        .HasForeignKey("HouseholdId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("RealEstate");
+                    b.Navigation("Household");
                 });
 
-            modelBuilder.Entity("BooklinkBE.Data.Entities.Bookshelf", b =>
+            modelBuilder.Entity("BooklinkBE.Data.Models.Bookshelf", b =>
                 {
                     b.Navigation("Books");
                 });
 
-            modelBuilder.Entity("BooklinkBE.Data.Entities.RealEstate", b =>
+            modelBuilder.Entity("BooklinkBE.Data.Models.Household", b =>
                 {
                     b.Navigation("Books");
 
                     b.Navigation("Rooms");
                 });
 
-            modelBuilder.Entity("BooklinkBE.Data.Entities.Room", b =>
+            modelBuilder.Entity("BooklinkBE.Data.Models.Room", b =>
                 {
                     b.Navigation("Bookshelves");
                 });
 
-            modelBuilder.Entity("BooklinkBE.Data.Entities.User", b =>
+            modelBuilder.Entity("BooklinkBE.Data.Models.User", b =>
                 {
                     b.Navigation("Books");
 
-                    b.Navigation("RealEstates");
+                    b.Navigation("Households");
                 });
 #pragma warning restore 612, 618
         }

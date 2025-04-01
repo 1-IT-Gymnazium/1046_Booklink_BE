@@ -1,0 +1,1036 @@
+### YamlMime:ManagedReference
+items:
+- uid: BooklinkBE.Data.Models.Book
+  commentId: T:BooklinkBE.Data.Models.Book
+  id: Book
+  parent: BooklinkBE.Data.Models
+  children:
+  - BooklinkBE.Data.Models.Book.Author
+  - BooklinkBE.Data.Models.Book.Bookshelf
+  - BooklinkBE.Data.Models.Book.BookshelfId
+  - BooklinkBE.Data.Models.Book.ColumnsFromLeft
+  - BooklinkBE.Data.Models.Book.Genre
+  - BooklinkBE.Data.Models.Book.HouseholdId
+  - BooklinkBE.Data.Models.Book.Id
+  - BooklinkBE.Data.Models.Book.IsInReadingList
+  - BooklinkBE.Data.Models.Book.Isbn
+  - BooklinkBE.Data.Models.Book.PublicationYear
+  - BooklinkBE.Data.Models.Book.RoomId
+  - BooklinkBE.Data.Models.Book.RowsFromTop
+  - BooklinkBE.Data.Models.Book.Title
+  - BooklinkBE.Data.Models.Book.User
+  - BooklinkBE.Data.Models.Book.UserId
+  langs:
+  - csharp
+  - vb
+  name: Book
+  nameWithType: Book
+  fullName: BooklinkBE.Data.Models.Book
+  type: Class
+  source:
+    remote:
+      path: BooklinkBE.Data/Models/Book.cs
+      branch: main
+      repo: https://github.com/1-IT-Gymnazium/1046_Booklink_BE.git
+    id: Book
+    path: ../../BooklinkBE.Data/Models/Book.cs
+    startLine: 5
+  assemblies:
+  - BooklinkBE.Data
+  namespace: BooklinkBE.Data.Models
+  syntax:
+    content: >-
+      [Table("Book")]
+
+      public class Book
+    content.vb: >-
+      <Table("Book")>
+
+      Public Class Book
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: System.ComponentModel.DataAnnotations.Schema.TableAttribute
+    ctor: System.ComponentModel.DataAnnotations.Schema.TableAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Book
+- uid: BooklinkBE.Data.Models.Book.Id
+  commentId: P:BooklinkBE.Data.Models.Book.Id
+  id: Id
+  parent: BooklinkBE.Data.Models.Book
+  langs:
+  - csharp
+  - vb
+  name: Id
+  nameWithType: Book.Id
+  fullName: BooklinkBE.Data.Models.Book.Id
+  type: Property
+  source:
+    remote:
+      path: BooklinkBE.Data/Models/Book.cs
+      branch: main
+      repo: https://github.com/1-IT-Gymnazium/1046_Booklink_BE.git
+    id: Id
+    path: ../../BooklinkBE.Data/Models/Book.cs
+    startLine: 8
+  assemblies:
+  - BooklinkBE.Data
+  namespace: BooklinkBE.Data.Models
+  syntax:
+    content: >-
+      [Key]
+
+      public Guid Id { get; set; }
+    parameters: []
+    return:
+      type: System.Guid
+    content.vb: >-
+      <Key>
+
+      Public Property Id As Guid
+  overload: BooklinkBE.Data.Models.Book.Id*
+  attributes:
+  - type: System.ComponentModel.DataAnnotations.KeyAttribute
+    ctor: System.ComponentModel.DataAnnotations.KeyAttribute.#ctor
+    arguments: []
+- uid: BooklinkBE.Data.Models.Book.UserId
+  commentId: P:BooklinkBE.Data.Models.Book.UserId
+  id: UserId
+  parent: BooklinkBE.Data.Models.Book
+  langs:
+  - csharp
+  - vb
+  name: UserId
+  nameWithType: Book.UserId
+  fullName: BooklinkBE.Data.Models.Book.UserId
+  type: Property
+  source:
+    remote:
+      path: BooklinkBE.Data/Models/Book.cs
+      branch: main
+      repo: https://github.com/1-IT-Gymnazium/1046_Booklink_BE.git
+    id: UserId
+    path: ../../BooklinkBE.Data/Models/Book.cs
+    startLine: 11
+  assemblies:
+  - BooklinkBE.Data
+  namespace: BooklinkBE.Data.Models
+  syntax:
+    content: >-
+      [Required]
+
+      public Guid UserId { get; set; }
+    parameters: []
+    return:
+      type: System.Guid
+    content.vb: >-
+      <Required>
+
+      Public Property UserId As Guid
+  overload: BooklinkBE.Data.Models.Book.UserId*
+  attributes:
+  - type: System.ComponentModel.DataAnnotations.RequiredAttribute
+    ctor: System.ComponentModel.DataAnnotations.RequiredAttribute.#ctor
+    arguments: []
+- uid: BooklinkBE.Data.Models.Book.User
+  commentId: P:BooklinkBE.Data.Models.Book.User
+  id: User
+  parent: BooklinkBE.Data.Models.Book
+  langs:
+  - csharp
+  - vb
+  name: User
+  nameWithType: Book.User
+  fullName: BooklinkBE.Data.Models.Book.User
+  type: Property
+  source:
+    remote:
+      path: BooklinkBE.Data/Models/Book.cs
+      branch: main
+      repo: https://github.com/1-IT-Gymnazium/1046_Booklink_BE.git
+    id: User
+    path: ../../BooklinkBE.Data/Models/Book.cs
+    startLine: 14
+  assemblies:
+  - BooklinkBE.Data
+  namespace: BooklinkBE.Data.Models
+  syntax:
+    content: >-
+      [ForeignKey("UserId")]
+
+      public User User { get; set; }
+    parameters: []
+    return:
+      type: BooklinkBE.Data.Models.User
+    content.vb: >-
+      <ForeignKey("UserId")>
+
+      Public Property User As User
+  overload: BooklinkBE.Data.Models.Book.User*
+  attributes:
+  - type: System.ComponentModel.DataAnnotations.Schema.ForeignKeyAttribute
+    ctor: System.ComponentModel.DataAnnotations.Schema.ForeignKeyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: UserId
+- uid: BooklinkBE.Data.Models.Book.Title
+  commentId: P:BooklinkBE.Data.Models.Book.Title
+  id: Title
+  parent: BooklinkBE.Data.Models.Book
+  langs:
+  - csharp
+  - vb
+  name: Title
+  nameWithType: Book.Title
+  fullName: BooklinkBE.Data.Models.Book.Title
+  type: Property
+  source:
+    remote:
+      path: BooklinkBE.Data/Models/Book.cs
+      branch: main
+      repo: https://github.com/1-IT-Gymnazium/1046_Booklink_BE.git
+    id: Title
+    path: ../../BooklinkBE.Data/Models/Book.cs
+    startLine: 17
+  assemblies:
+  - BooklinkBE.Data
+  namespace: BooklinkBE.Data.Models
+  syntax:
+    content: >-
+      [Required]
+
+      [MaxLength(100)]
+
+      public string Title { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <Required>
+
+      <MaxLength(100)>
+
+      Public Property Title As String
+  overload: BooklinkBE.Data.Models.Book.Title*
+  attributes:
+  - type: System.ComponentModel.DataAnnotations.RequiredAttribute
+    ctor: System.ComponentModel.DataAnnotations.RequiredAttribute.#ctor
+    arguments: []
+  - type: System.ComponentModel.DataAnnotations.MaxLengthAttribute
+    ctor: System.ComponentModel.DataAnnotations.MaxLengthAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 100
+- uid: BooklinkBE.Data.Models.Book.Author
+  commentId: P:BooklinkBE.Data.Models.Book.Author
+  id: Author
+  parent: BooklinkBE.Data.Models.Book
+  langs:
+  - csharp
+  - vb
+  name: Author
+  nameWithType: Book.Author
+  fullName: BooklinkBE.Data.Models.Book.Author
+  type: Property
+  source:
+    remote:
+      path: BooklinkBE.Data/Models/Book.cs
+      branch: main
+      repo: https://github.com/1-IT-Gymnazium/1046_Booklink_BE.git
+    id: Author
+    path: ../../BooklinkBE.Data/Models/Book.cs
+    startLine: 21
+  assemblies:
+  - BooklinkBE.Data
+  namespace: BooklinkBE.Data.Models
+  syntax:
+    content: >-
+      [Required]
+
+      [MaxLength(100)]
+
+      public string Author { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <Required>
+
+      <MaxLength(100)>
+
+      Public Property Author As String
+  overload: BooklinkBE.Data.Models.Book.Author*
+  attributes:
+  - type: System.ComponentModel.DataAnnotations.RequiredAttribute
+    ctor: System.ComponentModel.DataAnnotations.RequiredAttribute.#ctor
+    arguments: []
+  - type: System.ComponentModel.DataAnnotations.MaxLengthAttribute
+    ctor: System.ComponentModel.DataAnnotations.MaxLengthAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 100
+- uid: BooklinkBE.Data.Models.Book.Genre
+  commentId: P:BooklinkBE.Data.Models.Book.Genre
+  id: Genre
+  parent: BooklinkBE.Data.Models.Book
+  langs:
+  - csharp
+  - vb
+  name: Genre
+  nameWithType: Book.Genre
+  fullName: BooklinkBE.Data.Models.Book.Genre
+  type: Property
+  source:
+    remote:
+      path: BooklinkBE.Data/Models/Book.cs
+      branch: main
+      repo: https://github.com/1-IT-Gymnazium/1046_Booklink_BE.git
+    id: Genre
+    path: ../../BooklinkBE.Data/Models/Book.cs
+    startLine: 25
+  assemblies:
+  - BooklinkBE.Data
+  namespace: BooklinkBE.Data.Models
+  syntax:
+    content: >-
+      [Required]
+
+      [MaxLength(50)]
+
+      public string Genre { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <Required>
+
+      <MaxLength(50)>
+
+      Public Property Genre As String
+  overload: BooklinkBE.Data.Models.Book.Genre*
+  attributes:
+  - type: System.ComponentModel.DataAnnotations.RequiredAttribute
+    ctor: System.ComponentModel.DataAnnotations.RequiredAttribute.#ctor
+    arguments: []
+  - type: System.ComponentModel.DataAnnotations.MaxLengthAttribute
+    ctor: System.ComponentModel.DataAnnotations.MaxLengthAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 50
+- uid: BooklinkBE.Data.Models.Book.Isbn
+  commentId: P:BooklinkBE.Data.Models.Book.Isbn
+  id: Isbn
+  parent: BooklinkBE.Data.Models.Book
+  langs:
+  - csharp
+  - vb
+  name: Isbn
+  nameWithType: Book.Isbn
+  fullName: BooklinkBE.Data.Models.Book.Isbn
+  type: Property
+  source:
+    remote:
+      path: BooklinkBE.Data/Models/Book.cs
+      branch: main
+      repo: https://github.com/1-IT-Gymnazium/1046_Booklink_BE.git
+    id: Isbn
+    path: ../../BooklinkBE.Data/Models/Book.cs
+    startLine: 29
+  assemblies:
+  - BooklinkBE.Data
+  namespace: BooklinkBE.Data.Models
+  syntax:
+    content: >-
+      [MaxLength(17)]
+
+      public string? Isbn { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <MaxLength(17)>
+
+      Public Property Isbn As String
+  overload: BooklinkBE.Data.Models.Book.Isbn*
+  attributes:
+  - type: System.ComponentModel.DataAnnotations.MaxLengthAttribute
+    ctor: System.ComponentModel.DataAnnotations.MaxLengthAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 17
+- uid: BooklinkBE.Data.Models.Book.PublicationYear
+  commentId: P:BooklinkBE.Data.Models.Book.PublicationYear
+  id: PublicationYear
+  parent: BooklinkBE.Data.Models.Book
+  langs:
+  - csharp
+  - vb
+  name: PublicationYear
+  nameWithType: Book.PublicationYear
+  fullName: BooklinkBE.Data.Models.Book.PublicationYear
+  type: Property
+  source:
+    remote:
+      path: BooklinkBE.Data/Models/Book.cs
+      branch: main
+      repo: https://github.com/1-IT-Gymnazium/1046_Booklink_BE.git
+    id: PublicationYear
+    path: ../../BooklinkBE.Data/Models/Book.cs
+    startLine: 31
+  assemblies:
+  - BooklinkBE.Data
+  namespace: BooklinkBE.Data.Models
+  syntax:
+    content: public int PublicationYear { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property PublicationYear As Integer
+  overload: BooklinkBE.Data.Models.Book.PublicationYear*
+- uid: BooklinkBE.Data.Models.Book.IsInReadingList
+  commentId: P:BooklinkBE.Data.Models.Book.IsInReadingList
+  id: IsInReadingList
+  parent: BooklinkBE.Data.Models.Book
+  langs:
+  - csharp
+  - vb
+  name: IsInReadingList
+  nameWithType: Book.IsInReadingList
+  fullName: BooklinkBE.Data.Models.Book.IsInReadingList
+  type: Property
+  source:
+    remote:
+      path: BooklinkBE.Data/Models/Book.cs
+      branch: main
+      repo: https://github.com/1-IT-Gymnazium/1046_Booklink_BE.git
+    id: IsInReadingList
+    path: ../../BooklinkBE.Data/Models/Book.cs
+    startLine: 33
+  assemblies:
+  - BooklinkBE.Data
+  namespace: BooklinkBE.Data.Models
+  syntax:
+    content: public bool IsInReadingList { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsInReadingList As Boolean
+  overload: BooklinkBE.Data.Models.Book.IsInReadingList*
+- uid: BooklinkBE.Data.Models.Book.ColumnsFromLeft
+  commentId: P:BooklinkBE.Data.Models.Book.ColumnsFromLeft
+  id: ColumnsFromLeft
+  parent: BooklinkBE.Data.Models.Book
+  langs:
+  - csharp
+  - vb
+  name: ColumnsFromLeft
+  nameWithType: Book.ColumnsFromLeft
+  fullName: BooklinkBE.Data.Models.Book.ColumnsFromLeft
+  type: Property
+  source:
+    remote:
+      path: BooklinkBE.Data/Models/Book.cs
+      branch: main
+      repo: https://github.com/1-IT-Gymnazium/1046_Booklink_BE.git
+    id: ColumnsFromLeft
+    path: ../../BooklinkBE.Data/Models/Book.cs
+    startLine: 34
+  assemblies:
+  - BooklinkBE.Data
+  namespace: BooklinkBE.Data.Models
+  syntax:
+    content: public int ColumnsFromLeft { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property ColumnsFromLeft As Integer
+  overload: BooklinkBE.Data.Models.Book.ColumnsFromLeft*
+- uid: BooklinkBE.Data.Models.Book.RowsFromTop
+  commentId: P:BooklinkBE.Data.Models.Book.RowsFromTop
+  id: RowsFromTop
+  parent: BooklinkBE.Data.Models.Book
+  langs:
+  - csharp
+  - vb
+  name: RowsFromTop
+  nameWithType: Book.RowsFromTop
+  fullName: BooklinkBE.Data.Models.Book.RowsFromTop
+  type: Property
+  source:
+    remote:
+      path: BooklinkBE.Data/Models/Book.cs
+      branch: main
+      repo: https://github.com/1-IT-Gymnazium/1046_Booklink_BE.git
+    id: RowsFromTop
+    path: ../../BooklinkBE.Data/Models/Book.cs
+    startLine: 35
+  assemblies:
+  - BooklinkBE.Data
+  namespace: BooklinkBE.Data.Models
+  syntax:
+    content: public int RowsFromTop { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property RowsFromTop As Integer
+  overload: BooklinkBE.Data.Models.Book.RowsFromTop*
+- uid: BooklinkBE.Data.Models.Book.HouseholdId
+  commentId: P:BooklinkBE.Data.Models.Book.HouseholdId
+  id: HouseholdId
+  parent: BooklinkBE.Data.Models.Book
+  langs:
+  - csharp
+  - vb
+  name: HouseholdId
+  nameWithType: Book.HouseholdId
+  fullName: BooklinkBE.Data.Models.Book.HouseholdId
+  type: Property
+  source:
+    remote:
+      path: BooklinkBE.Data/Models/Book.cs
+      branch: main
+      repo: https://github.com/1-IT-Gymnazium/1046_Booklink_BE.git
+    id: HouseholdId
+    path: ../../BooklinkBE.Data/Models/Book.cs
+    startLine: 36
+  assemblies:
+  - BooklinkBE.Data
+  namespace: BooklinkBE.Data.Models
+  syntax:
+    content: public Guid HouseholdId { get; set; }
+    parameters: []
+    return:
+      type: System.Guid
+    content.vb: Public Property HouseholdId As Guid
+  overload: BooklinkBE.Data.Models.Book.HouseholdId*
+- uid: BooklinkBE.Data.Models.Book.RoomId
+  commentId: P:BooklinkBE.Data.Models.Book.RoomId
+  id: RoomId
+  parent: BooklinkBE.Data.Models.Book
+  langs:
+  - csharp
+  - vb
+  name: RoomId
+  nameWithType: Book.RoomId
+  fullName: BooklinkBE.Data.Models.Book.RoomId
+  type: Property
+  source:
+    remote:
+      path: BooklinkBE.Data/Models/Book.cs
+      branch: main
+      repo: https://github.com/1-IT-Gymnazium/1046_Booklink_BE.git
+    id: RoomId
+    path: ../../BooklinkBE.Data/Models/Book.cs
+    startLine: 37
+  assemblies:
+  - BooklinkBE.Data
+  namespace: BooklinkBE.Data.Models
+  syntax:
+    content: public Guid RoomId { get; set; }
+    parameters: []
+    return:
+      type: System.Guid
+    content.vb: Public Property RoomId As Guid
+  overload: BooklinkBE.Data.Models.Book.RoomId*
+- uid: BooklinkBE.Data.Models.Book.BookshelfId
+  commentId: P:BooklinkBE.Data.Models.Book.BookshelfId
+  id: BookshelfId
+  parent: BooklinkBE.Data.Models.Book
+  langs:
+  - csharp
+  - vb
+  name: BookshelfId
+  nameWithType: Book.BookshelfId
+  fullName: BooklinkBE.Data.Models.Book.BookshelfId
+  type: Property
+  source:
+    remote:
+      path: BooklinkBE.Data/Models/Book.cs
+      branch: main
+      repo: https://github.com/1-IT-Gymnazium/1046_Booklink_BE.git
+    id: BookshelfId
+    path: ../../BooklinkBE.Data/Models/Book.cs
+    startLine: 38
+  assemblies:
+  - BooklinkBE.Data
+  namespace: BooklinkBE.Data.Models
+  syntax:
+    content: >-
+      [Required]
+
+      public Guid BookshelfId { get; set; }
+    parameters: []
+    return:
+      type: System.Guid
+    content.vb: >-
+      <Required>
+
+      Public Property BookshelfId As Guid
+  overload: BooklinkBE.Data.Models.Book.BookshelfId*
+  attributes:
+  - type: System.ComponentModel.DataAnnotations.RequiredAttribute
+    ctor: System.ComponentModel.DataAnnotations.RequiredAttribute.#ctor
+    arguments: []
+- uid: BooklinkBE.Data.Models.Book.Bookshelf
+  commentId: P:BooklinkBE.Data.Models.Book.Bookshelf
+  id: Bookshelf
+  parent: BooklinkBE.Data.Models.Book
+  langs:
+  - csharp
+  - vb
+  name: Bookshelf
+  nameWithType: Book.Bookshelf
+  fullName: BooklinkBE.Data.Models.Book.Bookshelf
+  type: Property
+  source:
+    remote:
+      path: BooklinkBE.Data/Models/Book.cs
+      branch: main
+      repo: https://github.com/1-IT-Gymnazium/1046_Booklink_BE.git
+    id: Bookshelf
+    path: ../../BooklinkBE.Data/Models/Book.cs
+    startLine: 41
+  assemblies:
+  - BooklinkBE.Data
+  namespace: BooklinkBE.Data.Models
+  syntax:
+    content: >-
+      [ForeignKey("BookshelfId")]
+
+      public Bookshelf Bookshelf { get; set; }
+    parameters: []
+    return:
+      type: BooklinkBE.Data.Models.Bookshelf
+    content.vb: >-
+      <ForeignKey("BookshelfId")>
+
+      Public Property Bookshelf As Bookshelf
+  overload: BooklinkBE.Data.Models.Book.Bookshelf*
+  attributes:
+  - type: System.ComponentModel.DataAnnotations.Schema.ForeignKeyAttribute
+    ctor: System.ComponentModel.DataAnnotations.Schema.ForeignKeyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: BookshelfId
+references:
+- uid: BooklinkBE.Data.Models
+  commentId: N:BooklinkBE.Data.Models
+  href: BooklinkBE.html
+  name: BooklinkBE.Data.Models
+  nameWithType: BooklinkBE.Data.Models
+  fullName: BooklinkBE.Data.Models
+  spec.csharp:
+  - uid: BooklinkBE
+    name: BooklinkBE
+    href: BooklinkBE.html
+  - name: .
+  - uid: BooklinkBE.Data
+    name: Data
+    href: BooklinkBE.Data.html
+  - name: .
+  - uid: BooklinkBE.Data.Models
+    name: Models
+    href: BooklinkBE.Data.Models.html
+  spec.vb:
+  - uid: BooklinkBE
+    name: BooklinkBE
+    href: BooklinkBE.html
+  - name: .
+  - uid: BooklinkBE.Data
+    name: Data
+    href: BooklinkBE.Data.html
+  - name: .
+  - uid: BooklinkBE.Data.Models
+    name: Models
+    href: BooklinkBE.Data.Models.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: BooklinkBE.Data.Models.Book.Id*
+  commentId: Overload:BooklinkBE.Data.Models.Book.Id
+  href: BooklinkBE.Data.Models.Book.html#BooklinkBE_Data_Models_Book_Id
+  name: Id
+  nameWithType: Book.Id
+  fullName: BooklinkBE.Data.Models.Book.Id
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
+- uid: BooklinkBE.Data.Models.Book.UserId*
+  commentId: Overload:BooklinkBE.Data.Models.Book.UserId
+  href: BooklinkBE.Data.Models.Book.html#BooklinkBE_Data_Models_Book_UserId
+  name: UserId
+  nameWithType: Book.UserId
+  fullName: BooklinkBE.Data.Models.Book.UserId
+- uid: BooklinkBE.Data.Models.Book.User*
+  commentId: Overload:BooklinkBE.Data.Models.Book.User
+  href: BooklinkBE.Data.Models.Book.html#BooklinkBE_Data_Models_Book_User
+  name: User
+  nameWithType: Book.User
+  fullName: BooklinkBE.Data.Models.Book.User
+- uid: BooklinkBE.Data.Models.User
+  commentId: T:BooklinkBE.Data.Models.User
+  parent: BooklinkBE.Data.Models
+  href: BooklinkBE.Data.Models.User.html
+  name: User
+  nameWithType: User
+  fullName: BooklinkBE.Data.Models.User
+- uid: BooklinkBE.Data.Models.Book.Title*
+  commentId: Overload:BooklinkBE.Data.Models.Book.Title
+  href: BooklinkBE.Data.Models.Book.html#BooklinkBE_Data_Models_Book_Title
+  name: Title
+  nameWithType: Book.Title
+  fullName: BooklinkBE.Data.Models.Book.Title
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: BooklinkBE.Data.Models.Book.Author*
+  commentId: Overload:BooklinkBE.Data.Models.Book.Author
+  href: BooklinkBE.Data.Models.Book.html#BooklinkBE_Data_Models_Book_Author
+  name: Author
+  nameWithType: Book.Author
+  fullName: BooklinkBE.Data.Models.Book.Author
+- uid: BooklinkBE.Data.Models.Book.Genre*
+  commentId: Overload:BooklinkBE.Data.Models.Book.Genre
+  href: BooklinkBE.Data.Models.Book.html#BooklinkBE_Data_Models_Book_Genre
+  name: Genre
+  nameWithType: Book.Genre
+  fullName: BooklinkBE.Data.Models.Book.Genre
+- uid: BooklinkBE.Data.Models.Book.Isbn*
+  commentId: Overload:BooklinkBE.Data.Models.Book.Isbn
+  href: BooklinkBE.Data.Models.Book.html#BooklinkBE_Data_Models_Book_Isbn
+  name: Isbn
+  nameWithType: Book.Isbn
+  fullName: BooklinkBE.Data.Models.Book.Isbn
+- uid: BooklinkBE.Data.Models.Book.PublicationYear*
+  commentId: Overload:BooklinkBE.Data.Models.Book.PublicationYear
+  href: BooklinkBE.Data.Models.Book.html#BooklinkBE_Data_Models_Book_PublicationYear
+  name: PublicationYear
+  nameWithType: Book.PublicationYear
+  fullName: BooklinkBE.Data.Models.Book.PublicationYear
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: BooklinkBE.Data.Models.Book.IsInReadingList*
+  commentId: Overload:BooklinkBE.Data.Models.Book.IsInReadingList
+  href: BooklinkBE.Data.Models.Book.html#BooklinkBE_Data_Models_Book_IsInReadingList
+  name: IsInReadingList
+  nameWithType: Book.IsInReadingList
+  fullName: BooklinkBE.Data.Models.Book.IsInReadingList
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: BooklinkBE.Data.Models.Book.ColumnsFromLeft*
+  commentId: Overload:BooklinkBE.Data.Models.Book.ColumnsFromLeft
+  href: BooklinkBE.Data.Models.Book.html#BooklinkBE_Data_Models_Book_ColumnsFromLeft
+  name: ColumnsFromLeft
+  nameWithType: Book.ColumnsFromLeft
+  fullName: BooklinkBE.Data.Models.Book.ColumnsFromLeft
+- uid: BooklinkBE.Data.Models.Book.RowsFromTop*
+  commentId: Overload:BooklinkBE.Data.Models.Book.RowsFromTop
+  href: BooklinkBE.Data.Models.Book.html#BooklinkBE_Data_Models_Book_RowsFromTop
+  name: RowsFromTop
+  nameWithType: Book.RowsFromTop
+  fullName: BooklinkBE.Data.Models.Book.RowsFromTop
+- uid: BooklinkBE.Data.Models.Book.HouseholdId*
+  commentId: Overload:BooklinkBE.Data.Models.Book.HouseholdId
+  href: BooklinkBE.Data.Models.Book.html#BooklinkBE_Data_Models_Book_HouseholdId
+  name: HouseholdId
+  nameWithType: Book.HouseholdId
+  fullName: BooklinkBE.Data.Models.Book.HouseholdId
+- uid: BooklinkBE.Data.Models.Book.RoomId*
+  commentId: Overload:BooklinkBE.Data.Models.Book.RoomId
+  href: BooklinkBE.Data.Models.Book.html#BooklinkBE_Data_Models_Book_RoomId
+  name: RoomId
+  nameWithType: Book.RoomId
+  fullName: BooklinkBE.Data.Models.Book.RoomId
+- uid: BooklinkBE.Data.Models.Book.BookshelfId*
+  commentId: Overload:BooklinkBE.Data.Models.Book.BookshelfId
+  href: BooklinkBE.Data.Models.Book.html#BooklinkBE_Data_Models_Book_BookshelfId
+  name: BookshelfId
+  nameWithType: Book.BookshelfId
+  fullName: BooklinkBE.Data.Models.Book.BookshelfId
+- uid: BooklinkBE.Data.Models.Book.Bookshelf*
+  commentId: Overload:BooklinkBE.Data.Models.Book.Bookshelf
+  href: BooklinkBE.Data.Models.Book.html#BooklinkBE_Data_Models_Book_Bookshelf
+  name: Bookshelf
+  nameWithType: Book.Bookshelf
+  fullName: BooklinkBE.Data.Models.Book.Bookshelf
+- uid: BooklinkBE.Data.Models.Bookshelf
+  commentId: T:BooklinkBE.Data.Models.Bookshelf
+  parent: BooklinkBE.Data.Models
+  href: BooklinkBE.Data.Models.Bookshelf.html
+  name: Bookshelf
+  nameWithType: Bookshelf
+  fullName: BooklinkBE.Data.Models.Bookshelf

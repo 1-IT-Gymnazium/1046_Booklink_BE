@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "iwnY484Qrso=",
+  "dgSpecHash": "2ZfhTAhl+gI=",
   "success": true,
-  "projectFilePath": "/Users/f3l1x/Coding/CurrentProjects/maturita/BooklinkBE/BooklinkBE/BooklinkBE.csproj",
+  "projectFilePath": "/Users/f3l1x/Coding/Maturita/BooklinkBE.API/BooklinkBE/BooklinkBE.csproj",
   "expectedPackageFiles": [
     "/Users/f3l1x/.nuget/packages/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg.sha512",
     "/Users/f3l1x/.nuget/packages/microsoft.aspnetcore.openapi/8.0.0/microsoft.aspnetcore.openapi.8.0.0.nupkg.sha512",

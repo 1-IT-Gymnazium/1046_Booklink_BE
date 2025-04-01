@@ -1,0 +1,86 @@
+### YamlMime:ManagedReference
+items:
+- uid: BooklinkBE.API.Services.Interfaces
+  commentId: N:BooklinkBE.API.Services.Interfaces
+  id: BooklinkBE.API.Services.Interfaces
+  children:
+  - BooklinkBE.API.Services.Interfaces.IBookService
+  - BooklinkBE.API.Services.Interfaces.IBookshelfService
+  - BooklinkBE.API.Services.Interfaces.IHouseholdService
+  - BooklinkBE.API.Services.Interfaces.IRoomService
+  langs:
+  - csharp
+  - vb
+  name: BooklinkBE.API.Services.Interfaces
+  nameWithType: BooklinkBE.API.Services.Interfaces
+  fullName: BooklinkBE.API.Services.Interfaces
+  type: Namespace
+  assemblies:
+  - BooklinkBE.API
+references:
+- uid: BooklinkBE.API.Services.Interfaces.IBookService
+  commentId: T:BooklinkBE.API.Services.Interfaces.IBookService
+  parent: BooklinkBE.API.Services.Interfaces
+  href: BooklinkBE.API.Services.Interfaces.IBookService.html
+  name: IBookService
+  nameWithType: IBookService
+  fullName: BooklinkBE.API.Services.Interfaces.IBookService
+- uid: BooklinkBE.API.Services.Interfaces.IBookshelfService
+  commentId: T:BooklinkBE.API.Services.Interfaces.IBookshelfService
+  parent: BooklinkBE.API.Services.Interfaces
+  href: BooklinkBE.API.Services.Interfaces.IBookshelfService.html
+  name: IBookshelfService
+  nameWithType: IBookshelfService
+  fullName: BooklinkBE.API.Services.Interfaces.IBookshelfService
+- uid: BooklinkBE.API.Services.Interfaces.IHouseholdService
+  commentId: T:BooklinkBE.API.Services.Interfaces.IHouseholdService
+  parent: BooklinkBE.API.Services.Interfaces
+  href: BooklinkBE.API.Services.Interfaces.IHouseholdService.html
+  name: IHouseholdService
+  nameWithType: IHouseholdService
+  fullName: BooklinkBE.API.Services.Interfaces.IHouseholdService
+- uid: BooklinkBE.API.Services.Interfaces.IRoomService
+  commentId: T:BooklinkBE.API.Services.Interfaces.IRoomService
+  parent: BooklinkBE.API.Services.Interfaces
+  href: BooklinkBE.API.Services.Interfaces.IRoomService.html
+  name: IRoomService
+  nameWithType: IRoomService
+  fullName: BooklinkBE.API.Services.Interfaces.IRoomService
+- uid: BooklinkBE.API.Services.Interfaces
+  commentId: N:BooklinkBE.API.Services.Interfaces
+  href: BooklinkBE.html
+  name: BooklinkBE.API.Services.Interfaces
+  nameWithType: BooklinkBE.API.Services.Interfaces
+  fullName: BooklinkBE.API.Services.Interfaces
+  spec.csharp:
+  - uid: BooklinkBE
+    name: BooklinkBE
+    href: BooklinkBE.html
+  - name: .
+  - uid: BooklinkBE.API
+    name: API
+    href: BooklinkBE.API.html
+  - name: .
+  - uid: BooklinkBE.API.Services
+    name: Services
+    href: BooklinkBE.API.Services.html
+  - name: .
+  - uid: BooklinkBE.API.Services.Interfaces
+    name: Interfaces
+    href: BooklinkBE.API.Services.Interfaces.html
+  spec.vb:
+  - uid: BooklinkBE
+    name: BooklinkBE
+    href: BooklinkBE.html
+  - name: .
+  - uid: BooklinkBE.API
+    name: API
+    href: BooklinkBE.API.html
+  - name: .
+  - uid: BooklinkBE.API.Services
+    name: Services
+    href: BooklinkBE.API.Services.html
+  - name: .
+  - uid: BooklinkBE.API.Services.Interfaces
+    name: Interfaces
+    href: BooklinkBE.API.Services.Interfaces.html

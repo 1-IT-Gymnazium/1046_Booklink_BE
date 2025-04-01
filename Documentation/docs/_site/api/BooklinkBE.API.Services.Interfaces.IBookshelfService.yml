@@ -1,0 +1,534 @@
+### YamlMime:ManagedReference
+items:
+- uid: BooklinkBE.API.Services.Interfaces.IBookshelfService
+  commentId: T:BooklinkBE.API.Services.Interfaces.IBookshelfService
+  id: IBookshelfService
+  parent: BooklinkBE.API.Services.Interfaces
+  children:
+  - BooklinkBE.API.Services.Interfaces.IBookshelfService.CreateBookshelfAsync(BooklinkBE.Data.Models.CreateBookshelfModel)
+  - BooklinkBE.API.Services.Interfaces.IBookshelfService.DeleteRoomAsync(System.Guid)
+  - BooklinkBE.API.Services.Interfaces.IBookshelfService.GetBookshelfById(System.Guid)
+  - BooklinkBE.API.Services.Interfaces.IBookshelfService.GetBookshelvesByRoomIdAsync(System.Guid)
+  - BooklinkBE.API.Services.Interfaces.IBookshelfService.GetBookshelvesByUserIdAsync(System.Guid)
+  - BooklinkBE.API.Services.Interfaces.IBookshelfService.UpdateBookshelfAsync(BooklinkBE.Data.Models.UpdateBookshelfModel)
+  langs:
+  - csharp
+  - vb
+  name: IBookshelfService
+  nameWithType: IBookshelfService
+  fullName: BooklinkBE.API.Services.Interfaces.IBookshelfService
+  type: Interface
+  source:
+    remote:
+      path: BooklinkBE.API/Services/Interfaces/IBookshelfService.cs
+      branch: main
+      repo: https://github.com/1-IT-Gymnazium/1046_Booklink_BE.git
+    id: IBookshelfService
+    path: ../../BooklinkBE.API/Services/Interfaces/IBookshelfService.cs
+    startLine: 4
+  assemblies:
+  - BooklinkBE.API
+  namespace: BooklinkBE.API.Services.Interfaces
+  syntax:
+    content: public interface IBookshelfService
+    content.vb: Public Interface IBookshelfService
+- uid: BooklinkBE.API.Services.Interfaces.IBookshelfService.GetBookshelvesByUserIdAsync(System.Guid)
+  commentId: M:BooklinkBE.API.Services.Interfaces.IBookshelfService.GetBookshelvesByUserIdAsync(System.Guid)
+  id: GetBookshelvesByUserIdAsync(System.Guid)
+  parent: BooklinkBE.API.Services.Interfaces.IBookshelfService
+  langs:
+  - csharp
+  - vb
+  name: GetBookshelvesByUserIdAsync(Guid)
+  nameWithType: IBookshelfService.GetBookshelvesByUserIdAsync(Guid)
+  fullName: BooklinkBE.API.Services.Interfaces.IBookshelfService.GetBookshelvesByUserIdAsync(System.Guid)
+  type: Method
+  source:
+    remote:
+      path: BooklinkBE.API/Services/Interfaces/IBookshelfService.cs
+      branch: main
+      repo: https://github.com/1-IT-Gymnazium/1046_Booklink_BE.git
+    id: GetBookshelvesByUserIdAsync
+    path: ../../BooklinkBE.API/Services/Interfaces/IBookshelfService.cs
+    startLine: 6
+  assemblies:
+  - BooklinkBE.API
+  namespace: BooklinkBE.API.Services.Interfaces
+  syntax:
+    content: Task<IEnumerable<Bookshelf>> GetBookshelvesByUserIdAsync(Guid userId)
+    parameters:
+    - id: userId
+      type: System.Guid
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{BooklinkBE.Data.Models.Bookshelf}}
+    content.vb: Function GetBookshelvesByUserIdAsync(userId As Guid) As Task(Of IEnumerable(Of Bookshelf))
+  overload: BooklinkBE.API.Services.Interfaces.IBookshelfService.GetBookshelvesByUserIdAsync*
+- uid: BooklinkBE.API.Services.Interfaces.IBookshelfService.GetBookshelvesByRoomIdAsync(System.Guid)
+  commentId: M:BooklinkBE.API.Services.Interfaces.IBookshelfService.GetBookshelvesByRoomIdAsync(System.Guid)
+  id: GetBookshelvesByRoomIdAsync(System.Guid)
+  parent: BooklinkBE.API.Services.Interfaces.IBookshelfService
+  langs:
+  - csharp
+  - vb
+  name: GetBookshelvesByRoomIdAsync(Guid)
+  nameWithType: IBookshelfService.GetBookshelvesByRoomIdAsync(Guid)
+  fullName: BooklinkBE.API.Services.Interfaces.IBookshelfService.GetBookshelvesByRoomIdAsync(System.Guid)
+  type: Method
+  source:
+    remote:
+      path: BooklinkBE.API/Services/Interfaces/IBookshelfService.cs
+      branch: main
+      repo: https://github.com/1-IT-Gymnazium/1046_Booklink_BE.git
+    id: GetBookshelvesByRoomIdAsync
+    path: ../../BooklinkBE.API/Services/Interfaces/IBookshelfService.cs
+    startLine: 7
+  assemblies:
+  - BooklinkBE.API
+  namespace: BooklinkBE.API.Services.Interfaces
+  syntax:
+    content: Task<IEnumerable<Bookshelf>> GetBookshelvesByRoomIdAsync(Guid roomId)
+    parameters:
+    - id: roomId
+      type: System.Guid
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{BooklinkBE.Data.Models.Bookshelf}}
+    content.vb: Function GetBookshelvesByRoomIdAsync(roomId As Guid) As Task(Of IEnumerable(Of Bookshelf))
+  overload: BooklinkBE.API.Services.Interfaces.IBookshelfService.GetBookshelvesByRoomIdAsync*
+- uid: BooklinkBE.API.Services.Interfaces.IBookshelfService.GetBookshelfById(System.Guid)
+  commentId: M:BooklinkBE.API.Services.Interfaces.IBookshelfService.GetBookshelfById(System.Guid)
+  id: GetBookshelfById(System.Guid)
+  parent: BooklinkBE.API.Services.Interfaces.IBookshelfService
+  langs:
+  - csharp
+  - vb
+  name: GetBookshelfById(Guid)
+  nameWithType: IBookshelfService.GetBookshelfById(Guid)
+  fullName: BooklinkBE.API.Services.Interfaces.IBookshelfService.GetBookshelfById(System.Guid)
+  type: Method
+  source:
+    remote:
+      path: BooklinkBE.API/Services/Interfaces/IBookshelfService.cs
+      branch: main
+      repo: https://github.com/1-IT-Gymnazium/1046_Booklink_BE.git
+    id: GetBookshelfById
+    path: ../../BooklinkBE.API/Services/Interfaces/IBookshelfService.cs
+    startLine: 8
+  assemblies:
+  - BooklinkBE.API
+  namespace: BooklinkBE.API.Services.Interfaces
+  syntax:
+    content: Task<Bookshelf?> GetBookshelfById(Guid id)
+    parameters:
+    - id: id
+      type: System.Guid
+    return:
+      type: System.Threading.Tasks.Task{BooklinkBE.Data.Models.Bookshelf}
+    content.vb: Function GetBookshelfById(id As Guid) As Task(Of Bookshelf)
+  overload: BooklinkBE.API.Services.Interfaces.IBookshelfService.GetBookshelfById*
+- uid: BooklinkBE.API.Services.Interfaces.IBookshelfService.CreateBookshelfAsync(BooklinkBE.Data.Models.CreateBookshelfModel)
+  commentId: M:BooklinkBE.API.Services.Interfaces.IBookshelfService.CreateBookshelfAsync(BooklinkBE.Data.Models.CreateBookshelfModel)
+  id: CreateBookshelfAsync(BooklinkBE.Data.Models.CreateBookshelfModel)
+  parent: BooklinkBE.API.Services.Interfaces.IBookshelfService
+  langs:
+  - csharp
+  - vb
+  name: CreateBookshelfAsync(CreateBookshelfModel)
+  nameWithType: IBookshelfService.CreateBookshelfAsync(CreateBookshelfModel)
+  fullName: BooklinkBE.API.Services.Interfaces.IBookshelfService.CreateBookshelfAsync(BooklinkBE.Data.Models.CreateBookshelfModel)
+  type: Method
+  source:
+    remote:
+      path: BooklinkBE.API/Services/Interfaces/IBookshelfService.cs
+      branch: main
+      repo: https://github.com/1-IT-Gymnazium/1046_Booklink_BE.git
+    id: CreateBookshelfAsync
+    path: ../../BooklinkBE.API/Services/Interfaces/IBookshelfService.cs
+    startLine: 9
+  assemblies:
+  - BooklinkBE.API
+  namespace: BooklinkBE.API.Services.Interfaces
+  syntax:
+    content: Task<Bookshelf> CreateBookshelfAsync(CreateBookshelfModel model)
+    parameters:
+    - id: model
+      type: BooklinkBE.Data.Models.CreateBookshelfModel
+    return:
+      type: System.Threading.Tasks.Task{BooklinkBE.Data.Models.Bookshelf}
+    content.vb: Function CreateBookshelfAsync(model As CreateBookshelfModel) As Task(Of Bookshelf)
+  overload: BooklinkBE.API.Services.Interfaces.IBookshelfService.CreateBookshelfAsync*
+- uid: BooklinkBE.API.Services.Interfaces.IBookshelfService.UpdateBookshelfAsync(BooklinkBE.Data.Models.UpdateBookshelfModel)
+  commentId: M:BooklinkBE.API.Services.Interfaces.IBookshelfService.UpdateBookshelfAsync(BooklinkBE.Data.Models.UpdateBookshelfModel)
+  id: UpdateBookshelfAsync(BooklinkBE.Data.Models.UpdateBookshelfModel)
+  parent: BooklinkBE.API.Services.Interfaces.IBookshelfService
+  langs:
+  - csharp
+  - vb
+  name: UpdateBookshelfAsync(UpdateBookshelfModel)
+  nameWithType: IBookshelfService.UpdateBookshelfAsync(UpdateBookshelfModel)
+  fullName: BooklinkBE.API.Services.Interfaces.IBookshelfService.UpdateBookshelfAsync(BooklinkBE.Data.Models.UpdateBookshelfModel)
+  type: Method
+  source:
+    remote:
+      path: BooklinkBE.API/Services/Interfaces/IBookshelfService.cs
+      branch: main
+      repo: https://github.com/1-IT-Gymnazium/1046_Booklink_BE.git
+    id: UpdateBookshelfAsync
+    path: ../../BooklinkBE.API/Services/Interfaces/IBookshelfService.cs
+    startLine: 10
+  assemblies:
+  - BooklinkBE.API
+  namespace: BooklinkBE.API.Services.Interfaces
+  syntax:
+    content: Task<bool> UpdateBookshelfAsync(UpdateBookshelfModel model)
+    parameters:
+    - id: model
+      type: BooklinkBE.Data.Models.UpdateBookshelfModel
+    return:
+      type: System.Threading.Tasks.Task{System.Boolean}
+    content.vb: Function UpdateBookshelfAsync(model As UpdateBookshelfModel) As Task(Of Boolean)
+  overload: BooklinkBE.API.Services.Interfaces.IBookshelfService.UpdateBookshelfAsync*
+- uid: BooklinkBE.API.Services.Interfaces.IBookshelfService.DeleteRoomAsync(System.Guid)
+  commentId: M:BooklinkBE.API.Services.Interfaces.IBookshelfService.DeleteRoomAsync(System.Guid)
+  id: DeleteRoomAsync(System.Guid)
+  parent: BooklinkBE.API.Services.Interfaces.IBookshelfService
+  langs:
+  - csharp
+  - vb
+  name: DeleteRoomAsync(Guid)
+  nameWithType: IBookshelfService.DeleteRoomAsync(Guid)
+  fullName: BooklinkBE.API.Services.Interfaces.IBookshelfService.DeleteRoomAsync(System.Guid)
+  type: Method
+  source:
+    remote:
+      path: BooklinkBE.API/Services/Interfaces/IBookshelfService.cs
+      branch: main
+      repo: https://github.com/1-IT-Gymnazium/1046_Booklink_BE.git
+    id: DeleteRoomAsync
+    path: ../../BooklinkBE.API/Services/Interfaces/IBookshelfService.cs
+    startLine: 11
+  assemblies:
+  - BooklinkBE.API
+  namespace: BooklinkBE.API.Services.Interfaces
+  syntax:
+    content: Task<bool> DeleteRoomAsync(Guid id)
+    parameters:
+    - id: id
+      type: System.Guid
+    return:
+      type: System.Threading.Tasks.Task{System.Boolean}
+    content.vb: Function DeleteRoomAsync(id As Guid) As Task(Of Boolean)
+  overload: BooklinkBE.API.Services.Interfaces.IBookshelfService.DeleteRoomAsync*
+references:
+- uid: BooklinkBE.API.Services.Interfaces
+  commentId: N:BooklinkBE.API.Services.Interfaces
+  href: BooklinkBE.html
+  name: BooklinkBE.API.Services.Interfaces
+  nameWithType: BooklinkBE.API.Services.Interfaces
+  fullName: BooklinkBE.API.Services.Interfaces
+  spec.csharp:
+  - uid: BooklinkBE
+    name: BooklinkBE
+    href: BooklinkBE.html
+  - name: .
+  - uid: BooklinkBE.API
+    name: API
+    href: BooklinkBE.API.html
+  - name: .
+  - uid: BooklinkBE.API.Services
+    name: Services
+    href: BooklinkBE.API.Services.html
+  - name: .
+  - uid: BooklinkBE.API.Services.Interfaces
+    name: Interfaces
+    href: BooklinkBE.API.Services.Interfaces.html
+  spec.vb:
+  - uid: BooklinkBE
+    name: BooklinkBE
+    href: BooklinkBE.html
+  - name: .
+  - uid: BooklinkBE.API
+    name: API
+    href: BooklinkBE.API.html
+  - name: .
+  - uid: BooklinkBE.API.Services
+    name: Services
+    href: BooklinkBE.API.Services.html
+  - name: .
+  - uid: BooklinkBE.API.Services.Interfaces
+    name: Interfaces
+    href: BooklinkBE.API.Services.Interfaces.html
+- uid: BooklinkBE.API.Services.Interfaces.IBookshelfService.GetBookshelvesByUserIdAsync*
+  commentId: Overload:BooklinkBE.API.Services.Interfaces.IBookshelfService.GetBookshelvesByUserIdAsync
+  href: BooklinkBE.API.Services.Interfaces.IBookshelfService.html#BooklinkBE_API_Services_Interfaces_IBookshelfService_GetBookshelvesByUserIdAsync_System_Guid_
+  name: GetBookshelvesByUserIdAsync
+  nameWithType: IBookshelfService.GetBookshelvesByUserIdAsync
+  fullName: BooklinkBE.API.Services.Interfaces.IBookshelfService.GetBookshelvesByUserIdAsync
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
+- uid: System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{BooklinkBE.Data.Models.Bookshelf}}
+  commentId: T:System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{BooklinkBE.Data.Models.Bookshelf}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<IEnumerable<Bookshelf>>
+  nameWithType: Task<IEnumerable<Bookshelf>>
+  fullName: System.Threading.Tasks.Task<System.Collections.Generic.IEnumerable<BooklinkBE.Data.Models.Bookshelf>>
+  nameWithType.vb: Task(Of IEnumerable(Of Bookshelf))
+  fullName.vb: System.Threading.Tasks.Task(Of System.Collections.Generic.IEnumerable(Of BooklinkBE.Data.Models.Bookshelf))
+  name.vb: Task(Of IEnumerable(Of Bookshelf))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: BooklinkBE.Data.Models.Bookshelf
+    name: Bookshelf
+    href: BooklinkBE.Data.Models.Bookshelf.html
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: BooklinkBE.Data.Models.Bookshelf
+    name: Bookshelf
+    href: BooklinkBE.Data.Models.Bookshelf.html
+  - name: )
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: BooklinkBE.API.Services.Interfaces.IBookshelfService.GetBookshelvesByRoomIdAsync*
+  commentId: Overload:BooklinkBE.API.Services.Interfaces.IBookshelfService.GetBookshelvesByRoomIdAsync
+  href: BooklinkBE.API.Services.Interfaces.IBookshelfService.html#BooklinkBE_API_Services_Interfaces_IBookshelfService_GetBookshelvesByRoomIdAsync_System_Guid_
+  name: GetBookshelvesByRoomIdAsync
+  nameWithType: IBookshelfService.GetBookshelvesByRoomIdAsync
+  fullName: BooklinkBE.API.Services.Interfaces.IBookshelfService.GetBookshelvesByRoomIdAsync
+- uid: BooklinkBE.API.Services.Interfaces.IBookshelfService.GetBookshelfById*
+  commentId: Overload:BooklinkBE.API.Services.Interfaces.IBookshelfService.GetBookshelfById
+  href: BooklinkBE.API.Services.Interfaces.IBookshelfService.html#BooklinkBE_API_Services_Interfaces_IBookshelfService_GetBookshelfById_System_Guid_
+  name: GetBookshelfById
+  nameWithType: IBookshelfService.GetBookshelfById
+  fullName: BooklinkBE.API.Services.Interfaces.IBookshelfService.GetBookshelfById
+- uid: System.Threading.Tasks.Task{BooklinkBE.Data.Models.Bookshelf}
+  commentId: T:System.Threading.Tasks.Task{BooklinkBE.Data.Models.Bookshelf}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<Bookshelf>
+  nameWithType: Task<Bookshelf>
+  fullName: System.Threading.Tasks.Task<BooklinkBE.Data.Models.Bookshelf>
+  nameWithType.vb: Task(Of Bookshelf)
+  fullName.vb: System.Threading.Tasks.Task(Of BooklinkBE.Data.Models.Bookshelf)
+  name.vb: Task(Of Bookshelf)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: BooklinkBE.Data.Models.Bookshelf
+    name: Bookshelf
+    href: BooklinkBE.Data.Models.Bookshelf.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: BooklinkBE.Data.Models.Bookshelf
+    name: Bookshelf
+    href: BooklinkBE.Data.Models.Bookshelf.html
+  - name: )
+- uid: BooklinkBE.API.Services.Interfaces.IBookshelfService.CreateBookshelfAsync*
+  commentId: Overload:BooklinkBE.API.Services.Interfaces.IBookshelfService.CreateBookshelfAsync
+  href: BooklinkBE.API.Services.Interfaces.IBookshelfService.html#BooklinkBE_API_Services_Interfaces_IBookshelfService_CreateBookshelfAsync_BooklinkBE_Data_Models_CreateBookshelfModel_
+  name: CreateBookshelfAsync
+  nameWithType: IBookshelfService.CreateBookshelfAsync
+  fullName: BooklinkBE.API.Services.Interfaces.IBookshelfService.CreateBookshelfAsync
+- uid: BooklinkBE.Data.Models.CreateBookshelfModel
+  commentId: T:BooklinkBE.Data.Models.CreateBookshelfModel
+  parent: BooklinkBE.Data.Models
+  href: BooklinkBE.Data.Models.CreateBookshelfModel.html
+  name: CreateBookshelfModel
+  nameWithType: CreateBookshelfModel
+  fullName: BooklinkBE.Data.Models.CreateBookshelfModel
+- uid: BooklinkBE.Data.Models
+  commentId: N:BooklinkBE.Data.Models
+  href: BooklinkBE.html
+  name: BooklinkBE.Data.Models
+  nameWithType: BooklinkBE.Data.Models
+  fullName: BooklinkBE.Data.Models
+  spec.csharp:
+  - uid: BooklinkBE
+    name: BooklinkBE
+    href: BooklinkBE.html
+  - name: .
+  - uid: BooklinkBE.Data
+    name: Data
+    href: BooklinkBE.Data.html
+  - name: .
+  - uid: BooklinkBE.Data.Models
+    name: Models
+    href: BooklinkBE.Data.Models.html
+  spec.vb:
+  - uid: BooklinkBE
+    name: BooklinkBE
+    href: BooklinkBE.html
+  - name: .
+  - uid: BooklinkBE.Data
+    name: Data
+    href: BooklinkBE.Data.html
+  - name: .
+  - uid: BooklinkBE.Data.Models
+    name: Models
+    href: BooklinkBE.Data.Models.html
+- uid: BooklinkBE.API.Services.Interfaces.IBookshelfService.UpdateBookshelfAsync*
+  commentId: Overload:BooklinkBE.API.Services.Interfaces.IBookshelfService.UpdateBookshelfAsync
+  href: BooklinkBE.API.Services.Interfaces.IBookshelfService.html#BooklinkBE_API_Services_Interfaces_IBookshelfService_UpdateBookshelfAsync_BooklinkBE_Data_Models_UpdateBookshelfModel_
+  name: UpdateBookshelfAsync
+  nameWithType: IBookshelfService.UpdateBookshelfAsync
+  fullName: BooklinkBE.API.Services.Interfaces.IBookshelfService.UpdateBookshelfAsync
+- uid: BooklinkBE.Data.Models.UpdateBookshelfModel
+  commentId: T:BooklinkBE.Data.Models.UpdateBookshelfModel
+  parent: BooklinkBE.Data.Models
+  href: BooklinkBE.Data.Models.UpdateBookshelfModel.html
+  name: UpdateBookshelfModel
+  nameWithType: UpdateBookshelfModel
+  fullName: BooklinkBE.Data.Models.UpdateBookshelfModel
+- uid: System.Threading.Tasks.Task{System.Boolean}
+  commentId: T:System.Threading.Tasks.Task{System.Boolean}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<bool>
+  nameWithType: Task<bool>
+  fullName: System.Threading.Tasks.Task<bool>
+  nameWithType.vb: Task(Of Boolean)
+  fullName.vb: System.Threading.Tasks.Task(Of Boolean)
+  name.vb: Task(Of Boolean)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: BooklinkBE.API.Services.Interfaces.IBookshelfService.DeleteRoomAsync*
+  commentId: Overload:BooklinkBE.API.Services.Interfaces.IBookshelfService.DeleteRoomAsync
+  href: BooklinkBE.API.Services.Interfaces.IBookshelfService.html#BooklinkBE_API_Services_Interfaces_IBookshelfService_DeleteRoomAsync_System_Guid_
+  name: DeleteRoomAsync
+  nameWithType: IBookshelfService.DeleteRoomAsync
+  fullName: BooklinkBE.API.Services.Interfaces.IBookshelfService.DeleteRoomAsync

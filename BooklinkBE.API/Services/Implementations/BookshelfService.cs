@@ -5,30 +5,33 @@ using Microsoft.EntityFrameworkCore;
 
 namespace BooklinkBE.API.Services.Implementations
 {
-    public class BookshelfService : IBookshelfService
+    public class BookshelfService(AppDbContext context) : IBookshelfService
     {
-        private readonly AppDbContext _context;
-
-        public BookshelfService(AppDbContext context)
+        public async Task<IEnumerable<Bookshelf>> GetBookshelvesByUserIdAsync(Guid userId)
         {
-            _context = context;
+            if (userId == Guid.Empty)
+                throw new ArgumentException("Invalid user ID");
+
+            return await context.Bookshelves
+                .Where(b => b.UserId == userId)
+                .ToListAsync();
+        }
+        public async Task<IEnumerable<Bookshelf>> GetBookshelvesByRoomIdAsync(Guid roomId)
+        {
+            return await context.Bookshelves.Where(x => x.RoomId == roomId).ToListAsync();
         }
 
-        public async Task<IEnumerable<Bookshelf>> GetAllAsync()
+        public async Task<Bookshelf?> GetBookshelfById(Guid id)
         {
-            return await _context.Bookshelves.Include(b => b.Room).ToListAsync();
+            return await context.Bookshelves.Include(b => b.Room).FirstOrDefaultAsync(b => b.Id == id);
         }
 
-        public async Task<Bookshelf?> GetByIdAsync(Guid id)
-        {
-            return await _context.Bookshelves.Include(b => b.Room).FirstOrDefaultAsync(b => b.Id == id);
-        }
-
-        public async Task<Bookshelf> CreateAsync(CreateBookshelfModel model)
+        public async Task<Bookshelf> CreateBookshelfAsync(CreateBookshelfModel model)
         {
             var bookshelf = new Bookshelf
             {
                 Id = Guid.NewGuid(),
+                UserId = model.UserId,
                 Name = model.Name,
                 Description = model.Description,
                 NumberOfColumns = model.NumberOfColumns,
@@ -36,15 +39,15 @@ namespace BooklinkBE.API.Services.Implementations
                 RoomId = model.RoomId
             };
 
-            _context.Bookshelves.Add(bookshelf);
-            await _context.SaveChangesAsync();
+            context.Bookshelves.Add(bookshelf);
+            await context.SaveChangesAsync();
 
             return bookshelf;
         }
 
-        public async Task<bool> UpdateAsync(UpdateBookshelfModel model)
+        public async Task<bool> UpdateBookshelfAsync(UpdateBookshelfModel model)
         {
-            var bookshelf = await _context.Bookshelves.FindAsync(model.Id);
+            var bookshelf = await context.Bookshelves.FindAsync(model.Id);
             if (bookshelf == null) return false;
 
             bookshelf.Name = model.Name;
@@ -53,18 +56,18 @@ namespace BooklinkBE.API.Services.Implementations
             bookshelf.NumberOfRows = model.NumberOfRows;
             bookshelf.RoomId = model.RoomId;
 
-            await _context.SaveChangesAsync();
+            await context.SaveChangesAsync();
             return true;
         }
 
-        public async Task<bool> DeleteAsync(Guid id)
+        public async Task<bool> DeleteRoomAsync(Guid id)
         {
-            var bookshelf = await _context.Bookshelves.FindAsync(id);
-            if (bookshelf == null) return false; //404
+            var bookshelf = await context.Bookshelves.FindAsync(id);
+            if (bookshelf == null) return false;
 
-            _context.Bookshelves.Remove(bookshelf);
-            await _context.SaveChangesAsync();
-            return true; //204
+            context.Bookshelves.Remove(bookshelf);
+            await context.SaveChangesAsync();
+            return true;
         }
     }
 }

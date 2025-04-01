@@ -18,7 +18,7 @@ using Microsoft.IdentityModel.Tokens;
 
 namespace BooklinkBE.API.Controllers;
 [ApiController]
-[Route("api/v1/Auth")]
+[Route("v1/api/auth")]
 public class AuthController : ControllerBase
 {
     private readonly AppDbContext _dbContext;
@@ -44,8 +44,8 @@ public class AuthController : ControllerBase
         _emailSenderService = emailSenderService;
         _environmentOptions = environmentOptions.Value;
     }
-
-    [HttpPost("Register")]
+    
+    [HttpPost("register")]
 [ProducesResponseType(StatusCodes.Status200OK)]
 [ProducesResponseType(StatusCodes.Status400BadRequest)]
 public async Task<ActionResult> Register([FromBody] Register model)
@@ -55,7 +55,7 @@ public async Task<ActionResult> Register([FromBody] Register model)
         Id = Guid.NewGuid(),
         Email = model.Email,
         UserName = model.Email,
-        NormalizedEmail = model.Email.ToLower(),  // Ensure normalized email
+        NormalizedEmail = model.Email.ToLower(),
         NormalizedUserName = model.Email.ToLower(),
         SecurityStamp = Guid.NewGuid().ToString(),
         CreatedAt = DateTime.UtcNow,
@@ -85,7 +85,7 @@ public async Task<ActionResult> Register([FromBody] Register model)
         return StatusCode(500, "Failed to generate email confirmation token.");
     }
 
-    var confirmationLink = $"{_environmentOptions.FrontendConfirmUrl}?token={Uri.EscapeDataString(token)}&email={Uri.EscapeDataString(newUser.Email.ToLower())}";
+    var confirmationLink = $"{_environmentOptions.FrontendHostUrl}{_environmentOptions.FrontendConfirmUrl}?token={Uri.EscapeDataString(token)}&email={Uri.EscapeDataString(newUser.Email.ToLower())}";
     Console.WriteLine(confirmationLink);
 
     await _emailSenderService.AddEmail("Registrace", confirmationLink, newUser.Email, newUser.UserName);
@@ -93,7 +93,7 @@ public async Task<ActionResult> Register([FromBody] Register model)
     return Ok(new { Message = "User registered successfully. Please confirm your email.", ConfirmationLink = confirmationLink });
 }
 
-    [HttpPost("Login")]
+    [HttpPost("login")]
     public async Task<ActionResult> Login([FromBody] Login model)
     {
         var normalizedEmail = model.Email.ToUpperInvariant();
@@ -123,7 +123,7 @@ public async Task<ActionResult> Register([FromBody] Register model)
             SameSite = SameSiteMode.Strict,
             Expires = DateTime.UtcNow.AddDays(_jwtSettings.RefreshTokenExpirationInDays)
         });
-        return Ok(new { Token = accessToken });
+        return Ok(new { token = accessToken, email = user.Email, id = user.Id });
     }
 
     /// <summary>
@@ -131,11 +131,10 @@ public async Task<ActionResult> Register([FromBody] Register model)
     /// </summary>
     /// <param name="model"></param>
     /// <returns></returns>
-    [HttpPost("ValidateToken")]
-    public async Task<ActionResult> ValidateToken(
-        [FromBody] Token model
-        )
+    [HttpPost("validate-token")]
+    public async Task<ActionResult> ValidateToken([FromBody] Token model)
     {
+        Console.WriteLine("Validating token...");
         var normalizedMail = model.Email.ToUpperInvariant();
         var user = await _userManager
             .Users
@@ -158,7 +157,7 @@ public async Task<ActionResult> Register([FromBody] Register model)
     }
 
     [AllowAnonymous]
-    [HttpGet("UserInfo")]
+    [HttpGet("user-info")]
     public async Task<ActionResult<LoggedUser>> GetUserInfo()
     {
         if (!User.Identities.Any(x => x.IsAuthenticated))
@@ -189,12 +188,12 @@ public async Task<ActionResult> Register([FromBody] Register model)
         return loggedModel;
     }
 
-    [HttpPost("Refresh")]
+    [HttpPost("refresh")]
     public async Task<IActionResult> RefreshToken()
     {
         if (!Request.Cookies.TryGetValue("RefreshToken", out var incomingToken))
         {
-            return Unauthorized(new { Message = "Refresh token not found" });
+            return Unauthorized(new { Message = "refresh token not found" });
         }
 
         var hashedToken = Hash(incomingToken);
@@ -235,7 +234,7 @@ public async Task<ActionResult> Register([FromBody] Register model)
     }
 
     [Authorize]
-    [HttpPost("Logout")]
+    [HttpPost("logout")]
     public async Task<ActionResult> Logout()
     {
         if (!Request.Cookies.TryGetValue("RefreshToken", out var incomingToken))
@@ -261,7 +260,7 @@ public async Task<ActionResult> Register([FromBody] Register model)
     }
 
     [Authorize]
-    [HttpGet("TestMeBeforeLoginAndAfter")]
+    [HttpGet("testMeBeforeLoginAndAfter")]
     public ActionResult TestMeBeforeLoginAndAfter()
     {
         return Ok("Succesfully reached endpoint!");
@@ -314,13 +313,38 @@ public async Task<ActionResult> Register([FromBody] Register model)
         return Convert.ToBase64String(hash);
 
     }
-
-    [HttpGet("TestMail")]
-    public async Task<ActionResult> Test(
-    [FromServices] EmailSenderService service
-    )
+    [HttpPost("forgot-password")]
+    public async Task<IActionResult> ForgotPassword([FromBody] ForgotPassword request)
     {
-        await _emailSenderService.AddEmail("Suuuubject", "Aaaaaaaaaaa", "test@test.cz");
-        return NoContent();
+        var user = await _userManager.FindByEmailAsync(request.Email);
+        if (user == null || !(await _userManager.IsEmailConfirmedAsync(user)))
+        {
+            return Ok(new { message = "If that email exists, a reset link has been sent." });
+        }
+
+        var token = await _userManager.GeneratePasswordResetTokenAsync(user);
+        var resetUrl = $"{_environmentOptions.FrontendHostUrl}/reset-password?token={Uri.EscapeDataString(token)}&email={Uri.EscapeDataString(user.Email)}";
+
+        await _emailSenderService.AddEmail("Password Reset", resetUrl, user.Email, user.UserName);
+
+        return Ok(new { message = "Password reset link sent to email." });
+    }
+
+    [HttpPost("reset-password")]
+    public async Task<IActionResult> ResetPassword([FromBody] ResetPasswordRequest request)
+    {
+        var user = await _userManager.FindByEmailAsync(request.Email);
+        if (user == null)
+        {
+            return BadRequest(new { message = "Invalid request." });
+        }
+
+        var result = await _userManager.ResetPasswordAsync(user, request.Token, request.NewPassword);
+        if (!result.Succeeded)
+        {
+            return BadRequest(new { message = string.Join("; ", result.Errors.Select(e => e.Description)) });
+        }
+
+        return Ok(new { message = "Password has been reset successfully." });
     }
 }

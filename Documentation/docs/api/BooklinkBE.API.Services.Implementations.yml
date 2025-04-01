@@ -1,0 +1,90 @@
+### YamlMime:ManagedReference
+items:
+- uid: BooklinkBE.API.Services.Implementations
+  commentId: N:BooklinkBE.API.Services.Implementations
+  id: BooklinkBE.API.Services.Implementations
+  children:
+  - BooklinkBE.API.Services.Implementations.BookService
+  - BooklinkBE.API.Services.Implementations.BookshelfService
+  - BooklinkBE.API.Services.Implementations.EmailSenderService
+  - BooklinkBE.API.Services.Implementations.HouseholdService
+  - BooklinkBE.API.Services.Implementations.RoomService
+  langs:
+  - csharp
+  - vb
+  name: BooklinkBE.API.Services.Implementations
+  nameWithType: BooklinkBE.API.Services.Implementations
+  fullName: BooklinkBE.API.Services.Implementations
+  type: Namespace
+  assemblies:
+  - BooklinkBE.API
+references:
+- uid: BooklinkBE.API.Services.Implementations.BookService
+  commentId: T:BooklinkBE.API.Services.Implementations.BookService
+  href: BooklinkBE.API.Services.Implementations.BookService.html
+  name: BookService
+  nameWithType: BookService
+  fullName: BooklinkBE.API.Services.Implementations.BookService
+- uid: BooklinkBE.API.Services.Implementations.BookshelfService
+  commentId: T:BooklinkBE.API.Services.Implementations.BookshelfService
+  href: BooklinkBE.API.Services.Implementations.BookshelfService.html
+  name: BookshelfService
+  nameWithType: BookshelfService
+  fullName: BooklinkBE.API.Services.Implementations.BookshelfService
+- uid: BooklinkBE.API.Services.Implementations.EmailSenderService
+  commentId: T:BooklinkBE.API.Services.Implementations.EmailSenderService
+  parent: BooklinkBE.API.Services.Implementations
+  href: BooklinkBE.API.Services.Implementations.EmailSenderService.html
+  name: EmailSenderService
+  nameWithType: EmailSenderService
+  fullName: BooklinkBE.API.Services.Implementations.EmailSenderService
+- uid: BooklinkBE.API.Services.Implementations.HouseholdService
+  commentId: T:BooklinkBE.API.Services.Implementations.HouseholdService
+  href: BooklinkBE.API.Services.Implementations.HouseholdService.html
+  name: HouseholdService
+  nameWithType: HouseholdService
+  fullName: BooklinkBE.API.Services.Implementations.HouseholdService
+- uid: BooklinkBE.API.Services.Implementations.RoomService
+  commentId: T:BooklinkBE.API.Services.Implementations.RoomService
+  href: BooklinkBE.API.Services.Implementations.RoomService.html
+  name: RoomService
+  nameWithType: RoomService
+  fullName: BooklinkBE.API.Services.Implementations.RoomService
+- uid: BooklinkBE.API.Services.Implementations
+  commentId: N:BooklinkBE.API.Services.Implementations
+  href: BooklinkBE.html
+  name: BooklinkBE.API.Services.Implementations
+  nameWithType: BooklinkBE.API.Services.Implementations
+  fullName: BooklinkBE.API.Services.Implementations
+  spec.csharp:
+  - uid: BooklinkBE
+    name: BooklinkBE
+    href: BooklinkBE.html
+  - name: .
+  - uid: BooklinkBE.API
+    name: API
+    href: BooklinkBE.API.html
+  - name: .
+  - uid: BooklinkBE.API.Services
+    name: Services
+    href: BooklinkBE.API.Services.html
+  - name: .
+  - uid: BooklinkBE.API.Services.Implementations
+    name: Implementations
+    href: BooklinkBE.API.Services.Implementations.html
+  spec.vb:
+  - uid: BooklinkBE
+    name: BooklinkBE
+    href: BooklinkBE.html
+  - name: .
+  - uid: BooklinkBE.API
+    name: API
+    href: BooklinkBE.API.html
+  - name: .
+  - uid: BooklinkBE.API.Services
+    name: Services
+    href: BooklinkBE.API.Services.html
+  - name: .
+  - uid: BooklinkBE.API.Services.Implementations
+    name: Implementations
+    href: BooklinkBE.API.Services.Implementations.html
